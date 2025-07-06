@@ -26,6 +26,7 @@ const ProfilePage = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [errors, setErrors] = useState({});
   const [feedback, setFeedback] = useState(null);
+  
 
   // Fetch customer profile on mount
   useEffect(() => {
