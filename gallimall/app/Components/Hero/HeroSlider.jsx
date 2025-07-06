@@ -13,7 +13,7 @@ import Image from "next/image";
 // Images for sliders
 import kirana from "../../../public/images/Category/Local Kirana store.jpg";
 import tiffins from "../../../public/images/Category/Tiffin.jpg";
-import veg_fruits from "../../../public/images/Fresh Fruits.jpg";
+import veg_fruits from "../../../public/images/Category/Fresh Fruits.jpg";
 import dairy from "../../../public/images/Category/dairy $ Bakery.jpg";
 
 const Slides = [
