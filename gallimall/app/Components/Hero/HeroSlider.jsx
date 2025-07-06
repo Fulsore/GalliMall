@@ -11,10 +11,11 @@ import { IoArrowForwardOutline } from 'react-icons/io5';
 import Image from "next/image";
 
 // Images for sliders
-import kirana from "../../../public/images/Category/Local Kirana store.jpg";
-import tiffins from "../../../public/images/Category/Tiffin.jpg";
-import veg_fruits from "../../../public/images/Category/Fresh Fruits.jpg";
-import dairy from "../../../public/images/Category/dairy $ Bakery.jpg";
+import kirana from "../../../public/images/Category/local-kirana-store.jpg";
+import tiffins from "../../../public/images/Category/tiffin.jpg";
+import veg_fruits from "../../../public/images/Category/fresh-fruits.jpg";
+import dairy from "../../../public/images/Category/dairy-bakery.jpg";
+
 
 const Slides = [
   {
