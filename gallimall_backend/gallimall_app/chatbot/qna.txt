@@ -1,0 +1,36 @@
+hi|Hello! 👋 How can I assist you today?
+hello|Hi there! 😊 Need help with something?
+hey|Hey! I'm here to help. What would you like to know?
+how are you|I'm just a chatbot, but I'm always ready to help you!
+what can you do|I can assist you with queries about Galli Mall, orders, payments, vendors, and more.
+are you human|Nope! I'm your friendly AI assistant built to support you with Galli Mall.
+tell me about yourself|I'm an AI assistant created to help you use Galli Mall better—ask me anything!
+thanks|You're welcome! 😊 Let me know if you need anything else.
+thank you|Happy to help! 🙌
+bye|Goodbye! Have a great day!
+goodbye|See you soon! Take care.
+
+who is the founder|Anil is the founder of Galli Mall, leading the vision to empower local businesses with technology.
+who is the ceo|Anil is the CEO of Galli Mall, responsible for strategic growth and product leadership.
+who is the developer|Ramu is the developer behind Galli Mall’s backend systems and core functionality.
+who is ramu|Ramu is the co-founder and technical architect of Galli Mall, focusing on backend and data systems.
+who is anil|Anil is the founder, CEO, and one of the lead developers of Galli Mall.
+who is the co-founder|Ramu is the co-founder of Galli Mall and handles platform scalability and vendor tools.
+what is galli mall|Galli Mall is a hyperlocal marketplace that connects customers with nearby vendors for fast, same-day delivery.
+what is the purpose of galli mall|The mission of Galli Mall is to empower local vendors with digital stores and make everyday essentials accessible to customers in minutes.
+how to become a vendor|Download the app and sign up as a vendor by submitting your shop details and verification documents.
+how vendors receive orders|Vendors get notified through the app in real-time when a customer places an order.
+how to update my shop|Go to the vendor dashboard, click on 'Edit Store Info', and update your shop’s name, location, timing, and products.
+how do vendors manage inventory|Vendors can add, update, or remove products from the inventory tab in their dashboard.
+how to deliver orders|Once an order is confirmed, vendors can choose delivery agents or allow customers to pick up their orders.
+can vendors set their own prices|Yes, vendors have full control over product pricing and stock availability.
+can I sell without a physical shop|Yes, you can run a digital store on Galli Mall even without a physical storefront.
+how to check order status|Customers can check real-time order status from the 'My Orders' section.
+how to change my address|Go to your profile settings and update your delivery address and pin code.
+can I pay via UPI|Yes, we support UPI, Razorpay, and Cash on Delivery options.
+how to give feedback|You can give feedback via the 'Rate Order' section after delivery or through the Help menu.
+is galli mall available in my area|We’re expanding rapidly! Enter your pin code in the app to check service availability.
+how to register as a customer|Just download the app, sign up with your mobile number or email, and start exploring.
+how to logout|Go to your profile settings and click 'Logout' at the bottom.
+can I reorder items|Yes! Use the 'Reorder' option from your past orders to quickly restock.
+what is click and collect|Click and Collect allows you to place an order online and pick it up from the shop yourself.
