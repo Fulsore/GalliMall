@@ -7,6 +7,8 @@ import { verifyPayment } from '../Redux/Slice/orderSlice';
 import Link from 'next/link';
 import axios from 'axios';
 import Image from 'next/image';
+// import { loadCartFromStorage } from '../Redux/Slice/cartSlice';
+
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000';
 
