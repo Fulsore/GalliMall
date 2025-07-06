@@ -11,7 +11,8 @@ ENV = os.getenv("ENV", "development")
 DEBUG = os.getenv("DEBUG", "True") == "True"
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost",'192.168.29.192','gallimall-backend.onrender.com').split(",")
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost,192.168.29.192,gallimall-backend.onrender.com").split(",")
+
 CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000").split(",")
 
 if ENV == "production":
