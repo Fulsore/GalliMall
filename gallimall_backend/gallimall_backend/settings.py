@@ -20,9 +20,10 @@ if ENV == "production":
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
 
-    CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",") or [
-        "https://gallimall.vercel.app"
-    ]
+    cors_env = os.getenv("CORS_ALLOWED_ORIGINS", "")
+    CORS_ALLOWED_ORIGINS = cors_env.split(",") if cors_env else ["https://gallimall.vercel.app"]
+
+
 
 
 
