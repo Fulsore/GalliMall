@@ -70,12 +70,13 @@ const Products = ({ categoryId = null, subcategoryId = null }) => {
     router.push('/cart');
   };
 
-  const getSafeImage = (url) => {
-    if (!url) return '/placeholder.jpg';
-    if (url.startsWith('http')) return url;
-    if (url.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${url}`;
-    return `https://res.cloudinary.com/gallimall/image/upload/${url}`;
-  };
+const getSafeImage = (url) => {
+  if (!url) return '/placeholder.jpg';
+  if (url.startsWith('http')) return url;
+  if (url.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${url}`;
+  return `https://res.cloudinary.com/gallimall/image/upload/${url}`;
+};
+
 
   return (
     <section className="px-4 py-6 bg-gray-50">

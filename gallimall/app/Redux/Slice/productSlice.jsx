@@ -6,7 +6,9 @@ export const fetchProduct = createAsyncThunk(
   'product/fetchProduct',
   async (params = {}, { rejectWithValue }) => {
     try {
-      let url = `http://127.0.0.1:8000/api/product`;
+const BASE_API = process.env.NEXT_PUBLIC_API_BASE_URL;
+let url = `${BASE_API}/product`;
+
 
       const queryParams = [];
       if (params.categoryId) queryParams.push(`category=${params.categoryId}`);

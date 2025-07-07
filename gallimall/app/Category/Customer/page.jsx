@@ -27,13 +27,15 @@ const CategoryList = () => {
     return <div className="text-red-500 text-center">Failed to load categories: {error}</div>;
   }
 
-  const getImageUrl = (path) => {
+const getImageUrl = (path) => {
+  const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/api\/?$/, '') || '';
   if (!path) return '/placeholder.jpg';
   if (path.startsWith('http')) return path;
-  if (path.startsWith('/')) return `http://127.0.0.1:8000${path}`;
+  if (path.startsWith('/')) return `${BASE_URL}${path}`;
   if (path.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${path}`;
   return `https://res.cloudinary.com/gallimall/image/upload/${path}`;
 };
+
 
   return (
     <div className="bg-gray-50 py-10 px-4 sm:px-8">

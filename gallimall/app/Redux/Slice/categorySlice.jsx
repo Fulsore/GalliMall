@@ -3,7 +3,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8000/api/category/';
+const API_URL = `${process.env.NEXT_PUBLIC_API_BASE_URL}/category/`;
 
 // Async thunk to fetch categories
 export const fetchCategory = createAsyncThunk('category/fetchCategory', async () => {
