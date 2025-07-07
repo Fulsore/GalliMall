@@ -16,6 +16,7 @@ export default function CustomerDashboard() {
 const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 
+
   const [products, setProducts] = useState([]);
   const [suggestedProducts, setSuggestedProducts] = useState([]);
   const [shops, setShops] = useState([]);
@@ -27,7 +28,8 @@ const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   const fetchPromotions = async () => {
     try {
-      const res = await axios.get(`${backendBaseUrl}/api/promotions/`);
+      const res = await axios.get(`${backendBaseUrl}/promotions/`);
+
       setPromotions(res.data.results || []);
     } catch (err) {
       console.error("Failed to fetch promotions", err);
@@ -37,7 +39,7 @@ const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch(`${backendBaseUrl}/api/subcategory/`);
+      const res = await fetch(`${backendBaseUrl}/subcategory/`);
       if (!res.ok) throw new Error("Failed to fetch products");
       const data = await res.json();
       setProducts(data);
@@ -53,7 +55,7 @@ const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
   const fetchShops = async () => {
     try {
       const token = localStorage.getItem('access_token');
-      const response = await axios.get(`${backendBaseUrl}/api/shops/`, {
+      const response = await axios.get(`${backendBaseUrl}/shops/`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setShops(response.data);
