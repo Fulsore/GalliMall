@@ -19,7 +19,8 @@ if ENV == "production":
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    CSRF_TRUSTED_ORIGINS = [f"https://{host}" for host in ALLOWED_HOSTS]
+    CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
+
 
 # APPS
 INSTALLED_APPS = [
@@ -86,6 +87,8 @@ DATABASES = {
         "PORT": os.getenv("DB_PORT", "5432"),
     }
 }
+
+
 
 # PASSWORD VALIDATORS
 AUTH_PASSWORD_VALIDATORS = [
