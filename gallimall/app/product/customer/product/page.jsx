@@ -1,9 +1,11 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import Products from '../../../Components/Products'; // adjust path if different
+import dynamic from 'next/dynamic';
 
-const ProductPage = () => {
+const Products = dynamic(() => import('../../../Components/Products'), { ssr: false });
+
+export default function ProductPage() {
   const searchParams = useSearchParams();
   const categoryId = searchParams.get('categoryId');
   const subcategoryId = searchParams.get('subcategoryId');
@@ -11,6 +13,4 @@ const ProductPage = () => {
   return (
     <Products categoryId={categoryId} subcategoryId={subcategoryId} />
   );
-};
-
-export default ProductPage;
+}
