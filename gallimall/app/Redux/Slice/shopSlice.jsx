@@ -1,6 +1,9 @@
+'use client';
+
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+// ✅ Safe API base URL from .env
 const API = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 // 🔍 Fetch All Shops
@@ -10,40 +13,34 @@ export const fetchAllShops = createAsyncThunk(
     try {
       const token = localStorage.getItem('access_token');
       const response = await axios.get(`${API}/shops/`, {
-        // headers: {
-        //   Authorization: `Bearer ${token}`,
-        // },
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
       return response.data;
     } catch (error) {
-      return rejectWithValue(
-        error.response?.data?.detail || 'Failed to fetch shops'
-      );
+      return rejectWithValue(error.response?.data?.detail || 'Failed to fetch shops');
     }
   }
 );
 
-
+// 🏪 Create Shop
 export const createShop = createAsyncThunk(
   'shop/createShop',
   async (shopData, { rejectWithValue }) => {
     try {
       const token = localStorage.getItem('access_token');
-
       const response = await axios.post(`${API}/shops/`, shopData, {
         headers: {
           Authorization: `Bearer ${token}`,
-          // Do NOT set 'Content-Type' manually
         },
       });
-
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data || error.message);
     }
   }
 );
-
 
 // ✅ Fetch Public Shop Details
 export const fetchShopDetails = createAsyncThunk(
@@ -58,32 +55,25 @@ export const fetchShopDetails = createAsyncThunk(
       });
       return response.data;
     } catch (error) {
-      return rejectWithValue(
-        error.response?.data?.detail || 'Failed to fetch shop details'
-      );
+      return rejectWithValue(error.response?.data?.detail || 'Failed to fetch shop details');
     }
   }
 );
 
+// 🔄 Update Shop
 export const updateShop = createAsyncThunk(
   'shop/updateShop',
   async ({ shopId, formData }, { rejectWithValue }) => {
     try {
       const token = localStorage.getItem('access_token');
-      const response = await axios.patch(
-        `${API}/shops/${shopId}/`,
-        formData,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+      const response = await axios.patch(`${API}/shops/${shopId}/`, formData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       return response.data;
     } catch (error) {
-      return rejectWithValue(
-        error.response?.data || 'Failed to update shop'
-      );
+      return rejectWithValue(error.response?.data || 'Failed to update shop');
     }
   }
 );
@@ -103,12 +93,12 @@ export const fetchNearestShopId = createAsyncThunk(
   }
 );
 
-// 🔧 Slice
+// 🧩 Slice
 const shopSlice = createSlice({
   name: 'shop',
   initialState: {
     shop: null,
-    // shops: [],
+    shops: [],
     categories: [],
     subcategories: [],
     products: [],
@@ -132,6 +122,7 @@ const shopSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
+      // fetchAllShops
       .addCase(fetchAllShops.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -145,10 +136,11 @@ const shopSlice = createSlice({
         state.error = action.payload;
       })
 
+      // createShop
       .addCase(createShop.pending, (state) => {
         state.loading = true;
-        state.error = null;
         state.success = false;
+        state.error = null;
       })
       .addCase(createShop.fulfilled, (state, action) => {
         state.loading = false;
@@ -160,23 +152,25 @@ const shopSlice = createSlice({
         state.error = action.payload;
         state.success = false;
       })
+
+      // updateShop
       .addCase(updateShop.pending, (state) => {
-  state.loading = true;
-  state.success = false;
-  state.error = null;
-})
-.addCase(updateShop.fulfilled, (state, action) => {
-  state.loading = false;
-  state.shop = action.payload; // updated shop
-  state.success = true;
-})
-.addCase(updateShop.rejected, (state, action) => {
-  state.loading = false;
-  state.error = action.payload;
-  state.success = false;
-})
+        state.loading = true;
+        state.success = false;
+        state.error = null;
+      })
+      .addCase(updateShop.fulfilled, (state, action) => {
+        state.loading = false;
+        state.shop = action.payload;
+        state.success = true;
+      })
+      .addCase(updateShop.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+        state.success = false;
+      })
 
-
+      // fetchShopDetails
       .addCase(fetchShopDetails.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -193,6 +187,7 @@ const shopSlice = createSlice({
         state.error = action.payload || 'Something went wrong';
       })
 
+      // fetchNearestShopId
       .addCase(fetchNearestShopId.pending, (state) => {
         state.loading = true;
         state.error = null;
