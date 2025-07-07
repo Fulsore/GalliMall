@@ -7,11 +7,11 @@ import { verifyPayment } from '../Redux/Slice/orderSlice';
 import Link from 'next/link';
 import axios from 'axios';
 import Image from 'next/image';
-import { API_BASE } from '../utils/api';
 
 
 
-// const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000';
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000';
 
 const loadRazorpayScript = () => {
   return new Promise((resolve) => {
@@ -47,7 +47,7 @@ const CartPage = () => {
 
       try {
         const productIds = cartItems.map((item) => item.id);
-        const response = await axios.post(`${API_BASE}/products/latest-prices/`, {
+        const response = await axios.post(`${API_BASE_URL}/products/latest-prices/`, {
           product_ids: productIds,
         });
 
@@ -121,17 +121,18 @@ const CartPage = () => {
 const getImageUrl = (path) => {
   if (!path) return '/placeholder.jpg';
   if (path.startsWith('http')) return path;
-  if (path.startsWith('/')) return `${API_BASE.replace('/api', '')}${path}`;
+  if (path.startsWith('/')) return `${API_BASE_URL.replace('/api', '')}${path}`;
   if (path.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${path}`;
   return `https://res.cloudinary.com/gallimall/image/upload/${path}`;
 };
+
 
 
   const syncLocalCartToBackend = async () => {
     const token = localStorage.getItem('access_token');
     for (const item of cartItems) {
       await axios.post(
-        `${API_BASE}/cart-items/`,
+        `${API_BASE_URL}/cart-items/`,
         {
           product: item.id,
           quantity: quantities[item.id],
@@ -156,7 +157,7 @@ const getImageUrl = (path) => {
     await syncLocalCartToBackend();
 
     const response = await axios.post(
-      `${API_BASE}/create_order/`,
+      `${API_BASE_URL}/create_order/`,
       {},
       {
         headers: {
