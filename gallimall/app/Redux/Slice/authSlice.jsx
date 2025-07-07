@@ -2,9 +2,12 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_URL_LOGIN = 'http://127.0.0.1:8000/api/login/';
-const API_URL_REGISTER = 'http://127.0.0.1:8000/api/register/';
-const API_URL_LOGOUT = 'http://127.0.0.1:8000/api/logout/';
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+const API_URL_LOGIN = `${BASE_URL}/login/`;
+const API_URL_REGISTER = `${BASE_URL}/register/`;
+const API_URL_LOGOUT = `${BASE_URL}/logout/`;
+
 
 // Login user thunk
 export const loginUser = createAsyncThunk(
