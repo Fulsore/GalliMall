@@ -13,7 +13,8 @@ import Product from "../../Components/Products";
 export default function CustomerDashboard() {
   const user = useSelector((state) => state.user);
   const router = useRouter();
-  const backendBaseUrl = "http://127.0.0.1:8000";
+const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 
   const [products, setProducts] = useState([]);
   const [suggestedProducts, setSuggestedProducts] = useState([]);
@@ -55,7 +56,8 @@ export default function CustomerDashboard() {
       const response = await axios.get(`${backendBaseUrl}/api/shops/`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      setShops(response.data.results);
+      setShops(response.data);
+
     } catch (err) {
       setError(err.message);
       setErrorType("shops");
@@ -86,7 +88,8 @@ export default function CustomerDashboard() {
     return (
       <div className="flex gap-6 overflow-x-auto no-scrollbar py-2 px-1">
         {items.map((item) => {
-          const imagePath = item[imageKey];
+          const imagePath = item[imageKey] || item.image || item.image_url;
+
           const imageUrl = imagePath
             ? imagePath.startsWith("http")
               ? imagePath

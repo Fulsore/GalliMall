@@ -14,19 +14,16 @@ import { useSearchParams } from 'next/navigation';
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/api\/?$/, '') || '';
 
-const FALLBACK_IMAGE =
-  'https://res.cloudinary.com/gallimall/image/upload/v1750186556/GalliMall_Images/wjh5jyt4fqc5lmh81qye.jpg';
-
 const getImageUrl = (image) => {
-  const FALLBACK_IMAGE =
-    'https://res.cloudinary.com/gallimall/image/upload/v1750186556/GalliMall_Images/wjh5jyt4fqc5lmh81qye.jpg';
+  const FALLBACK_IMAGE = 'https://res.cloudinary.com/gallimall/image/upload/v1750186556/GalliMall_Images/wjh5jyt4fqc5lmh81qye.jpg';
 
   if (!image) return FALLBACK_IMAGE;
   if (image.startsWith('http')) return image;
-  if (image.startsWith('/')) return `${BASE_URL}${image}`;
+  if (image.startsWith('/')) return `https://res.cloudinary.com/gallimall${image}`;
   if (image.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${image}`;
   return `https://res.cloudinary.com/gallimall/image/upload/${image}`;
 };
+
 
 
 // ✅ Wrapped searchParams logic in suspense-friendly component
