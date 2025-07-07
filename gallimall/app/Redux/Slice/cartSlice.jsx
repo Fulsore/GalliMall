@@ -1,9 +1,6 @@
-import { API_BASE } from '../../utils/api'; // adjust path if deeper
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000/api';
-
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000/api';
 
 const initialState = {
   cart_code: typeof window !== 'undefined' ? localStorage.getItem('cart_code') : null,
@@ -18,8 +15,8 @@ export const fetchCartItems = createAsyncThunk(
   async ({ token, cart_code }, thunkAPI) => {
     try {
       const url = token
-        ? `${API_BASE}/cart-items/`
-        : `${API_BASE}/cart-items/?cart_code=${cart_code}`;
+        ? `${API_BASE_URL}/cart-items/`
+        : `${API_BASE_URL}/cart-items/?cart_code=${cart_code}`;
 
       const res = await fetch(url, {
         headers: token ? { Authorization: `Bearer ${token}` } : {},
@@ -38,7 +35,7 @@ export const addToCart = createAsyncThunk(
   'cart/addToCart',
   async ({ productId, quantity, token, cart_code }, thunkAPI) => {
     try {
-      const res = await fetch(`${API_BASE}/cart-items/`, {
+      const res = await fetch(`${API_BASE_URL}/cart-items/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
