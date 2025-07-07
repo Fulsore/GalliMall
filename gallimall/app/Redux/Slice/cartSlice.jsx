@@ -1,6 +1,9 @@
+import { API_BASE } from '../../utils/api'; // adjust path if deeper
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000/api';
+
 
 const initialState = {
   cart_code: typeof window !== 'undefined' ? localStorage.getItem('cart_code') : null,
