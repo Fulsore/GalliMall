@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import React, { useEffect, useState, Suspense } from 'react';
+import { useRouter } from 'next/navigation';
 import { LoaderCircle, Heart, HeartOff } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -10,6 +10,7 @@ import {
 } from '../../../Redux/Slice/shopSlice';
 import { addToCart } from '../../../Redux/Slice/cartSlice';
 import { useFavourite } from '../../../hooks/useFavourite';
+import { useSearchParams } from 'next/navigation';
 
 const BASE_URL = 'http://127.0.0.1:8000/';
 const FALLBACK_IMAGE =
@@ -17,27 +18,21 @@ const FALLBACK_IMAGE =
 
 const getImageUrl = (image) => {
   if (!image) return FALLBACK_IMAGE;
-
-  // ✅ If it's already a full Cloudinary URL
-  if (
-    image.startsWith('http') &&
-    image.includes('res.cloudinary.com/gallimall')
-  ) {
-    return image;
-  }
-
-  // ✅ If it's a full HTTP/HTTPS path from other sources
+  if (image.startsWith('http') && image.includes('res.cloudinary.com/gallimall')) return image;
   if (image.startsWith('http')) return image;
-
-  // ✅ If it's a Cloudinary public ID (e.g., "v1234/filename.jpg")
-  if (!image.startsWith('/')) {
-    return `https://res.cloudinary.com/gallimall/image/upload/${image}`;
-  }
-
-  // ✅ If it's a local Django media path (e.g., "/media/image.jpg")
+  if (!image.startsWith('/')) return `https://res.cloudinary.com/gallimall/image/upload/${image}`;
   return `${BASE_URL}${image}`;
 };
 
+// ✅ Wrapped searchParams logic in suspense-friendly component
+const ShopSearchHandler = ({ onShopId }) => {
+  const searchParams = useSearchParams();
+  useEffect(() => {
+    const id = searchParams.get('shopId');
+    if (id) onShopId(id);
+  }, [searchParams]);
+  return null;
+};
 
 const FloatingCartBar = ({ quantities, products }) => {
   const router = useRouter();
@@ -76,19 +71,17 @@ const FloatingCartBar = ({ quantities, products }) => {
 };
 
 const ShopPage = () => {
-  const searchParams = useSearchParams();
-  const shopIdQuery = searchParams.get('shopId');
   const dispatch = useDispatch();
   const router = useRouter();
 
-  const { shop, products, nearestShopId, loading, error } = useSelector((state) => state.shop);
-  const token = useSelector((state) => state.auth.token);
-  const cart_code = useSelector((state) => state.cart.cart_code);
-
+  const [shopIdQuery, setShopIdQuery] = useState(null);
   const [quantities, setQuantities] = useState({});
   const [isFavourite, setIsFavourite] = useState(false);
   const [favId, setFavId] = useState(null);
 
+  const { shop, products, nearestShopId, loading, error } = useSelector((state) => state.shop);
+  const token = useSelector((state) => state.auth.token);
+  const cart_code = useSelector((state) => state.cart.cart_code);
   const { getShopFavourites, addShopToFavourite, removeShopFromFavourite } = useFavourite();
 
   useEffect(() => {
@@ -184,102 +177,103 @@ const ShopPage = () => {
   }
 
   return (
-    <div className="p-6 max-w-6xl mx-auto pb-24">
-      <div className="flex items-center justify-between mb-1">
-        <h1 className="text-2xl font-bold">{shop?.shop_name}</h1>
-        <button onClick={toggleShopFavourite} className="text-red-600 hover:text-red-800">
-          {isFavourite ? <Heart className="fill-current" /> : <HeartOff />}
-        </button>
-      </div>
-      <p className="text-gray-700">{shop?.shop_description}</p>
-      <p className="text-sm text-gray-500 mt-1">
-        📍 {shop?.shop_address} | 📞 {shop?.shop_phone_number}
-      </p>
-
-      {shop?.shop_image && (
-        <img
-          src={getImageUrl(shop.shop_image)}
-          alt={shop.shop_name}
-          className="w-full h-48 object-cover rounded-lg mt-4"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = FALLBACK_IMAGE;
-          }}
-        />
-      )}
-
-      <h2 className="text-xl font-semibold mt-6 mb-2">🛒 Products</h2>
-      {products?.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {products.map((product) => {
-            const quantity = quantities[product.id] || 0;
-              const imageUrl = getImageUrl(product.image_url || product.image);  // ✅ updated line
-
-
-            return (
-              <div
-                key={product.id}
-                className="border p-4 rounded-xl shadow hover:shadow-lg transition bg-white"
-              >
-                <img
-                  src={imageUrl}
-                  alt={product.name}
-                  className="w-full h-32 object-cover mb-2 rounded"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = FALLBACK_IMAGE;
-                  }}
-                />
-               <h3 className="font-semibold text-gray-800">{product.name}</h3>
-<p className="text-sm text-gray-600">{product.description}</p>
-
-<p className="mt-1 text-sm text-gray-700">₹{parseFloat(product.price).toFixed(2)}</p>
-<p className="text-xs text-gray-500">
-  * ₹{parseFloat(product.convenience_fee || 0).toFixed(2)} convenience fee may apply at checkout
-</p>
-<p className="text-sm font-semibold text-green-700">
-  Total: ₹{quantity > 0 ? (parseFloat(product.price || 0) * quantity).toFixed(2) : '0.00'}
-</p>
-
-
-
-                <div className="mt-2">
-                  {quantity === 0 ? (
-                    <button
-                      onClick={() => handleAddToCart(product)}
-                      className="bg-blue-500 text-white text-sm px-3 py-1 rounded hover:bg-blue-600"
-                    >
-                      + Add
-                    </button>
-                  ) : (
-                    <div className="flex items-center space-x-2">
-                      <button
-                        onClick={() => decrement(product.id)}
-                        className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 text-lg"
-                      >
-                        −
-                      </button>
-                      <span className="font-semibold text-gray-800">{quantity}</span>
-                      <button
-                        onClick={() => increment(product.id)}
-                        className="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600 text-lg"
-                      >
-                        +
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+    <>
+      <Suspense fallback={null}>
+        <ShopSearchHandler onShopId={setShopIdQuery} />
+      </Suspense>
+      <div className="p-6 max-w-6xl mx-auto pb-24">
+        <div className="flex items-center justify-between mb-1">
+          <h1 className="text-2xl font-bold">{shop?.shop_name}</h1>
+          <button onClick={toggleShopFavourite} className="text-red-600 hover:text-red-800">
+            {isFavourite ? <Heart className="fill-current" /> : <HeartOff />}
+          </button>
         </div>
-      ) : (
-        <p className="text-sm text-gray-500 ml-2">No products listed yet.</p>
-      )}
+        <p className="text-gray-700">{shop?.shop_description}</p>
+        <p className="text-sm text-gray-500 mt-1">
+          📍 {shop?.shop_address} | 📞 {shop?.shop_phone_number}
+        </p>
 
-      <FloatingCartBar quantities={quantities} products={products} />
-    </div>
+        {shop?.shop_image && (
+          <img
+            src={getImageUrl(shop.shop_image)}
+            alt={shop.shop_name}
+            className="w-full h-48 object-cover rounded-lg mt-4"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = FALLBACK_IMAGE;
+            }}
+          />
+        )}
+
+        <h2 className="text-xl font-semibold mt-6 mb-2">🛒 Products</h2>
+        {products?.length > 0 ? (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {products.map((product) => {
+              const quantity = quantities[product.id] || 0;
+              const imageUrl = getImageUrl(product.image_url || product.image);
+              return (
+                <div
+                  key={product.id}
+                  className="border p-4 rounded-xl shadow hover:shadow-lg transition bg-white"
+                >
+                  <img
+                    src={imageUrl}
+                    alt={product.name}
+                    className="w-full h-32 object-cover mb-2 rounded"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = FALLBACK_IMAGE;
+                    }}
+                  />
+                  <h3 className="font-semibold text-gray-800">{product.name}</h3>
+                  <p className="text-sm text-gray-600">{product.description}</p>
+                  <p className="mt-1 text-sm text-gray-700">₹{parseFloat(product.price).toFixed(2)}</p>
+                  <p className="text-xs text-gray-500">
+                    * ₹{parseFloat(product.convenience_fee || 0).toFixed(2)} convenience fee may apply at checkout
+                  </p>
+                  <p className="text-sm font-semibold text-green-700">
+                    Total: ₹{quantity > 0 ? (parseFloat(product.price || 0) * quantity).toFixed(2) : '0.00'}
+                  </p>
+
+                  <div className="mt-2">
+                    {quantity === 0 ? (
+                      <button
+                        onClick={() => handleAddToCart(product)}
+                        className="bg-blue-500 text-white text-sm px-3 py-1 rounded hover:bg-blue-600"
+                      >
+                        + Add
+                      </button>
+                    ) : (
+                      <div className="flex items-center space-x-2">
+                        <button
+                          onClick={() => decrement(product.id)}
+                          className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 text-lg"
+                        >
+                          −
+                        </button>
+                        <span className="font-semibold text-gray-800">{quantity}</span>
+                        <button
+                          onClick={() => increment(product.id)}
+                          className="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600 text-lg"
+                        >
+                          +
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <p className="text-sm text-gray-500 ml-2">No products listed yet.</p>
+        )}
+
+        <FloatingCartBar quantities={quantities} products={products} />
+      </div>
+    </>
   );
 };
 
 export default ShopPage;
+export const dynamic = 'force-dynamic';

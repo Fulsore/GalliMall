@@ -3,8 +3,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProduct } from '../../../Redux/Slice/productSlice';
-import { addToCart } from '../../../Redux/Slice/cartSlice';
+import { fetchProduct } from '../Redux/Slice/productSlice';
+import { addToCart } from '../Redux/Slice/cartSlice';
 import { LoaderCircle } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 

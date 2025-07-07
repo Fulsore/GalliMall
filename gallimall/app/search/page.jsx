@@ -1,23 +1,20 @@
-// SearchPage.jsx
 'use client';
 
-import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Suspense, useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import Link from 'next/link';
-import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../Redux/Slice/cartSlice';
+import SearchHandler from './SearchHandler'; // <- new component
 
 const BASE_URL = 'http://127.0.0.1:8000/';
 const FALLBACK_IMAGE = 'https://res.cloudinary.com/gallimall/image/upload/v1750186556/GalliMall_Images/wjh5jyt4fqc5lmh81qye.jpg';
 
 export default function SearchPage() {
-  const searchParams = useSearchParams();
-  const query = searchParams.get('query') || '';
-
+  const [query, setQuery] = useState('');
   const [products, setProducts] = useState([]);
   const [shops, setShops] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [quantities, setQuantities] = useState({});
 
   const dispatch = useDispatch();
@@ -39,7 +36,9 @@ export default function SearchPage() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const cartQuantities = JSON.parse(localStorage.getItem('cartQuantities')) || {};
     const exists = cartItems.find((p) => p.id === product.id);
-    const updatedItems = exists ? cartItems.map((p) => p.id === product.id ? { ...product } : p) : [...cartItems, product];
+    const updatedItems = exists
+      ? cartItems.map((p) => (p.id === product.id ? { ...product } : p))
+      : [...cartItems, product];
     cartQuantities[product.id] = newQty;
     localStorage.setItem('cartItems', JSON.stringify(updatedItems));
     localStorage.setItem('cartQuantities', JSON.stringify(cartQuantities));
@@ -72,8 +71,12 @@ export default function SearchPage() {
         ]);
         const allProducts = productRes.data.results || [];
         const allShops = Array.isArray(shopRes.data) ? shopRes.data : shopRes.data.results || [];
-        const filteredProducts = allProducts.filter((p) => p.name?.toLowerCase().includes(query.toLowerCase()));
-        const filteredShops = allShops.filter((shop) => shop.shop_name?.toLowerCase().includes(query.toLowerCase()));
+        const filteredProducts = allProducts.filter((p) =>
+          p.name?.toLowerCase().includes(query.toLowerCase())
+        );
+        const filteredShops = allShops.filter((shop) =>
+          shop.shop_name?.toLowerCase().includes(query.toLowerCase())
+        );
         setProducts(filteredProducts);
         setShops(filteredShops);
       } catch (err) {
@@ -82,11 +85,16 @@ export default function SearchPage() {
         setLoading(false);
       }
     };
+
     fetchResults();
   }, [query]);
 
   return (
     <div className="max-w-6xl mx-auto p-6 relative">
+      <Suspense fallback={null}>
+        <SearchHandler onQuery={setQuery} />
+      </Suspense>
+
       <h2 className="text-2xl font-semibold mb-4">
         Search Results for: <span className="text-blue-600">"{query}"</span>
       </h2>
@@ -149,9 +157,13 @@ export default function SearchPage() {
                       <div className="mt-3">
                         {quantities[product.id] > 0 ? (
                           <div className="flex items-center gap-2">
-                            <button onClick={() => decrement(product)} className="px-2 py-1 bg-red-500 text-white rounded">−</button>
+                            <button onClick={() => decrement(product)} className="px-2 py-1 bg-red-500 text-white rounded">
+                              −
+                            </button>
                             <span>{quantities[product.id]}</span>
-                            <button onClick={() => increment(product)} className="px-2 py-1 bg-green-500 text-white rounded">+</button>
+                            <button onClick={() => increment(product)} className="px-2 py-1 bg-green-500 text-white rounded">
+                              +
+                            </button>
                           </div>
                         ) : (
                           <button onClick={() => addProduct(product)} className="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
@@ -175,11 +187,11 @@ export default function SearchPage() {
             </div>
           )}
 
-          {products.length === 0 && shops.length === 0 && (
-            <p>No results found.</p>
-          )}
+          {products.length === 0 && shops.length === 0 && <p>No results found.</p>}
         </>
       )}
     </div>
   );
 }
+
+export const dynamic = 'force-dynamic';
