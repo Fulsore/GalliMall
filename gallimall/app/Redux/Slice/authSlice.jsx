@@ -2,7 +2,7 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const BASE_URL = 'https://gallimall-backend.onrender.com/';
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 const API_URL_LOGIN = `${BASE_URL}/login/`;
 const API_URL_REGISTER = `${BASE_URL}/register/`;
