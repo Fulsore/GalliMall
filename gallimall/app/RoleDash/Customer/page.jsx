@@ -8,7 +8,7 @@ import Image from "next/image";
 import Hero from "../../Components/Hero/HeroSlider";
 import Category from "../../Category/Customer/page";
 import axios from "axios";
-import Product from "../../product/customer/product/page";
+import Product from "../../Components/Products";
 
 export default function CustomerDashboard() {
   const user = useSelector((state) => state.user);
