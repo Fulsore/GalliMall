@@ -575,12 +575,12 @@ class VendorProductViewSet(viewsets.ModelViewSet):
 class ShopViewSet(viewsets.ModelViewSet):
     serializer_class = ShopSerializer
     parser_classes = [MultiPartParser, FormParser, JSONParser]
-    # permission_classes = [AllowAny]
-
     def get_permissions(self):
-        if self.action in ['list', 'retrieve', 'public_details', 'nearest_shop']:
+    # ✅ Allow anyone to view shops, even without login
+        if self.action in ['list', 'retrieve', 'public_details', 'nearest', 'nearest_shop']:
             return [AllowAny()]
-        return [permissions.IsAuthenticated()]
+        return [IsAuthenticated()]
+
 
     def perform_create(self, serializer):
         try:
@@ -697,7 +697,7 @@ class ShopViewSet(viewsets.ModelViewSet):
 
 
 class ProductAvailableShopsView(APIView):
-    permission_classes = [AllowAny]
+    # permission_classes = [AllowAny]
 
     def get(self, request, pk):
         try:
@@ -797,7 +797,7 @@ def find_best_match(user_input, qna_dict):
 
 
 class ChatBotAPIView(APIView):
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
     def post(self, request):
         user = request.user
