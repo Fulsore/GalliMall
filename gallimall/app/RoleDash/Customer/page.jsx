@@ -52,18 +52,19 @@ const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
     }
   };
 
-  const fetchShops = async () => {
+const fetchShops = async () => {
   try {
     const token = localStorage.getItem('access_token');
+
     const headers = token
       ? { Authorization: `Bearer ${token}` }
-      : {}; // No headers if not logged in
+      : {}; // ✅ Always pass headers (even if empty)
 
     const response = await axios.get(`${backendBaseUrl}/shops/`, {
       headers,
     });
 
-    setShops(response.data);
+    setShops(response.data.results || []);
   } catch (err) {
     console.error("❌ Failed to fetch shops", err);
     setError(err.message);
