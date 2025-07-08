@@ -587,21 +587,20 @@ class ShopViewSet(viewsets.ModelViewSet):
             serializer.save(user=self.request.user)
         except IntegrityError:
             raise ValidationError({"detail": "Shop already exists for this user."})
-
     def get_queryset(self):
-        user = self.request.user
-        if self.action in ['list', 'public_details', 'nearest_shop']:
-            return Shop.objects.all().order_by("id")  # ✅ FIXED: add ordering
+                user = self.request.user
 
-            
+                # ✅ Let unauthenticated users access list endpoint
+                if not user.is_authenticated:
+                    return Shop.objects.all().order_by("id")
 
-            
+                # ✅ Admins see all
+                if user.is_admin:
+                    return Shop.objects.all().order_by("id")
 
-        if user.is_authenticated and user.is_admin:
-            return Shop.objects.all() 
-        
-        return Shop.objects.filter(user=user)
-    # return Shop.objects.filter(user=self.request.user)
+                # ✅ Normal authenticated users see only their shops
+                return Shop.objects.filter(user=user).order_by("id")
+
 
     @action(detail=True, methods=['get'], url_path='full-details')
     def full_details(self, request, pk=None):

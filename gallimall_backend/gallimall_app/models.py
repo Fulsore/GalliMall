@@ -210,7 +210,7 @@ class OrderItem(models.Model):
 
 class Cart(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True, db_index=True)
-    cart_code = models.CharField(max_length=11, unique=True, db_index=True)
+    cart_code = models.CharField(max_length=50, unique=True, db_index=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
