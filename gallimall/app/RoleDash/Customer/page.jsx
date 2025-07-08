@@ -53,20 +53,26 @@ const backendBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
   };
 
   const fetchShops = async () => {
-    try {
-      const token = localStorage.getItem('access_token');
-      const response = await axios.get(`${backendBaseUrl}/shops/`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      setShops(response.data);
+  try {
+    const token = localStorage.getItem('access_token');
+    const headers = token
+      ? { Authorization: `Bearer ${token}` }
+      : {}; // No headers if not logged in
 
-    } catch (err) {
-      setError(err.message);
-      setErrorType("shops");
-    } finally {
-      setLoadingShops(false);
-    }
-  };
+    const response = await axios.get(`${backendBaseUrl}/shops/`, {
+      headers,
+    });
+
+    setShops(response.data);
+  } catch (err) {
+    console.error("❌ Failed to fetch shops", err);
+    setError(err.message);
+    setErrorType("shops");
+  } finally {
+    setLoadingShops(false);
+  }
+};
+
 
   useEffect(() => {
     fetchPromotions();
