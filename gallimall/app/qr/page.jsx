@@ -5,7 +5,7 @@ import { toPng } from 'html-to-image';
 import download from 'downloadjs';
 
 export default function QRPage() {
-  const appUrl = 'http://192.168.29.192:3000';
+  const appUrl = 'gallimall.vercel.app';
   const qrRef = useRef(null);
 
   const handleDownload = () => {

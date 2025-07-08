@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
 import { fetchNearestShopId } from '../Redux/Slice/shopSlice';
 import { LoaderCircle, LocateFixed } from 'lucide-react';
@@ -10,36 +10,37 @@ import { motion } from 'framer-motion';
 const LocationBasedShopLoader = () => {
   const dispatch = useDispatch();
   const router = useRouter();
-  const { nearestShopId } = useSelector((state) => state.shop);
   const [loading, setLoading] = useState(false);
 
-  const handleShopClick = async () => {
+  const handleShopClick = () => {
     setLoading(true);
-    try {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        async (position) => {
-          const { latitude, longitude } = position.coords;
+        async (pos) => {
+          const { latitude, longitude } = pos.coords;
           const action = await dispatch(fetchNearestShopId({ lat: latitude, lon: longitude }));
+          
           if (fetchNearestShopId.fulfilled.match(action)) {
             const nearestId = action.payload;
-            router.push(`/RoleDash/Customer/shop?shopId=${nearestId}`);
+            if (typeof nearestId === 'number') {
+              router.replace(`/RoleDash/Customer/shop?shopId=${nearestId}`);
+            } else {
+              console.warn('No nearby shop found.');
+              setLoading(false);
+            }
           } else {
-            alert(`Error: ${action.payload || 'Unable to find nearest shop.'}`);
+            console.error('❌ Error:', action.payload);
+            setLoading(false);
           }
+        },
+        (err) => {
+          console.error('Geolocation Error:', err);
           setLoading(false);
         },
-        (error) => {
-          alert('Location access denied or unavailable.');
-          setLoading(false);
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 0,
-        }
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
       );
-    } catch (err) {
-      alert('Unexpected error. Please try again.');
+    } else {
+      console.warn('Geolocation not supported');
       setLoading(false);
     }
   };

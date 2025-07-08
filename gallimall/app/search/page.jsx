@@ -66,7 +66,7 @@ export default function SearchPage() {
         const [productRes, shopRes] = await Promise.all([
           axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/product/`),
           axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/shops/`, {
-            headers: { Authorization: `Bearer ${access}` },
+            // headers: { Authorization: `Bearer ${access}` },
           }),
         ]);
         const allProducts = productRes.data.results || [];

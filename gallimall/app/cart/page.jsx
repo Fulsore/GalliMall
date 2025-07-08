@@ -8,9 +8,6 @@ import Link from 'next/link';
 import axios from 'axios';
 import Image from 'next/image';
 
-
-
-
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8000';
 
 const loadRazorpayScript = () => {
@@ -30,6 +27,7 @@ const CartPage = () => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [convenienceFee, setConvenienceFee] = useState(0);
   const [errorMessage, setErrorMessage] = useState('');
+  const [showLoginPrompt, setShowLoginPrompt] = useState(false);
 
   const dispatch = useDispatch();
   const router = useRouter();
@@ -44,7 +42,6 @@ const CartPage = () => {
   useEffect(() => {
     const syncLatestPrices = async () => {
       if (cartItems.length === 0) return;
-
       try {
         const productIds = cartItems.map((item) => item.id);
         const response = await axios.post(`${API_BASE_URL}/products/latest-prices/`, {
@@ -102,7 +99,7 @@ const CartPage = () => {
         delete updated[id];
         return updated;
       }
-      return { ...prev, newQty };
+      return { ...prev, [id]: newQty };
     });
   };
 
@@ -118,15 +115,13 @@ const CartPage = () => {
     localStorage.setItem('cartQuantities', JSON.stringify(updatedQuantities));
   };
 
-const getImageUrl = (path) => {
-  if (!path) return '/placeholder.jpg';
-  if (path.startsWith('http')) return path;
-  if (path.startsWith('/')) return `${API_BASE_URL.replace('/api', '')}${path}`;
-  if (path.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${path}`;
-  return `https://res.cloudinary.com/gallimall/image/upload/${path}`;
-};
-
-
+  const getImageUrl = (path) => {
+    if (!path) return '/placeholder.jpg';
+    if (path.startsWith('http')) return path;
+    if (path.startsWith('/')) return `http://127.0.0.1:8000${path}`;
+    if (path.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${path}`;
+    return `https://res.cloudinary.com/gallimall/image/upload/${path}`;
+  };
 
   const syncLocalCartToBackend = async () => {
     const token = localStorage.getItem('access_token');
@@ -147,76 +142,73 @@ const getImageUrl = (path) => {
   };
 
   const razor_payment = async () => {
-  const scriptLoaded = await loadRazorpayScript();
-  if (!scriptLoaded) return alert('Razorpay SDK failed to load');
+    const scriptLoaded = await loadRazorpayScript();
+    if (!scriptLoaded) return alert('Razorpay SDK failed to load');
 
-  const token = localStorage.getItem('access_token');
-  if (!token) return alert('Please login to continue');
+    const token = localStorage.getItem('access_token');
+    if (!token) {
+      setShowLoginPrompt(true);
+      return;
+    }
 
-  try {
-    await syncLocalCartToBackend();
+    try {
+      await syncLocalCartToBackend();
 
-    const response = await axios.post(
-      `${API_BASE_URL}/create_order/`,
-      {},
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
+      const response = await axios.post(
+        `${API_BASE_URL}/create_order/`,
+        {},
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      const order = response.data;
+
+      setConvenienceFee(order.convenience_fee);
+      setTotalPrice(order.amount);
+
+      alert(`About to pay ₹${order.amount} - Confirm it's same as shown`);
+
+      const options = {
+        key: order.razorpay_key,
+        amount: order.amount * 100,
+        currency: 'INR',
+        name: 'Galli Mall',
+        description: 'Payment for items',
+        order_id: order.order_id,
+        handler: function (response) {
+          const paymentData = {
+            razorpay_order_id: response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature: response.razorpay_signature,
+          };
+          dispatch(verifyPayment(paymentData));
         },
-      }
-    );
+        prefill: {
+          name: 'Ramu Bitla',
+          email: 'Ramu@gmail.com',
+          contact: '9999999999',
+        },
+        notes: {
+          address: 'Bharath Nagar Colony',
+          cart_items: JSON.stringify(order.cart_items),
+        },
+        theme: {
+          color: '#F37254',
+        },
+      };
 
-    const order = response.data;
-
-    // ✅ FORCE backend amount and fee to update UI
-    setConvenienceFee(order.convenience_fee);
-setTotalPrice(order.amount);
-
-
-    // ✅ DEBUG to compare backend vs frontend before payment popup
-    console.log("Cart Total before Razorpay:", totalPrice);
-    console.log("Backend Razorpay Amount:", order.amount);
-    alert(`About to pay ₹${order.amount} - Confirm it's same as shown`);
-
-    const options = {
-      key: order.razorpay_key,
-      amount: order.amount * 100,
-      currency: 'INR',
-      name: 'Galli Mall',
-      description: 'Payment for items',
-      order_id: order.order_id,
-      handler: function (response) {
-        const paymentData = {
-          razorpay_order_id: response.razorpay_order_id,
-          razorpay_payment_id: response.razorpay_payment_id,
-          razorpay_signature: response.razorpay_signature,
-        };
-        dispatch(verifyPayment(paymentData));
-      },
-      prefill: {
-        name: 'Ramu Bitla',
-        email: 'Ramu@gmail.com',
-        contact: '9999999999',
-      },
-      notes: {
-        address: 'Bharath Nagar Colony',
-        cart_items: JSON.stringify(order.cart_items),
-      },
-      theme: {
-        color: '#F37254',
-      },
-    };
-
-    const rzp = new window.Razorpay(options);
-    rzp.open();
-  } catch (err) {
-    console.error('🧨 Error creating order:', err.response?.data || err.message);
-    setErrorMessage(
-      '⚠️ We ran into an issue while creating your order. Please check your internet connection or try again in a few minutes.'
-    );
-  }
-};
-
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+    } catch (err) {
+      console.error('🧨 Error creating order:', err.response?.data || err.message);
+      setErrorMessage(
+        '⚠️ We ran into an issue while creating your order. Please check your internet connection or try again in a few minutes.'
+      );
+    }
+  };
 
   return (
     <div className="p-6">
@@ -225,6 +217,22 @@ setTotalPrice(order.amount);
       {errorMessage && (
         <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
           <strong>Error:</strong> {errorMessage}
+        </div>
+      )}
+
+      {showLoginPrompt && (
+        <div className="mb-6 p-4 bg-yellow-100 border border-yellow-400 text-yellow-800 rounded shadow">
+          <h2 className="text-lg font-semibold mb-2">🔐 Please Login to Continue</h2>
+          <p className="mb-4">To complete your purchase, you need to be logged in.</p>
+          <button
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            onClick={() => {
+              localStorage.setItem('postLoginRedirect', '/cart');
+              router.push('/authentication/login');
+            }}
+          >
+            Login Now
+          </button>
         </div>
       )}
 
