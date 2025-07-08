@@ -1,9 +1,7 @@
-// ✅ This file should be in: app/RoleDash/Customer/shop/page.jsx
+'use client'; // ✅ This is the fix!
 
-import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
-
-const ShopPage = dynamic(() => import('./ShopPage'), { ssr: false });
+import ShopPage from './ShopPage';
 
 export default function ShopPageWrapper() {
   return (

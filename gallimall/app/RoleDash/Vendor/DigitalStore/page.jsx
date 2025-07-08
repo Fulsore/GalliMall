@@ -96,7 +96,7 @@ export default function DigitalStorePage() {
   };
 
   const qrUrl = shop?.id
-    ? `http://192.168.186.214:3000/RoleDash/Customer/shop?shopId=${shop.id}`
+    ? `gallimall.vercel.app/RoleDash/Customer/shop?shopId=${shop.id}`
     : '';
 
   const handleDownload = () => {
