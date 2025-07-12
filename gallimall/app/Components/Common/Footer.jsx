@@ -45,7 +45,7 @@ const Footer = () => {
           <h3 className="text-sm font-semibold uppercase mb-4 text-gray-900 dark:text-white tracking-wider">Connect with Us</h3>
           <p className="text-sm mb-2">fulsoreanilkumar@gallimall.com</p>
   <div className="flex justify-center space-x-4 mt-2">
-            <a href="https://www.instagram.com/gallimall_official?igsh=b29qODJqaDQydnpi" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 transition">
+            <a href="https://www.instagram.com/gallimall_official/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 transition">
               <FaInstagram size={20} />
             </a>
             <a href="https://github.com/Fulsore" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition">
