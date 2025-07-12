@@ -211,7 +211,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="p-6">
+              <div key={item.id} className="flex items-justify gap-4 p-4 bg-white rounded shadow">
       <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
 
       {errorMessage && (
@@ -260,23 +260,21 @@ const CartPage = () => {
                   alt={item.name}
                   width={80}
                   height={80}
-                  className="w-20 h-20 object-cover rounded"
+                  className="w-14 h-14 object-cover rounded"
                   unoptimized
                 />
-                <div className="flex-1">
+              <div className="flex-1 px-2 overflow-hidden">
                   <h2 className="font-semibold text-lg">{item.name}</h2>
                   <p className="text-sm text-gray-600">
-                    ₹{item.price} × {qty} = ₹{total}
+                   ₹{total}
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
                   <button onClick={() => decrement(item.id)} className="px-2 py-1 bg-red-500 text-white rounded hover:bg-red-600">−</button>
                   <span className="text-lg font-semibold">{qty}</span>
                   <button onClick={() => increment(item.id)} className="px-2 py-1 bg-green-500 text-white rounded hover:bg-green-600">+</button>
                 </div>
-                <button onClick={() => removeItem(item.id)} className="ml-4 text-red-600 hover:text-red-800 text-sm">
-                  ❌ Remove
-                </button>
+            
               </div>
             );
           })}

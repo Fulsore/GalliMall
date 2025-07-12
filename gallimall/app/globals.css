@@ -185,3 +185,13 @@
 .animate-button {
   animation: button-pulse 2s infinite;
 }
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}

@@ -45,56 +45,59 @@ const Slides = [
 ];
 
 const HeroSlider = () => {
-  return (
-    <div className="w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+   return (
+    <div className="w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-[95vh]">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         className="w-full h-full"
       >
         {Slides.map((slide, index) => (
           <SwiperSlide key={index}>
             {slide.custom ? (
-              // Custom animated first slide
               <div className="w-full h-full relative overflow-hidden">
-                {/* Animated Background */}
-<div className={`absolute inset-0 animate-wave bg-gradient-to-r ${slide.bgClass} bg-[length:400%_400%] z-0 rounded-xl`} />
+                {/* Animated Gradient Background */}
+                <div className={`absolute inset-0 animate-wave bg-gradient-to-r ${slide.bgClass} bg-[length:400%_400%] z-0`} />
 
-                {/* Content */}
-    <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-gray-800">
-      <h2 className="text-2xl md:text-5xl font-bold mb-2 drop-shadow">{slide.title}</h2>
-      <p className="text-md md:text-xl mb-6 drop-shadow">{slide.description}</p>
+                {/* Slide Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-12 text-center text-gray-800">
+                  <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-2 drop-shadow">
+                    {slide.title}
+                  </h2>
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl mb-6 drop-shadow">
+                    {slide.description}
+                  </p>
 
-      {/* Images */}
-      <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-4 md:gap-6">
-        {slide.images.map((img, i) => (
-          <div key={i} className="animate-slide-in">
-            <Image
-              src={img}
-              alt={`Slide image ${i}`}
-              width={150}
-              height={150}
-              className="rounded-xl object-cover w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 shadow-lg"
-            />
-          </div>
-        ))}
-      </div>
+                  {/* Images Row */}
+                  <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+                    {slide.images.map((img, i) => (
+                      <div key={i} className="animate-slide-in">
+                        <Image
+                          src={img}
+                          alt={`Slide image ${i}`}
+                          width={160}
+                          height={160}
+                          className="rounded-xl object-cover w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 shadow-md"
+                        />
+                      </div>
+                    ))}
+                  </div>
 
-      {/* CTA Button */}
-      <Link href="/authentication/register">
-        <button className="animate-button flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2 rounded-full font-semibold mt-6 transition">
-          {slide.cta}
-          <IoArrowForwardOutline className="text-xl" />
-        </button>
-      </Link>
-    </div>
-  </div>
+                  {/* CTA Button */}
+                  <Link href="/authentication/register">
+                    <button className="animate-button flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 sm:px-6 py-2 rounded-full font-semibold mt-6 transition-all">
+                      {slide.cta}
+                      <IoArrowForwardOutline className="text-lg sm:text-xl" />
+                    </button>
+                  </Link>
+                </div>
+              </div>
             ) : (
-              // Other regular slides
+              // Fallback if custom = false (not used here)
               <div
                 className="w-full h-full bg-cover bg-center relative"
                 style={{ backgroundImage: `url(${slide.images})` }}

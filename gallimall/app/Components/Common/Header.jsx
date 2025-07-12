@@ -80,12 +80,12 @@ const token = useSelector((state) => state.auth.token);
 
   return (
    <nav className="bg-white shadow-md sticky top-0 z-50">
-  <div className="container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between gap-4 px-4 py-3 lg:px-8">
+<div className="container md:max-w-full sm:mid-w-[780px] mx-auto flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
     {/* Left: Logo + Location */}
     <div className="flex items-center justify-between w-full md:w-auto gap-4">
       {/* Logo */}
       <Link href="/RoleDash/Customer" className="flex items-center gap-2">
-        <img src="/logo.png" alt="Galli Mall" className="w-10 h-10 rounded-full object-cover" />
+        <img src="/Galli Mall Logo.png" alt="Galli Mall" className="w-10 h-10 rounded-full object-cover" />
         <span className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">Galli Mall</span>
       </Link>
 

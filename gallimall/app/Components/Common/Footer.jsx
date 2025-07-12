@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 pt-12 border-t border-gray-200 dark:border-gray-700">
       {/* Main Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
 
         {/* Logo & Tagline */}
         <div>
@@ -17,8 +17,10 @@ const Footer = () => {
           </p>
         </div>
 
+<div className="w-full sm:w-auto flex justify-between items-center sm:flex-col gap-6 sm:gap-0">
+
         {/* Explore */}
-        <div>
+  <div className="w-2 sm:w-full px-6">
           <h3 className="text-sm font-semibold uppercase mb-4 text-gray-900 dark:text-white tracking-wider">Explore</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="#shops" className="hover:text-blue-600 transition-colors">Shops</a></li>
@@ -37,18 +39,19 @@ const Footer = () => {
           </ul>
         </div>
 
+</div>
         {/* Social */}
-        <div>
+<div className="w-full text-center  sm:mt-0">
           <h3 className="text-sm font-semibold uppercase mb-4 text-gray-900 dark:text-white tracking-wider">Connect with Us</h3>
           <p className="text-sm mb-2">fulsoreanilkumar@gallimall.com</p>
-          <div className="flex space-x-4 mt-3">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 transition">
+  <div className="flex justify-center space-x-4 mt-2">
+            <a href="https://www.instagram.com/gallimall_official?igsh=b29qODJqaDQydnpi" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 transition">
               <FaInstagram size={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition">
+            <a href="https://github.com/Fulsore" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black transition">
               <FaGithub size={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition">
+            <a href="https://www.linkedin.com/in/fulsoreanilkumar/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition">
               <FaLinkedinIn size={20} />
             </a>
           </div>
@@ -62,7 +65,7 @@ const Footer = () => {
           <p className="text-sm text-gray-600 dark:text-gray-400">Quick access to the website via QR code.</p>
         </div>
         <img
-          src="/main gallimall-qr.png"
+          src="/gallimall-qr.png"
           alt="GalliMall QR Code"
           className="w-28 h-28 border border-gray-300 dark:border-gray-600 rounded-md"
         />
