@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 pt-12 border-t border-gray-200 dark:border-gray-700">
+
       {/* Main Grid */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
 
@@ -17,11 +18,9 @@ const Footer = () => {
           </p>
         </div>
 
-<div className="w-full sm:w-auto flex justify-between items-center sm:flex-col gap-6 sm:gap-0">
-
         {/* Explore */}
-  <div className="w-2 sm:w-full px-6">
-          <h3 className="text-sm font-semibold uppercase mb-4 text-gray-900 dark:text-white tracking-wider">Explore</h3>
+        <div>
+          <h3 className="text-sm font-semibold uppercase mb-4 tracking-wider">Explore</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="#shops" className="hover:text-blue-600 transition-colors">Shops</a></li>
             <li><a href="#products" className="hover:text-blue-600 transition-colors">Products</a></li>
@@ -32,19 +31,20 @@ const Footer = () => {
 
         {/* Support */}
         <div>
-          <h3 className="text-sm font-semibold uppercase mb-4 text-gray-900 dark:text-white tracking-wider">Support</h3>
+          <h3 className="text-sm font-semibold uppercase mb-4 tracking-wider">Support</h3>
           <ul className="space-y-2 text-sm">
             <li><Link href="/terms" className="hover:text-blue-600 transition-colors">Terms of Service</Link></li>
             <li><Link href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
+            <li><Link href="/shippingpolicy" className="hover:text-blue-600 transition-colors">Shipping Policy</Link></li>
+            <li><Link href="/cancellationscandrefunds" className="hover:text-blue-600 transition-colors">Cancellation and Refund</Link></li>
           </ul>
         </div>
 
-</div>
         {/* Social */}
-<div className="w-full text-center  sm:mt-0">
-          <h3 className="text-sm font-semibold uppercase mb-4 text-gray-900 dark:text-white tracking-wider">Connect with Us</h3>
+        <div className="text-center sm:text-left">
+          <h3 className="text-sm font-semibold uppercase mb-4 tracking-wider text-gray-900 dark:text-white">Connect with Us</h3>
           <p className="text-sm mb-2">fulsoreanilkumar@gallimall.com</p>
-  <div className="flex justify-center space-x-4 mt-2">
+          <div className="flex justify-center sm:justify-start space-x-4 mt-2">
             <a href="https://www.instagram.com/gallimall_official/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-500 transition">
               <FaInstagram size={20} />
             </a>
