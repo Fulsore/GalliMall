@@ -211,7 +211,7 @@ const CartPage = () => {
   };
 
   return (
-              <div key={item.id} className="flex items-justify gap-4 p-4 bg-white rounded shadow">
+    <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
 
       {errorMessage && (
@@ -254,7 +254,7 @@ const CartPage = () => {
             const total = (qty * price).toFixed(2);
 
             return (
-              <div className="flex items-center gap-4 p-4 bg-white rounded shadow">
+              <div key={item.id} className="flex items-center gap-4 p-4 bg-white rounded shadow">
                 <Image
                   src={getImageUrl(item.image)}
                   alt={item.name}
@@ -263,18 +263,25 @@ const CartPage = () => {
                   className="w-14 h-14 object-cover rounded"
                   unoptimized
                 />
-              <div className="flex-1 px-2 overflow-hidden">
-                  <h2 className="font-semibold text-lg" key={item.id}>{item.name}</h2>
-                  <p className="text-sm text-gray-600">
-                   ₹{total}
-                  </p>
+                <div className="flex-1 px-2 overflow-hidden">
+                  <h2 className="font-semibold text-lg">{item.name}</h2>
+                  <p className="text-sm text-gray-600">₹{total}</p>
                 </div>
                 <div className="flex items-center gap-1">
-                  <button onClick={() => decrement(item.id)} className="px-2 py-1 bg-red-500 text-white rounded hover:bg-red-600">−</button>
+                  <button
+                    onClick={() => decrement(item.id)}
+                    className="px-2 py-1 bg-red-500 text-white rounded hover:bg-red-600"
+                  >
+                    −
+                  </button>
                   <span className="text-lg font-semibold">{qty}</span>
-                  <button onClick={() => increment(item.id)} className="px-2 py-1 bg-green-500 text-white rounded hover:bg-green-600">+</button>
+                  <button
+                    onClick={() => increment(item.id)}
+                    className="px-2 py-1 bg-green-500 text-white rounded hover:bg-green-600"
+                  >
+                    +
+                  </button>
                 </div>
-            
               </div>
             );
           })}
@@ -283,7 +290,10 @@ const CartPage = () => {
             <p className="text-sm text-gray-500">Convenience Fee: ₹{convenienceFee.toFixed(2)}</p>
             <p className="text-lg font-bold">Total: ₹{totalPrice.toFixed(2)}</p>
             <p className="text-sm text-gray-500">*Taxes and delivery charges may apply.</p>
-            <button className="mt-6 w-full bg-green-600 text-white py-3 rounded-xl hover:bg-green-700 transition" onClick={razor_payment}>
+            <button
+              className="mt-6 w-full bg-green-600 text-white py-3 rounded-xl hover:bg-green-700 transition"
+              onClick={razor_payment}
+            >
               Pay ₹{totalPrice.toFixed(2)} Now
             </button>
           </div>
