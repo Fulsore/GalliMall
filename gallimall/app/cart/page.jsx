@@ -254,7 +254,7 @@ const CartPage = () => {
             const total = (qty * price).toFixed(2);
 
             return (
-              <div key={item.id} className="flex items-center gap-4 p-4 bg-white rounded shadow">
+              <div className="flex items-center gap-4 p-4 bg-white rounded shadow">
                 <Image
                   src={getImageUrl(item.image)}
                   alt={item.name}
