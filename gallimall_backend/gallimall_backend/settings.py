@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
+    # 'django.contrib.sites',
 
     # Local
     'gallimall_app',
@@ -48,13 +48,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'cloudinary',
     'cloudinary_storage',
-
-    # Auth packages
-    'dj_rest_auth',
-    'dj_rest_auth.registration',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
 ]
 
 
@@ -67,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'allauth.account.middleware.AccountMiddleware',  # ✅ Add this line here
+    # 'allauth.account.middleware.AccountMiddleware',  # ✅ Add this line here
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
