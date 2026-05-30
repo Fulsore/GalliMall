@@ -8,29 +8,36 @@ load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # ENVIRONMENT CONFIG
 ENV = os.getenv("ENV", "development")
-DEBUG = os.getenv("DEBUG", "True") == "True"
+DEBUG = ENV == "development"
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost,192.168.29.192,gallimall-backend.onrender.com").split(",")
 
-CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://gallimall.vercel.app",
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
 CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
     "https://gallimall.vercel.app",
 ]
 
 
-if ENV == "production":
-    SECURE_SSL_REDIRECT = True
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
+# if ENV == "production":
+#     SECURE_SSL_REDIRECT = True
+#     SESSION_COOKIE_SECURE = True
+#     CSRF_COOKIE_SECURE = True
 
-    cors_env = os.getenv("CORS_ALLOWED_ORIGINS", "")
-    CORS_ALLOWED_ORIGINS = cors_env.split(",") if cors_env else ["https://gallimall.vercel.app"]
+#     cors_env = os.getenv("CORS_ALLOWED_ORIGINS", "")
+#     CORS_ALLOWED_ORIGINS = cors_env.split(",") if cors_env else ["https://gallimall.vercel.app"]
 
-else:
-    SECURE_SSL_REDIRECT = False
-    SESSION_COOKIE_SECURE = False
-    CSRF_COOKIE_SECURE = False
+# else:
+#     SECURE_SSL_REDIRECT = False
+#     SESSION_COOKIE_SECURE = False
+#     CSRF_COOKIE_SECURE = False
 #App
 INSTALLED_APPS = [
     # Django default
