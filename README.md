@@ -2,6 +2,9 @@
 Live Link:
 https://gallimall.vercel.app/
 
+**[Demo Video](**
+https://github.com/Fulsore/GalliMall/blob/main/screenshots/gall_video.mp4
+
 ## Overview
 
 Galli Mall is a full-stack AI-powered hyperlocal e-commerce platform designed to connect local vendors and customers within their surrounding area. The platform enables vendors to manage products, inventory, and orders while allowing customers to discover products through AI-powered semantic search, place orders, and make secure online payments.
