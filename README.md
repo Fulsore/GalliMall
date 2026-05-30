@@ -1,4 +1,6 @@
 # Galli Mall – AI-Powered Hyperlocal E-Commerce Marketplace
+Live Link:
+https://gallimall.vercel.app/
 
 ## Overview
 
