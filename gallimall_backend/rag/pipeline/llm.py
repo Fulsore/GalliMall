@@ -1,9 +1,10 @@
 import requests
 
-from decouple import config
+import os
 
 
-HF_API_KEY = config("HF_API_KEY")
+
+HF_API_KEY = os.getenv("HF_API_KEY")
 
 API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
