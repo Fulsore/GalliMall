@@ -121,7 +121,7 @@ export default function VendorChecklistProduct() {
   };
 
   const getImageUrl = (path) => {
-    if (!path) return '/placeholder.jpg';
+    if (!path) return "/placeholder.jpg";
     if (path.startsWith('http')) return path;
     if (path.startsWith('/')) return `http://127.0.0.1:8000${path}`;
     if (path.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${path}`;

@@ -122,7 +122,7 @@ class Shop(models.Model):
     shop_name = models.CharField(max_length=255, null=True, blank=True)
     shop_category = models.ForeignKey(Category, related_name='shops', on_delete=models.CASCADE)
     shop_description = models.TextField(null=True, blank=True)
-    shop_image = CloudinaryField('image', blank=True, null=True)
+    image = CloudinaryField('image', blank=True, null=True)
     qr_code_image = models.ImageField(True, blank=True)
     shop_address = models.CharField(max_length=500, null=True, blank=True)
     shop_phone_number = models.CharField(max_length=15, null=True, blank=True)

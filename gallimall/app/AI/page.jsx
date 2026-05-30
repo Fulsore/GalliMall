@@ -44,18 +44,18 @@ const Chatbot = () => {
   const dispatch = useDispatch();
   const { messages, loading } = useSelector((state) => state.chatbot);
 
-  const handleSend = (text = input, reply = '') => {
-    const trimmed = text.trim();
-    if (!trimmed) return;
+const handleSend = (text = input) => {
 
-    dispatch(addUserMessage(trimmed));
-    if (reply) {
-      dispatch(addUserMessage(reply));
-    } else {
-      dispatch(sendMessageToBot(trimmed));
-    }
-    setInput('');
-  };
+  const trimmed = text.trim();
+
+  if (!trimmed) return;
+
+  dispatch(addUserMessage(trimmed));
+
+  dispatch(sendMessageToBot(trimmed));
+
+  setInput('');
+};
 
   const subCategories = category ? Object.keys(categories[category]) : [];
   const questions = category && subCategory ? categories[category][subCategory] : [];
@@ -108,7 +108,7 @@ const Chatbot = () => {
                 {questions.map((item, idx) => (
                   <button
                     key={idx}
-                    onClick={() => handleSend(item.question, item.answer)}
+                    onClick={() => handleSend(item.question)}
                     className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full hover:bg-gray-200"
                   >
                     {item.question}

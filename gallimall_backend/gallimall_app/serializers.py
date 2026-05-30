@@ -222,12 +222,35 @@ class OrderSerializer(serializers.ModelSerializer):
         return [f"{item.quantity} x {item.product.name}" for item in obj.items.all()]
 
         
-        
+"""       
 class ChatBotSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatBot
         fields = ['id', 'user', 'user_text', 'bot_reply', 'created_at', 'updated_at']
         read_only_fields = ['id', 'user', 'bot_reply', 'created_at', 'updated_at']
+"""
+class ChatBotSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = ChatBot
+
+        fields = [
+            'id',
+            'user',
+            'user_text',
+            'bot_reply',
+            'created_at',
+            'updated_at'
+        ]
+
+        read_only_fields = [
+            'id',
+            'user',
+            'bot_reply',
+            'created_at',
+            'updated_at'
+        ]
 
 # Favourite Product Serializer
 class FavouriteItemSerializer(serializers.ModelSerializer):

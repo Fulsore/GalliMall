@@ -28,6 +28,15 @@ from dotenv import load_dotenv
 load_dotenv()
 from .utils import generate_cart_code
 from django.db.models import Sum
+from rest_framework.decorators import api_view
+
+from rag.pipeline.rag_chatbot import chatbot
+from sentence_transformers import SentenceTransformer
+import json
+import numpy as np
+import faiss
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
 from .serializers import (
     UserRegistrationSerializer,
@@ -754,12 +763,12 @@ class CustomerProfileUpdateView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-    
+""" 
 def load_qna_from_txt():
-    """
-    Load Q&A from qna.txt and return as a dictionary.
-    Format per line: question|answer
-    """
+
+      #Load Q&A from qna.txt and return as a dictionary.
+      #Format per line: question|answer
+
     qna_file_path = os.path.join(settings.BASE_DIR, 'gallimall_app', 'chatbot', 'qna.txt')
     qna_dict = {}
 
@@ -776,9 +785,7 @@ def load_qna_from_txt():
 
 
 def find_best_match(user_input, qna_dict):
-    """
-    Return the best-matched answer using fuzzy matching and fallback keyword matching.
-    """
+      #Return the best-matched answer using fuzzy matching and fallback keyword matching.
     user_input = user_input.lower().strip()
     questions = list(qna_dict.keys())
 
@@ -793,20 +800,28 @@ def find_best_match(user_input, qna_dict):
             return qna_dict[question]
 
     return "Sorry, I didn’t understand that. Please try again or contact support."
-
-
+"""
 class ChatBotAPIView(APIView):
-    # permission_classes = [IsAuthenticated]
 
     def post(self, request):
+
         user = request.user
+
         user_text = request.data.get('user_text', '')
+
         if not user_text:
-            return Response({'error': 'user_text is required.'}, status=400)
 
-        qna_dict = load_qna_from_txt()
-        bot_reply = find_best_match(user_text, qna_dict)
+            return Response(
+                {
+                    'error': 'user_text is required.'
+                },
+                status=400
+            )
 
+        # AI RESPONSE
+        bot_reply = chatbot(user_text)
+
+        # SAVE CHAT
         chatbot_entry = ChatBot.objects.create(
             user=user,
             user_text=user_text,
@@ -814,8 +829,9 @@ class ChatBotAPIView(APIView):
         )
 
         serializer = ChatBotSerializer(chatbot_entry)
+
         return Response(serializer.data)
-    
+
 class FavouriteItemViewSet(viewsets.ModelViewSet):
     serializer_class = FavouriteItemSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -887,3 +903,41 @@ class ContactMessageViewSet(viewsets.ModelViewSet):
 
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+class SemanticSearchAPIView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        query = request.GET.get("q", "").strip()
+
+        if not query:
+            return Response({"results": []})
+
+        # Load index
+        index = faiss.read_index("rag/vectorstore_products/index.faiss")
+
+        # Load metadata
+        with open("rag/vectorstore_products/meta.json", "r") as f:
+            meta = json.load(f)
+
+        # Encode query
+        query_vec = model.encode([query])
+
+        # Search
+        D, I = index.search(np.array(query_vec), k=5)
+
+        results = []
+        seen = set()
+        for idx in I[0]:
+            if idx < len(meta) and idx not in seen:
+                results.append(meta[idx])
+                seen.add(idx)
+
+        return Response({
+    "query": query,
+    "results": results,
+    "debug": {
+        "total_indexed": len(meta),
+        "top_indexes": I[0].tolist(),
+        "distances": D[0].tolist()
+    }
+})

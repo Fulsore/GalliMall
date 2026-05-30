@@ -1,4 +1,32 @@
-"genv/" 
-"media/" 
-"node_modules/" 
-"node_modules/" 
+# Frontend
+gallimall/node_modules/
+gallimall/.next/
+gallimall/.vercel/
+
+# Python
+venv/
+genv/
+gallimall_backend/genv/
+
+# Environment
+.env
+.env.*
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

@@ -11,6 +11,7 @@ const BASE_URL = 'http://127.0.0.1:8000/';
 const FALLBACK_IMAGE = 'https://res.cloudinary.com/gallimall/image/upload/v1750186556/GalliMall_Images/wjh5jyt4fqc5lmh81qye.jpg';
 
 export default function SearchPage() {
+  const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://127.0.0.1:8000/api";
   const [query, setQuery] = useState('');
   const [products, setProducts] = useState([]);
   const [shops, setShops] = useState([]);
@@ -57,37 +58,39 @@ export default function SearchPage() {
     updateCart(product, Math.max(0, newQty));
   };
 
-  useEffect(() => {
-    const fetchResults = async () => {
-      if (!query) return;
-      setLoading(true);
-      try {
-        const access = typeof window !== 'undefined' ? localStorage.getItem('access_token') : null;
-        const [productRes, shopRes] = await Promise.all([
-          axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/product/`),
-          axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/shops/`, {
-            // headers: { Authorization: `Bearer ${access}` },
-          }),
-        ]);
-        const allProducts = productRes.data.results || [];
-        const allShops = Array.isArray(shopRes.data) ? shopRes.data : shopRes.data.results || [];
-        const filteredProducts = allProducts.filter((p) =>
-          p.name?.toLowerCase().includes(query.toLowerCase())
-        );
-        const filteredShops = allShops.filter((shop) =>
-          shop.shop_name?.toLowerCase().includes(query.toLowerCase())
-        );
-        setProducts(filteredProducts);
-        setShops(filteredShops);
-      } catch (err) {
-        console.error('Search error:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
+useEffect(() => {
+  const fetchResults = async () => {
+    if (!query) return;
 
-    fetchResults();
-  }, [query]);
+    setLoading(true);
+
+    try {
+      const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://127.0.0.1:8000/api";
+
+      const [productRes, shopRes] = await Promise.all([
+        axios.get(`${API_BASE}/semantic-search/?q=${query}`),
+        axios.get(`${API_BASE}/shops/`)
+      ]);
+
+      setProducts(productRes.data.results || []);
+
+      const allShops = Array.isArray(shopRes.data)
+        ? shopRes.data
+        : shopRes.data.results || [];
+
+      setShops(allShops);
+
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const timer = setTimeout(fetchResults, 400);
+
+  return () => clearTimeout(timer);
+}, [query]);
 
   return (
     <div className="max-w-6xl mx-auto p-6 relative">
@@ -136,7 +139,7 @@ export default function SearchPage() {
             <div>
               <h3 className="text-xl font-bold mb-2">Products</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {products.map((product) => (
+                {Array.from(new Map(products.map(p => [p.id, p])).values()).map((product) => (
                   <div
                     key={product.id}
                     className="border rounded-xl shadow hover:shadow-lg transition-all duration-200 bg-white"

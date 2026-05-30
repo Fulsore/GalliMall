@@ -29,7 +29,7 @@ const CategoryList = () => {
 
 const getImageUrl = (path) => {
   const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/api\/?$/, '') || '';
-  if (!path) return '/placeholder.jpg';
+  if (!path) return "/placeholder.jpg";
   if (path.startsWith('http')) return path;
   if (path.startsWith('/')) return `${BASE_URL}${path}`;
   if (path.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${path}`;

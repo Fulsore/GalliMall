@@ -193,7 +193,7 @@ const ProductPage = () => {
         {/* Product Images */}
         <div className="w-full flex flex-col items-center lg:items-start">
           <img
-            src={product.image_url}
+            src={product.image || "/placeholder.jpg"}
             alt={product.name}
             className="w-full max-w-md h-auto rounded-2xl shadow-sm object-cover"
           />

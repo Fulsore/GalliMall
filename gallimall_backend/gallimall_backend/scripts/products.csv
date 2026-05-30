@@ -1,0 +1,1001 @@
+name,price,description,category,subcategory,shop,image
+Curtain 256,3279,High quality Curtain from Home,Home,Curtain,Super Store,products/default.jpg
+Toothpaste 503,794,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Super Store,products/default.jpg
+Mobile 265,3263,High quality Mobile from Electronics,Electronics,Mobile,Urban Grocery,products/default.jpg
+Pillow 554,2496,High quality Pillow from Home,Home,Pillow,Super Store,products/default.jpg
+Namkeen 387,3483,High quality Namkeen from Snacks,Snacks,Namkeen,Urban Grocery,products/default.jpg
+Tea 308,1120,High quality Tea from Beverages,Beverages,Tea,Urban Grocery,products/default.jpg
+Bed Sheet 179,4569,High quality Bed Sheet from Home,Home,Bed Sheet,Fresh Mart,products/default.jpg
+Yogurt 552,4625,High quality Yogurt from Dairy,Dairy,Yogurt,Green Basket,products/default.jpg
+Onion 465,3808,High quality Onion from Vegetables,Vegetables,Onion,Super Store,products/default.jpg
+Table 179,4926,High quality Table from Home,Home,Table,Urban Grocery,products/default.jpg
+Jacket 218,3300,High quality Jacket from Clothing,Clothing,Jacket,Fresh Mart,products/default.jpg
+Cheese 466,290,High quality Cheese from Dairy,Dairy,Cheese,Fresh Mart,products/default.jpg
+Shirt 304,3167,High quality Shirt from Clothing,Clothing,Shirt,Green Basket,products/default.jpg
+Mobile 53,4010,High quality Mobile from Electronics,Electronics,Mobile,Mega Mart,products/default.jpg
+Paneer 409,4969,High quality Paneer from Dairy,Dairy,Paneer,Green Basket,products/default.jpg
+Eraser 445,4377,High quality Eraser from Stationery,Stationery,Eraser,Fresh Mart,products/default.jpg
+Butter 77,2049,High quality Butter from Dairy,Dairy,Butter,Mega Mart,products/default.jpg
+Jacket 17,634,High quality Jacket from Clothing,Clothing,Jacket,Super Store,products/default.jpg
+Grapes 883,1850,High quality Grapes from Fruits,Fruits,Grapes,Quick Shop,products/default.jpg
+Shirt 233,1070,High quality Shirt from Clothing,Clothing,Shirt,Smart Shop,products/default.jpg
+Coffee 757,2302,High quality Coffee from Beverages,Beverages,Coffee,Fresh Mart,products/default.jpg
+Table 603,4962,High quality Table from Home,Home,Table,Super Store,products/default.jpg
+Orange 817,4459,High quality Orange from Fruits,Fruits,Orange,Super Store,products/default.jpg
+Biscuit 340,4803,High quality Biscuit from Bakery,Bakery,Biscuit,Mega Mart,products/default.jpg
+Cake 869,3874,High quality Cake from Bakery,Bakery,Cake,Daily Needs Store,products/default.jpg
+T-Shirt 274,903,High quality T-Shirt from Clothing,Clothing,T-Shirt,Daily Needs Store,products/default.jpg
+T-Shirt 532,2318,High quality T-Shirt from Clothing,Clothing,T-Shirt,Smart Shop,products/default.jpg
+Chocolate 242,2836,High quality Chocolate from Snacks,Snacks,Chocolate,Quick Shop,products/default.jpg
+Carrot 143,3032,High quality Carrot from Vegetables,Vegetables,Carrot,Fresh Mart,products/default.jpg
+Tomato 7,3793,High quality Tomato from Vegetables,Vegetables,Tomato,Quick Shop,products/default.jpg
+Donut 775,3793,High quality Donut from Bakery,Bakery,Donut,Daily Needs Store,products/default.jpg
+Headphones 348,430,High quality Headphones from Electronics,Electronics,Headphones,Fresh Mart,products/default.jpg
+Headphones 396,518,High quality Headphones from Electronics,Electronics,Headphones,Urban Grocery,products/default.jpg
+Onion 738,1630,High quality Onion from Vegetables,Vegetables,Onion,Urban Grocery,products/default.jpg
+Tea 261,2554,High quality Tea from Beverages,Beverages,Tea,Super Store,products/default.jpg
+Detergent 834,2624,High quality Detergent from Daily Needs,Daily Needs,Detergent,Urban Grocery,products/default.jpg
+T-Shirt 817,2948,High quality T-Shirt from Clothing,Clothing,T-Shirt,Super Store,products/default.jpg
+Grapes 909,1658,High quality Grapes from Fruits,Fruits,Grapes,Fresh Mart,products/default.jpg
+Laptop 889,1591,High quality Laptop from Electronics,Electronics,Laptop,Mega Mart,products/default.jpg
+Banana 893,1503,High quality Banana from Fruits,Fruits,Banana,Smart Shop,products/default.jpg
+Apple 227,2103,High quality Apple from Fruits,Fruits,Apple,Fresh Mart,products/default.jpg
+Cookies 852,1231,High quality Cookies from Snacks,Snacks,Cookies,Fresh Mart,products/default.jpg
+Biscuit 418,4824,High quality Biscuit from Bakery,Bakery,Biscuit,Super Store,products/default.jpg
+Pillow 782,716,High quality Pillow from Home,Home,Pillow,Daily Needs Store,products/default.jpg
+Jacket 678,2689,High quality Jacket from Clothing,Clothing,Jacket,Daily Needs Store,products/default.jpg
+Pen 166,932,High quality Pen from Stationery,Stationery,Pen,Daily Needs Store,products/default.jpg
+Grapes 902,4699,High quality Grapes from Fruits,Fruits,Grapes,Mega Mart,products/default.jpg
+Jacket 305,2231,High quality Jacket from Clothing,Clothing,Jacket,Fresh Mart,products/default.jpg
+Pencil 337,1392,High quality Pencil from Stationery,Stationery,Pencil,Green Basket,products/default.jpg
+Orange 419,2190,High quality Orange from Fruits,Fruits,Orange,Daily Needs Store,products/default.jpg
+Charger 931,1627,High quality Charger from Electronics,Electronics,Charger,Fresh Mart,products/default.jpg
+Jacket 863,4962,High quality Jacket from Clothing,Clothing,Jacket,Fresh Mart,products/default.jpg
+T-Shirt 933,4999,High quality T-Shirt from Clothing,Clothing,T-Shirt,Super Store,products/default.jpg
+Grapes 29,3738,High quality Grapes from Fruits,Fruits,Grapes,Smart Shop,products/default.jpg
+Charger 51,2108,High quality Charger from Electronics,Electronics,Charger,Daily Needs Store,products/default.jpg
+Eraser 578,4711,High quality Eraser from Stationery,Stationery,Eraser,Mega Mart,products/default.jpg
+Toothpaste 530,2726,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Quick Shop,products/default.jpg
+Butter 365,608,High quality Butter from Dairy,Dairy,Butter,Green Basket,products/default.jpg
+Headphones 792,135,High quality Headphones from Electronics,Electronics,Headphones,Urban Grocery,products/default.jpg
+Carrot 777,3782,High quality Carrot from Vegetables,Vegetables,Carrot,Mega Mart,products/default.jpg
+Chair 251,2311,High quality Chair from Home,Home,Chair,Super Store,products/default.jpg
+Banana 376,920,High quality Banana from Fruits,Fruits,Banana,Smart Shop,products/default.jpg
+Smart Watch 833,3337,High quality Smart Watch from Electronics,Electronics,Smart Watch,Fresh Mart,products/default.jpg
+Eraser 373,2293,High quality Eraser from Stationery,Stationery,Eraser,Smart Shop,products/default.jpg
+Soap 16,3519,High quality Soap from Daily Needs,Daily Needs,Soap,Fresh Mart,products/default.jpg
+Energy Drink 556,2059,High quality Energy Drink from Beverages,Beverages,Energy Drink,Daily Needs Store,products/default.jpg
+Soda 147,611,High quality Soda from Beverages,Beverages,Soda,Green Basket,products/default.jpg
+Banana 38,2533,High quality Banana from Fruits,Fruits,Banana,Urban Grocery,products/default.jpg
+Donut 358,4314,High quality Donut from Bakery,Bakery,Donut,Smart Shop,products/default.jpg
+Shampoo 747,2404,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Urban Grocery,products/default.jpg
+Apple 869,2393,High quality Apple from Fruits,Fruits,Apple,Daily Needs Store,products/default.jpg
+Potato 208,3098,High quality Potato from Vegetables,Vegetables,Potato,Smart Shop,products/default.jpg
+Apple 45,1069,High quality Apple from Fruits,Fruits,Apple,Daily Needs Store,products/default.jpg
+Grapes 176,1020,High quality Grapes from Fruits,Fruits,Grapes,Super Store,products/default.jpg
+Toothpaste 600,1039,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Quick Shop,products/default.jpg
+Yogurt 598,1830,High quality Yogurt from Dairy,Dairy,Yogurt,Daily Needs Store,products/default.jpg
+Chips 207,4955,High quality Chips from Snacks,Snacks,Chips,Quick Shop,products/default.jpg
+Jacket 942,3874,High quality Jacket from Clothing,Clothing,Jacket,Urban Grocery,products/default.jpg
+Biscuit 635,2678,High quality Biscuit from Bakery,Bakery,Biscuit,Mega Mart,products/default.jpg
+Carrot 895,4630,High quality Carrot from Vegetables,Vegetables,Carrot,Daily Needs Store,products/default.jpg
+Detergent 826,986,High quality Detergent from Daily Needs,Daily Needs,Detergent,Urban Grocery,products/default.jpg
+Marker 512,4928,High quality Marker from Stationery,Stationery,Marker,Daily Needs Store,products/default.jpg
+Bed Sheet 906,1500,High quality Bed Sheet from Home,Home,Bed Sheet,Daily Needs Store,products/default.jpg
+Cake 931,4286,High quality Cake from Bakery,Bakery,Cake,Fresh Mart,products/default.jpg
+Jacket 930,208,High quality Jacket from Clothing,Clothing,Jacket,Fresh Mart,products/default.jpg
+Laptop 650,4583,High quality Laptop from Electronics,Electronics,Laptop,Super Store,products/default.jpg
+Soda 769,2165,High quality Soda from Beverages,Beverages,Soda,Quick Shop,products/default.jpg
+Paneer 398,3257,High quality Paneer from Dairy,Dairy,Paneer,Super Store,products/default.jpg
+Toothpaste 900,3039,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Green Basket,products/default.jpg
+Jacket 413,1245,High quality Jacket from Clothing,Clothing,Jacket,Mega Mart,products/default.jpg
+Popcorn 873,556,High quality Popcorn from Snacks,Snacks,Popcorn,Quick Shop,products/default.jpg
+Butter 700,1559,High quality Butter from Dairy,Dairy,Butter,Fresh Mart,products/default.jpg
+Notebook 807,3654,High quality Notebook from Stationery,Stationery,Notebook,Green Basket,products/default.jpg
+Pillow 903,1413,High quality Pillow from Home,Home,Pillow,Daily Needs Store,products/default.jpg
+Carrot 364,3560,High quality Carrot from Vegetables,Vegetables,Carrot,Quick Shop,products/default.jpg
+Charger 782,3089,High quality Charger from Electronics,Electronics,Charger,Super Store,products/default.jpg
+Charger 85,4427,High quality Charger from Electronics,Electronics,Charger,Smart Shop,products/default.jpg
+Energy Drink 397,4736,High quality Energy Drink from Beverages,Beverages,Energy Drink,Green Basket,products/default.jpg
+Shampoo 655,1768,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Daily Needs Store,products/default.jpg
+Mobile 976,4043,High quality Mobile from Electronics,Electronics,Mobile,Quick Shop,products/default.jpg
+Grapes 77,3156,High quality Grapes from Fruits,Fruits,Grapes,Smart Shop,products/default.jpg
+Detergent 949,392,High quality Detergent from Daily Needs,Daily Needs,Detergent,Mega Mart,products/default.jpg
+Marker 205,1289,High quality Marker from Stationery,Stationery,Marker,Fresh Mart,products/default.jpg
+Popcorn 726,2508,High quality Popcorn from Snacks,Snacks,Popcorn,Fresh Mart,products/default.jpg
+Notebook 209,793,High quality Notebook from Stationery,Stationery,Notebook,Mega Mart,products/default.jpg
+Detergent 362,2407,High quality Detergent from Daily Needs,Daily Needs,Detergent,Green Basket,products/default.jpg
+Potato 148,2092,High quality Potato from Vegetables,Vegetables,Potato,Smart Shop,products/default.jpg
+Tea 444,4501,High quality Tea from Beverages,Beverages,Tea,Quick Shop,products/default.jpg
+Marker 674,1229,High quality Marker from Stationery,Stationery,Marker,Mega Mart,products/default.jpg
+Mobile 296,2549,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Bed Sheet 472,4336,High quality Bed Sheet from Home,Home,Bed Sheet,Urban Grocery,products/default.jpg
+Charger 760,3866,High quality Charger from Electronics,Electronics,Charger,Daily Needs Store,products/default.jpg
+Mango 819,1810,High quality Mango from Fruits,Fruits,Mango,Mega Mart,products/default.jpg
+Namkeen 197,2445,High quality Namkeen from Snacks,Snacks,Namkeen,Green Basket,products/default.jpg
+Milk 786,1977,High quality Milk from Dairy,Dairy,Milk,Smart Shop,products/default.jpg
+Laptop 993,1460,High quality Laptop from Electronics,Electronics,Laptop,Green Basket,products/default.jpg
+Potato 204,3348,High quality Potato from Vegetables,Vegetables,Potato,Quick Shop,products/default.jpg
+Table 300,382,High quality Table from Home,Home,Table,Green Basket,products/default.jpg
+Popcorn 784,101,High quality Popcorn from Snacks,Snacks,Popcorn,Green Basket,products/default.jpg
+Potato 94,1651,High quality Potato from Vegetables,Vegetables,Potato,Fresh Mart,products/default.jpg
+Soda 879,4413,High quality Soda from Beverages,Beverages,Soda,Quick Shop,products/default.jpg
+Pillow 330,2403,High quality Pillow from Home,Home,Pillow,Smart Shop,products/default.jpg
+Bread 44,121,High quality Bread from Bakery,Bakery,Bread,Mega Mart,products/default.jpg
+Bread 218,1483,High quality Bread from Bakery,Bakery,Bread,Mega Mart,products/default.jpg
+Cookies 372,554,High quality Cookies from Snacks,Snacks,Cookies,Urban Grocery,products/default.jpg
+Grapes 445,4289,High quality Grapes from Fruits,Fruits,Grapes,Smart Shop,products/default.jpg
+Banana 586,2315,High quality Banana from Fruits,Fruits,Banana,Super Store,products/default.jpg
+Shirt 849,3939,High quality Shirt from Clothing,Clothing,Shirt,Fresh Mart,products/default.jpg
+Table 426,1573,High quality Table from Home,Home,Table,Fresh Mart,products/default.jpg
+Cookies 958,2206,High quality Cookies from Snacks,Snacks,Cookies,Fresh Mart,products/default.jpg
+Chips 338,2133,High quality Chips from Snacks,Snacks,Chips,Smart Shop,products/default.jpg
+Orange 356,4271,High quality Orange from Fruits,Fruits,Orange,Super Store,products/default.jpg
+Shampoo 249,2182,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Quick Shop,products/default.jpg
+Soda 994,1768,High quality Soda from Beverages,Beverages,Soda,Mega Mart,products/default.jpg
+Onion 910,1724,High quality Onion from Vegetables,Vegetables,Onion,Urban Grocery,products/default.jpg
+Grapes 116,4636,High quality Grapes from Fruits,Fruits,Grapes,Green Basket,products/default.jpg
+Shorts 507,1227,High quality Shorts from Clothing,Clothing,Shorts,Quick Shop,products/default.jpg
+Namkeen 908,3057,High quality Namkeen from Snacks,Snacks,Namkeen,Green Basket,products/default.jpg
+Mango 273,3827,High quality Mango from Fruits,Fruits,Mango,Fresh Mart,products/default.jpg
+Onion 419,3740,High quality Onion from Vegetables,Vegetables,Onion,Mega Mart,products/default.jpg
+T-Shirt 116,2098,High quality T-Shirt from Clothing,Clothing,T-Shirt,Green Basket,products/default.jpg
+Toothpaste 19,3584,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Super Store,products/default.jpg
+Toothpaste 639,1601,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Quick Shop,products/default.jpg
+Yogurt 14,1372,High quality Yogurt from Dairy,Dairy,Yogurt,Quick Shop,products/default.jpg
+Tomato 665,1341,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+Headphones 343,2505,High quality Headphones from Electronics,Electronics,Headphones,Quick Shop,products/default.jpg
+Shampoo 724,3820,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Quick Shop,products/default.jpg
+Shirt 125,2429,High quality Shirt from Clothing,Clothing,Shirt,Super Store,products/default.jpg
+Pillow 303,4511,High quality Pillow from Home,Home,Pillow,Quick Shop,products/default.jpg
+Bed Sheet 544,1877,High quality Bed Sheet from Home,Home,Bed Sheet,Mega Mart,products/default.jpg
+T-Shirt 939,1785,High quality T-Shirt from Clothing,Clothing,T-Shirt,Quick Shop,products/default.jpg
+Curtain 20,886,High quality Curtain from Home,Home,Curtain,Super Store,products/default.jpg
+Shirt 443,4789,High quality Shirt from Clothing,Clothing,Shirt,Smart Shop,products/default.jpg
+Toilet Paper 998,1635,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Super Store,products/default.jpg
+Mobile 228,4479,High quality Mobile from Electronics,Electronics,Mobile,Daily Needs Store,products/default.jpg
+Tomato 860,18,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+Curtain 964,257,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+Toilet Paper 804,88,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Daily Needs Store,products/default.jpg
+Chair 644,2891,High quality Chair from Home,Home,Chair,Urban Grocery,products/default.jpg
+Bread 191,1272,High quality Bread from Bakery,Bakery,Bread,Fresh Mart,products/default.jpg
+Jacket 88,424,High quality Jacket from Clothing,Clothing,Jacket,Quick Shop,products/default.jpg
+Bread 95,4041,High quality Bread from Bakery,Bakery,Bread,Super Store,products/default.jpg
+Laptop 741,4178,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+Namkeen 892,2755,High quality Namkeen from Snacks,Snacks,Namkeen,Mega Mart,products/default.jpg
+Bed Sheet 779,2038,High quality Bed Sheet from Home,Home,Bed Sheet,Quick Shop,products/default.jpg
+Apple 488,4690,High quality Apple from Fruits,Fruits,Apple,Green Basket,products/default.jpg
+Pencil 333,4885,High quality Pencil from Stationery,Stationery,Pencil,Super Store,products/default.jpg
+Cheese 531,3266,High quality Cheese from Dairy,Dairy,Cheese,Fresh Mart,products/default.jpg
+Cake 411,704,High quality Cake from Bakery,Bakery,Cake,Fresh Mart,products/default.jpg
+Toilet Paper 927,695,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Urban Grocery,products/default.jpg
+Chair 37,2631,High quality Chair from Home,Home,Chair,Mega Mart,products/default.jpg
+Toilet Paper 89,4345,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Green Basket,products/default.jpg
+Muffin 907,3071,High quality Muffin from Bakery,Bakery,Muffin,Quick Shop,products/default.jpg
+Donut 99,3599,High quality Donut from Bakery,Bakery,Donut,Super Store,products/default.jpg
+Pillow 284,2018,High quality Pillow from Home,Home,Pillow,Daily Needs Store,products/default.jpg
+Chocolate 645,666,High quality Chocolate from Snacks,Snacks,Chocolate,Green Basket,products/default.jpg
+Mango 510,3121,High quality Mango from Fruits,Fruits,Mango,Quick Shop,products/default.jpg
+Spinach 622,819,High quality Spinach from Vegetables,Vegetables,Spinach,Fresh Mart,products/default.jpg
+Chocolate 971,4374,High quality Chocolate from Snacks,Snacks,Chocolate,Green Basket,products/default.jpg
+Detergent 356,1632,High quality Detergent from Daily Needs,Daily Needs,Detergent,Quick Shop,products/default.jpg
+Cheese 450,1898,High quality Cheese from Dairy,Dairy,Cheese,Green Basket,products/default.jpg
+Biscuit 622,2132,High quality Biscuit from Bakery,Bakery,Biscuit,Smart Shop,products/default.jpg
+Chocolate 351,4067,High quality Chocolate from Snacks,Snacks,Chocolate,Super Store,products/default.jpg
+Shorts 472,4555,High quality Shorts from Clothing,Clothing,Shorts,Daily Needs Store,products/default.jpg
+Butter 571,2944,High quality Butter from Dairy,Dairy,Butter,Super Store,products/default.jpg
+Laptop 93,2368,High quality Laptop from Electronics,Electronics,Laptop,Daily Needs Store,products/default.jpg
+Onion 617,4874,High quality Onion from Vegetables,Vegetables,Onion,Fresh Mart,products/default.jpg
+Spinach 477,1838,High quality Spinach from Vegetables,Vegetables,Spinach,Urban Grocery,products/default.jpg
+T-Shirt 139,4446,High quality T-Shirt from Clothing,Clothing,T-Shirt,Smart Shop,products/default.jpg
+Toilet Paper 109,4819,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Urban Grocery,products/default.jpg
+Pillow 166,3350,High quality Pillow from Home,Home,Pillow,Fresh Mart,products/default.jpg
+Shirt 209,2081,High quality Shirt from Clothing,Clothing,Shirt,Green Basket,products/default.jpg
+Butter 518,2213,High quality Butter from Dairy,Dairy,Butter,Daily Needs Store,products/default.jpg
+Pencil 281,4039,High quality Pencil from Stationery,Stationery,Pencil,Mega Mart,products/default.jpg
+Jeans 904,1673,High quality Jeans from Clothing,Clothing,Jeans,Super Store,products/default.jpg
+Toothpaste 661,1621,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Fresh Mart,products/default.jpg
+Muffin 441,338,High quality Muffin from Bakery,Bakery,Muffin,Urban Grocery,products/default.jpg
+T-Shirt 798,4289,High quality T-Shirt from Clothing,Clothing,T-Shirt,Urban Grocery,products/default.jpg
+Yogurt 81,1180,High quality Yogurt from Dairy,Dairy,Yogurt,Urban Grocery,products/default.jpg
+Laptop 193,751,High quality Laptop from Electronics,Electronics,Laptop,Super Store,products/default.jpg
+Toilet Paper 631,626,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Daily Needs Store,products/default.jpg
+Soap 558,1676,High quality Soap from Daily Needs,Daily Needs,Soap,Smart Shop,products/default.jpg
+Orange 574,4010,High quality Orange from Fruits,Fruits,Orange,Daily Needs Store,products/default.jpg
+Donut 637,2216,High quality Donut from Bakery,Bakery,Donut,Daily Needs Store,products/default.jpg
+Shirt 486,1369,High quality Shirt from Clothing,Clothing,Shirt,Super Store,products/default.jpg
+Chips 733,3503,High quality Chips from Snacks,Snacks,Chips,Smart Shop,products/default.jpg
+Chips 358,3538,High quality Chips from Snacks,Snacks,Chips,Green Basket,products/default.jpg
+Toilet Paper 248,2031,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Green Basket,products/default.jpg
+Shirt 28,4510,High quality Shirt from Clothing,Clothing,Shirt,Urban Grocery,products/default.jpg
+Bed Sheet 726,1218,High quality Bed Sheet from Home,Home,Bed Sheet,Fresh Mart,products/default.jpg
+Chair 970,2395,High quality Chair from Home,Home,Chair,Super Store,products/default.jpg
+Cake 175,2870,High quality Cake from Bakery,Bakery,Cake,Smart Shop,products/default.jpg
+Cake 67,4115,High quality Cake from Bakery,Bakery,Cake,Fresh Mart,products/default.jpg
+Apple 33,3148,High quality Apple from Fruits,Fruits,Apple,Super Store,products/default.jpg
+Marker 868,2063,High quality Marker from Stationery,Stationery,Marker,Daily Needs Store,products/default.jpg
+Grapes 45,4292,High quality Grapes from Fruits,Fruits,Grapes,Daily Needs Store,products/default.jpg
+Butter 1,2316,High quality Butter from Dairy,Dairy,Butter,Fresh Mart,products/default.jpg
+Cake 98,3019,High quality Cake from Bakery,Bakery,Cake,Fresh Mart,products/default.jpg
+Table 287,1045,High quality Table from Home,Home,Table,Quick Shop,products/default.jpg
+Soap 169,979,High quality Soap from Daily Needs,Daily Needs,Soap,Fresh Mart,products/default.jpg
+Table 713,4300,High quality Table from Home,Home,Table,Fresh Mart,products/default.jpg
+Charger 623,1200,High quality Charger from Electronics,Electronics,Charger,Fresh Mart,products/default.jpg
+Coffee 709,4895,High quality Coffee from Beverages,Beverages,Coffee,Urban Grocery,products/default.jpg
+Notebook 298,472,High quality Notebook from Stationery,Stationery,Notebook,Smart Shop,products/default.jpg
+Paneer 864,4225,High quality Paneer from Dairy,Dairy,Paneer,Daily Needs Store,products/default.jpg
+Shampoo 469,2168,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Quick Shop,products/default.jpg
+Curtain 972,328,High quality Curtain from Home,Home,Curtain,Super Store,products/default.jpg
+Cheese 200,857,High quality Cheese from Dairy,Dairy,Cheese,Mega Mart,products/default.jpg
+Butter 139,1416,High quality Butter from Dairy,Dairy,Butter,Urban Grocery,products/default.jpg
+Bed Sheet 397,2697,High quality Bed Sheet from Home,Home,Bed Sheet,Smart Shop,products/default.jpg
+Potato 569,198,High quality Potato from Vegetables,Vegetables,Potato,Smart Shop,products/default.jpg
+Grapes 515,126,High quality Grapes from Fruits,Fruits,Grapes,Smart Shop,products/default.jpg
+Potato 107,734,High quality Potato from Vegetables,Vegetables,Potato,Super Store,products/default.jpg
+Charger 957,1652,High quality Charger from Electronics,Electronics,Charger,Urban Grocery,products/default.jpg
+Bed Sheet 291,4560,High quality Bed Sheet from Home,Home,Bed Sheet,Smart Shop,products/default.jpg
+Jeans 250,1265,High quality Jeans from Clothing,Clothing,Jeans,Green Basket,products/default.jpg
+Chair 373,1164,High quality Chair from Home,Home,Chair,Smart Shop,products/default.jpg
+Cheese 611,4382,High quality Cheese from Dairy,Dairy,Cheese,Super Store,products/default.jpg
+Shampoo 907,2324,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Urban Grocery,products/default.jpg
+Notebook 145,2885,High quality Notebook from Stationery,Stationery,Notebook,Quick Shop,products/default.jpg
+Chair 539,2031,High quality Chair from Home,Home,Chair,Green Basket,products/default.jpg
+Tea 654,3270,High quality Tea from Beverages,Beverages,Tea,Mega Mart,products/default.jpg
+Popcorn 504,3401,High quality Popcorn from Snacks,Snacks,Popcorn,Quick Shop,products/default.jpg
+Cake 263,3961,High quality Cake from Bakery,Bakery,Cake,Super Store,products/default.jpg
+Curtain 316,507,High quality Curtain from Home,Home,Curtain,Fresh Mart,products/default.jpg
+Tea 813,550,High quality Tea from Beverages,Beverages,Tea,Smart Shop,products/default.jpg
+Jeans 262,1397,High quality Jeans from Clothing,Clothing,Jeans,Quick Shop,products/default.jpg
+Bread 250,741,High quality Bread from Bakery,Bakery,Bread,Urban Grocery,products/default.jpg
+Apple 126,2830,High quality Apple from Fruits,Fruits,Apple,Green Basket,products/default.jpg
+Namkeen 826,954,High quality Namkeen from Snacks,Snacks,Namkeen,Super Store,products/default.jpg
+Marker 630,1786,High quality Marker from Stationery,Stationery,Marker,Urban Grocery,products/default.jpg
+Carrot 87,2730,High quality Carrot from Vegetables,Vegetables,Carrot,Fresh Mart,products/default.jpg
+Cake 939,4807,High quality Cake from Bakery,Bakery,Cake,Super Store,products/default.jpg
+T-Shirt 116,1271,High quality T-Shirt from Clothing,Clothing,T-Shirt,Quick Shop,products/default.jpg
+Table 947,3208,High quality Table from Home,Home,Table,Mega Mart,products/default.jpg
+Chair 894,2519,High quality Chair from Home,Home,Chair,Quick Shop,products/default.jpg
+Shirt 806,2494,High quality Shirt from Clothing,Clothing,Shirt,Smart Shop,products/default.jpg
+T-Shirt 808,1116,High quality T-Shirt from Clothing,Clothing,T-Shirt,Fresh Mart,products/default.jpg
+Mango 211,2853,High quality Mango from Fruits,Fruits,Mango,Urban Grocery,products/default.jpg
+Smart Watch 401,4546,High quality Smart Watch from Electronics,Electronics,Smart Watch,Mega Mart,products/default.jpg
+Soap 402,2823,High quality Soap from Daily Needs,Daily Needs,Soap,Smart Shop,products/default.jpg
+Cake 760,4550,High quality Cake from Bakery,Bakery,Cake,Daily Needs Store,products/default.jpg
+Spinach 568,2434,High quality Spinach from Vegetables,Vegetables,Spinach,Daily Needs Store,products/default.jpg
+Paneer 765,941,High quality Paneer from Dairy,Dairy,Paneer,Super Store,products/default.jpg
+Soda 340,3821,High quality Soda from Beverages,Beverages,Soda,Daily Needs Store,products/default.jpg
+Carrot 353,2846,High quality Carrot from Vegetables,Vegetables,Carrot,Fresh Mart,products/default.jpg
+Orange 380,1319,High quality Orange from Fruits,Fruits,Orange,Smart Shop,products/default.jpg
+Onion 668,4437,High quality Onion from Vegetables,Vegetables,Onion,Fresh Mart,products/default.jpg
+Shirt 692,4498,High quality Shirt from Clothing,Clothing,Shirt,Super Store,products/default.jpg
+Yogurt 34,1250,High quality Yogurt from Dairy,Dairy,Yogurt,Quick Shop,products/default.jpg
+Butter 99,1501,High quality Butter from Dairy,Dairy,Butter,Fresh Mart,products/default.jpg
+Potato 393,3640,High quality Potato from Vegetables,Vegetables,Potato,Mega Mart,products/default.jpg
+Mobile 314,3407,High quality Mobile from Electronics,Electronics,Mobile,Green Basket,products/default.jpg
+Toilet Paper 194,2837,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Daily Needs Store,products/default.jpg
+Cake 622,2799,High quality Cake from Bakery,Bakery,Cake,Daily Needs Store,products/default.jpg
+Muffin 597,857,High quality Muffin from Bakery,Bakery,Muffin,Daily Needs Store,products/default.jpg
+Grapes 404,3457,High quality Grapes from Fruits,Fruits,Grapes,Mega Mart,products/default.jpg
+Muffin 915,1681,High quality Muffin from Bakery,Bakery,Muffin,Mega Mart,products/default.jpg
+Grapes 283,1852,High quality Grapes from Fruits,Fruits,Grapes,Mega Mart,products/default.jpg
+Yogurt 152,3916,High quality Yogurt from Dairy,Dairy,Yogurt,Super Store,products/default.jpg
+Chips 488,52,High quality Chips from Snacks,Snacks,Chips,Daily Needs Store,products/default.jpg
+Pencil 786,2641,High quality Pencil from Stationery,Stationery,Pencil,Super Store,products/default.jpg
+Table 822,418,High quality Table from Home,Home,Table,Urban Grocery,products/default.jpg
+Donut 429,1372,High quality Donut from Bakery,Bakery,Donut,Smart Shop,products/default.jpg
+Bread 68,4377,High quality Bread from Bakery,Bakery,Bread,Super Store,products/default.jpg
+Jacket 586,4936,High quality Jacket from Clothing,Clothing,Jacket,Daily Needs Store,products/default.jpg
+Donut 117,3793,High quality Donut from Bakery,Bakery,Donut,Mega Mart,products/default.jpg
+Banana 595,2115,High quality Banana from Fruits,Fruits,Banana,Urban Grocery,products/default.jpg
+Cookies 7,2805,High quality Cookies from Snacks,Snacks,Cookies,Smart Shop,products/default.jpg
+Muffin 703,1667,High quality Muffin from Bakery,Bakery,Muffin,Fresh Mart,products/default.jpg
+Detergent 570,2728,High quality Detergent from Daily Needs,Daily Needs,Detergent,Quick Shop,products/default.jpg
+Shampoo 817,2054,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Smart Shop,products/default.jpg
+Chair 678,1839,High quality Chair from Home,Home,Chair,Daily Needs Store,products/default.jpg
+Carrot 394,3471,High quality Carrot from Vegetables,Vegetables,Carrot,Urban Grocery,products/default.jpg
+Detergent 410,2879,High quality Detergent from Daily Needs,Daily Needs,Detergent,Fresh Mart,products/default.jpg
+Detergent 615,3079,High quality Detergent from Daily Needs,Daily Needs,Detergent,Mega Mart,products/default.jpg
+Detergent 88,708,High quality Detergent from Daily Needs,Daily Needs,Detergent,Super Store,products/default.jpg
+Milk 551,3810,High quality Milk from Dairy,Dairy,Milk,Smart Shop,products/default.jpg
+Toilet Paper 88,4183,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Fresh Mart,products/default.jpg
+Toilet Paper 832,3479,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Mega Mart,products/default.jpg
+Namkeen 141,2571,High quality Namkeen from Snacks,Snacks,Namkeen,Super Store,products/default.jpg
+Bread 485,3363,High quality Bread from Bakery,Bakery,Bread,Green Basket,products/default.jpg
+Pen 972,1898,High quality Pen from Stationery,Stationery,Pen,Urban Grocery,products/default.jpg
+Mobile 430,4761,High quality Mobile from Electronics,Electronics,Mobile,Green Basket,products/default.jpg
+Bread 681,2180,High quality Bread from Bakery,Bakery,Bread,Quick Shop,products/default.jpg
+Namkeen 27,2701,High quality Namkeen from Snacks,Snacks,Namkeen,Daily Needs Store,products/default.jpg
+Tea 3,3759,High quality Tea from Beverages,Beverages,Tea,Daily Needs Store,products/default.jpg
+Chocolate 296,1966,High quality Chocolate from Snacks,Snacks,Chocolate,Fresh Mart,products/default.jpg
+Yogurt 505,3976,High quality Yogurt from Dairy,Dairy,Yogurt,Green Basket,products/default.jpg
+Cake 922,3952,High quality Cake from Bakery,Bakery,Cake,Smart Shop,products/default.jpg
+Popcorn 854,2576,High quality Popcorn from Snacks,Snacks,Popcorn,Fresh Mart,products/default.jpg
+Charger 220,1850,High quality Charger from Electronics,Electronics,Charger,Smart Shop,products/default.jpg
+Smart Watch 146,2055,High quality Smart Watch from Electronics,Electronics,Smart Watch,Super Store,products/default.jpg
+Yogurt 467,3013,High quality Yogurt from Dairy,Dairy,Yogurt,Green Basket,products/default.jpg
+Eraser 585,3555,High quality Eraser from Stationery,Stationery,Eraser,Mega Mart,products/default.jpg
+Cookies 389,4429,High quality Cookies from Snacks,Snacks,Cookies,Super Store,products/default.jpg
+Chocolate 785,3960,High quality Chocolate from Snacks,Snacks,Chocolate,Green Basket,products/default.jpg
+Headphones 304,940,High quality Headphones from Electronics,Electronics,Headphones,Mega Mart,products/default.jpg
+Spinach 933,3382,High quality Spinach from Vegetables,Vegetables,Spinach,Quick Shop,products/default.jpg
+Spinach 186,1568,High quality Spinach from Vegetables,Vegetables,Spinach,Fresh Mart,products/default.jpg
+Biscuit 690,4850,High quality Biscuit from Bakery,Bakery,Biscuit,Daily Needs Store,products/default.jpg
+Cheese 198,1235,High quality Cheese from Dairy,Dairy,Cheese,Green Basket,products/default.jpg
+Apple 498,1146,High quality Apple from Fruits,Fruits,Apple,Fresh Mart,products/default.jpg
+Toilet Paper 269,2478,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Super Store,products/default.jpg
+Headphones 530,3762,High quality Headphones from Electronics,Electronics,Headphones,Fresh Mart,products/default.jpg
+Juice 255,4746,High quality Juice from Beverages,Beverages,Juice,Fresh Mart,products/default.jpg
+Tea 508,1545,High quality Tea from Beverages,Beverages,Tea,Smart Shop,products/default.jpg
+Chair 733,2635,High quality Chair from Home,Home,Chair,Urban Grocery,products/default.jpg
+T-Shirt 956,1928,High quality T-Shirt from Clothing,Clothing,T-Shirt,Green Basket,products/default.jpg
+Curtain 727,3919,High quality Curtain from Home,Home,Curtain,Urban Grocery,products/default.jpg
+Jacket 371,1527,High quality Jacket from Clothing,Clothing,Jacket,Green Basket,products/default.jpg
+Coffee 257,1411,High quality Coffee from Beverages,Beverages,Coffee,Super Store,products/default.jpg
+Bed Sheet 658,4368,High quality Bed Sheet from Home,Home,Bed Sheet,Smart Shop,products/default.jpg
+Shorts 312,716,High quality Shorts from Clothing,Clothing,Shorts,Fresh Mart,products/default.jpg
+Toothpaste 601,4996,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Green Basket,products/default.jpg
+Potato 980,1747,High quality Potato from Vegetables,Vegetables,Potato,Super Store,products/default.jpg
+Donut 258,4085,High quality Donut from Bakery,Bakery,Donut,Mega Mart,products/default.jpg
+Laptop 456,3299,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+Toilet Paper 927,3770,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Green Basket,products/default.jpg
+Carrot 841,1515,High quality Carrot from Vegetables,Vegetables,Carrot,Mega Mart,products/default.jpg
+Laptop 567,4772,High quality Laptop from Electronics,Electronics,Laptop,Daily Needs Store,products/default.jpg
+Pen 443,202,High quality Pen from Stationery,Stationery,Pen,Green Basket,products/default.jpg
+Toothpaste 767,807,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Urban Grocery,products/default.jpg
+Muffin 71,385,High quality Muffin from Bakery,Bakery,Muffin,Super Store,products/default.jpg
+Juice 255,1206,High quality Juice from Beverages,Beverages,Juice,Green Basket,products/default.jpg
+Jeans 119,1571,High quality Jeans from Clothing,Clothing,Jeans,Smart Shop,products/default.jpg
+Juice 84,3867,High quality Juice from Beverages,Beverages,Juice,Smart Shop,products/default.jpg
+Jacket 767,4928,High quality Jacket from Clothing,Clothing,Jacket,Green Basket,products/default.jpg
+Cookies 623,2866,High quality Cookies from Snacks,Snacks,Cookies,Super Store,products/default.jpg
+Chair 652,2226,High quality Chair from Home,Home,Chair,Urban Grocery,products/default.jpg
+Juice 820,1349,High quality Juice from Beverages,Beverages,Juice,Daily Needs Store,products/default.jpg
+Smart Watch 147,4308,High quality Smart Watch from Electronics,Electronics,Smart Watch,Green Basket,products/default.jpg
+Popcorn 428,4913,High quality Popcorn from Snacks,Snacks,Popcorn,Urban Grocery,products/default.jpg
+Coffee 43,3953,High quality Coffee from Beverages,Beverages,Coffee,Smart Shop,products/default.jpg
+Orange 546,150,High quality Orange from Fruits,Fruits,Orange,Fresh Mart,products/default.jpg
+Bread 915,2438,High quality Bread from Bakery,Bakery,Bread,Green Basket,products/default.jpg
+T-Shirt 210,397,High quality T-Shirt from Clothing,Clothing,T-Shirt,Quick Shop,products/default.jpg
+Chips 995,2779,High quality Chips from Snacks,Snacks,Chips,Mega Mart,products/default.jpg
+Juice 942,2408,High quality Juice from Beverages,Beverages,Juice,Mega Mart,products/default.jpg
+Carrot 804,1205,High quality Carrot from Vegetables,Vegetables,Carrot,Mega Mart,products/default.jpg
+Pencil 580,2553,High quality Pencil from Stationery,Stationery,Pencil,Mega Mart,products/default.jpg
+Yogurt 142,3569,High quality Yogurt from Dairy,Dairy,Yogurt,Quick Shop,products/default.jpg
+Charger 952,2899,High quality Charger from Electronics,Electronics,Charger,Super Store,products/default.jpg
+Carrot 81,1647,High quality Carrot from Vegetables,Vegetables,Carrot,Fresh Mart,products/default.jpg
+Tomato 552,1717,High quality Tomato from Vegetables,Vegetables,Tomato,Daily Needs Store,products/default.jpg
+Pencil 983,1565,High quality Pencil from Stationery,Stationery,Pencil,Daily Needs Store,products/default.jpg
+Apple 504,3818,High quality Apple from Fruits,Fruits,Apple,Daily Needs Store,products/default.jpg
+Coffee 487,2232,High quality Coffee from Beverages,Beverages,Coffee,Fresh Mart,products/default.jpg
+Pencil 200,1030,High quality Pencil from Stationery,Stationery,Pencil,Fresh Mart,products/default.jpg
+Chocolate 212,2011,High quality Chocolate from Snacks,Snacks,Chocolate,Daily Needs Store,products/default.jpg
+Soap 420,3908,High quality Soap from Daily Needs,Daily Needs,Soap,Green Basket,products/default.jpg
+Onion 832,1265,High quality Onion from Vegetables,Vegetables,Onion,Urban Grocery,products/default.jpg
+Juice 869,421,High quality Juice from Beverages,Beverages,Juice,Super Store,products/default.jpg
+Biscuit 28,20,High quality Biscuit from Bakery,Bakery,Biscuit,Daily Needs Store,products/default.jpg
+Biscuit 743,2410,High quality Biscuit from Bakery,Bakery,Biscuit,Green Basket,products/default.jpg
+Bed Sheet 123,3095,High quality Bed Sheet from Home,Home,Bed Sheet,Quick Shop,products/default.jpg
+T-Shirt 78,1136,High quality T-Shirt from Clothing,Clothing,T-Shirt,Super Store,products/default.jpg
+Toilet Paper 383,4573,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Super Store,products/default.jpg
+Headphones 835,66,High quality Headphones from Electronics,Electronics,Headphones,Mega Mart,products/default.jpg
+Curtain 216,3830,High quality Curtain from Home,Home,Curtain,Fresh Mart,products/default.jpg
+Energy Drink 55,1917,High quality Energy Drink from Beverages,Beverages,Energy Drink,Urban Grocery,products/default.jpg
+Bed Sheet 907,356,High quality Bed Sheet from Home,Home,Bed Sheet,Urban Grocery,products/default.jpg
+Soap 54,1308,High quality Soap from Daily Needs,Daily Needs,Soap,Super Store,products/default.jpg
+Grapes 482,4894,High quality Grapes from Fruits,Fruits,Grapes,Quick Shop,products/default.jpg
+Spinach 340,222,High quality Spinach from Vegetables,Vegetables,Spinach,Smart Shop,products/default.jpg
+Energy Drink 783,1315,High quality Energy Drink from Beverages,Beverages,Energy Drink,Mega Mart,products/default.jpg
+Donut 976,2792,High quality Donut from Bakery,Bakery,Donut,Urban Grocery,products/default.jpg
+Popcorn 522,2485,High quality Popcorn from Snacks,Snacks,Popcorn,Super Store,products/default.jpg
+Chair 652,2013,High quality Chair from Home,Home,Chair,Super Store,products/default.jpg
+Charger 739,773,High quality Charger from Electronics,Electronics,Charger,Urban Grocery,products/default.jpg
+Shorts 561,1388,High quality Shorts from Clothing,Clothing,Shorts,Fresh Mart,products/default.jpg
+Chips 399,3806,High quality Chips from Snacks,Snacks,Chips,Mega Mart,products/default.jpg
+Bed Sheet 560,3090,High quality Bed Sheet from Home,Home,Bed Sheet,Smart Shop,products/default.jpg
+Grapes 705,702,High quality Grapes from Fruits,Fruits,Grapes,Super Store,products/default.jpg
+Popcorn 831,2376,High quality Popcorn from Snacks,Snacks,Popcorn,Smart Shop,products/default.jpg
+Detergent 446,1299,High quality Detergent from Daily Needs,Daily Needs,Detergent,Urban Grocery,products/default.jpg
+Headphones 814,2533,High quality Headphones from Electronics,Electronics,Headphones,Super Store,products/default.jpg
+Energy Drink 3,1800,High quality Energy Drink from Beverages,Beverages,Energy Drink,Daily Needs Store,products/default.jpg
+Cheese 643,1724,High quality Cheese from Dairy,Dairy,Cheese,Urban Grocery,products/default.jpg
+Orange 763,4148,High quality Orange from Fruits,Fruits,Orange,Urban Grocery,products/default.jpg
+Tea 766,1842,High quality Tea from Beverages,Beverages,Tea,Quick Shop,products/default.jpg
+Chips 187,2477,High quality Chips from Snacks,Snacks,Chips,Quick Shop,products/default.jpg
+Coffee 54,1562,High quality Coffee from Beverages,Beverages,Coffee,Daily Needs Store,products/default.jpg
+Bed Sheet 409,4500,High quality Bed Sheet from Home,Home,Bed Sheet,Urban Grocery,products/default.jpg
+Shorts 459,4942,High quality Shorts from Clothing,Clothing,Shorts,Mega Mart,products/default.jpg
+Shampoo 361,1846,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Green Basket,products/default.jpg
+Spinach 168,2216,High quality Spinach from Vegetables,Vegetables,Spinach,Green Basket,products/default.jpg
+Onion 905,4178,High quality Onion from Vegetables,Vegetables,Onion,Daily Needs Store,products/default.jpg
+Soap 559,4419,High quality Soap from Daily Needs,Daily Needs,Soap,Green Basket,products/default.jpg
+Potato 78,2862,High quality Potato from Vegetables,Vegetables,Potato,Fresh Mart,products/default.jpg
+Shirt 300,3691,High quality Shirt from Clothing,Clothing,Shirt,Super Store,products/default.jpg
+Marker 533,4259,High quality Marker from Stationery,Stationery,Marker,Smart Shop,products/default.jpg
+Toothpaste 802,2659,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Super Store,products/default.jpg
+Donut 169,4647,High quality Donut from Bakery,Bakery,Donut,Mega Mart,products/default.jpg
+Soap 204,4016,High quality Soap from Daily Needs,Daily Needs,Soap,Super Store,products/default.jpg
+Jacket 440,2673,High quality Jacket from Clothing,Clothing,Jacket,Smart Shop,products/default.jpg
+Soap 757,555,High quality Soap from Daily Needs,Daily Needs,Soap,Quick Shop,products/default.jpg
+Charger 344,40,High quality Charger from Electronics,Electronics,Charger,Mega Mart,products/default.jpg
+Curtain 572,1821,High quality Curtain from Home,Home,Curtain,Smart Shop,products/default.jpg
+Toilet Paper 668,835,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Super Store,products/default.jpg
+Donut 141,2215,High quality Donut from Bakery,Bakery,Donut,Daily Needs Store,products/default.jpg
+Mobile 985,168,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Shorts 376,4830,High quality Shorts from Clothing,Clothing,Shorts,Super Store,products/default.jpg
+Namkeen 486,1807,High quality Namkeen from Snacks,Snacks,Namkeen,Green Basket,products/default.jpg
+Detergent 961,3887,High quality Detergent from Daily Needs,Daily Needs,Detergent,Quick Shop,products/default.jpg
+Soda 322,3434,High quality Soda from Beverages,Beverages,Soda,Fresh Mart,products/default.jpg
+Pillow 19,80,High quality Pillow from Home,Home,Pillow,Smart Shop,products/default.jpg
+Table 306,93,High quality Table from Home,Home,Table,Green Basket,products/default.jpg
+Cookies 275,2266,High quality Cookies from Snacks,Snacks,Cookies,Super Store,products/default.jpg
+Grapes 604,73,High quality Grapes from Fruits,Fruits,Grapes,Daily Needs Store,products/default.jpg
+Soap 27,4702,High quality Soap from Daily Needs,Daily Needs,Soap,Green Basket,products/default.jpg
+Jeans 222,317,High quality Jeans from Clothing,Clothing,Jeans,Fresh Mart,products/default.jpg
+Bed Sheet 806,1743,High quality Bed Sheet from Home,Home,Bed Sheet,Daily Needs Store,products/default.jpg
+Pillow 54,270,High quality Pillow from Home,Home,Pillow,Mega Mart,products/default.jpg
+Chips 88,2887,High quality Chips from Snacks,Snacks,Chips,Urban Grocery,products/default.jpg
+Chair 676,2086,High quality Chair from Home,Home,Chair,Super Store,products/default.jpg
+Apple 644,3815,High quality Apple from Fruits,Fruits,Apple,Urban Grocery,products/default.jpg
+Juice 706,1596,High quality Juice from Beverages,Beverages,Juice,Fresh Mart,products/default.jpg
+Banana 914,2104,High quality Banana from Fruits,Fruits,Banana,Fresh Mart,products/default.jpg
+Jacket 382,4642,High quality Jacket from Clothing,Clothing,Jacket,Mega Mart,products/default.jpg
+Bed Sheet 855,3601,High quality Bed Sheet from Home,Home,Bed Sheet,Urban Grocery,products/default.jpg
+Pillow 821,326,High quality Pillow from Home,Home,Pillow,Green Basket,products/default.jpg
+Carrot 947,4470,High quality Carrot from Vegetables,Vegetables,Carrot,Fresh Mart,products/default.jpg
+Potato 273,1513,High quality Potato from Vegetables,Vegetables,Potato,Daily Needs Store,products/default.jpg
+Marker 316,1285,High quality Marker from Stationery,Stationery,Marker,Super Store,products/default.jpg
+Butter 3,3377,High quality Butter from Dairy,Dairy,Butter,Daily Needs Store,products/default.jpg
+Notebook 147,4001,High quality Notebook from Stationery,Stationery,Notebook,Quick Shop,products/default.jpg
+Toothpaste 52,3147,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Mega Mart,products/default.jpg
+Cake 357,1775,High quality Cake from Bakery,Bakery,Cake,Super Store,products/default.jpg
+Detergent 775,4435,High quality Detergent from Daily Needs,Daily Needs,Detergent,Mega Mart,products/default.jpg
+Biscuit 348,4131,High quality Biscuit from Bakery,Bakery,Biscuit,Mega Mart,products/default.jpg
+Soda 881,2602,High quality Soda from Beverages,Beverages,Soda,Smart Shop,products/default.jpg
+Soda 443,2534,High quality Soda from Beverages,Beverages,Soda,Green Basket,products/default.jpg
+Energy Drink 333,1612,High quality Energy Drink from Beverages,Beverages,Energy Drink,Super Store,products/default.jpg
+Chair 274,3155,High quality Chair from Home,Home,Chair,Daily Needs Store,products/default.jpg
+Charger 641,1856,High quality Charger from Electronics,Electronics,Charger,Super Store,products/default.jpg
+Milk 153,1250,High quality Milk from Dairy,Dairy,Milk,Green Basket,products/default.jpg
+T-Shirt 375,1705,High quality T-Shirt from Clothing,Clothing,T-Shirt,Green Basket,products/default.jpg
+Toothpaste 402,3889,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Urban Grocery,products/default.jpg
+Soap 291,3087,High quality Soap from Daily Needs,Daily Needs,Soap,Daily Needs Store,products/default.jpg
+Coffee 205,3879,High quality Coffee from Beverages,Beverages,Coffee,Super Store,products/default.jpg
+Onion 618,2283,High quality Onion from Vegetables,Vegetables,Onion,Urban Grocery,products/default.jpg
+Chair 767,572,High quality Chair from Home,Home,Chair,Super Store,products/default.jpg
+Curtain 844,1422,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+Chips 64,1318,High quality Chips from Snacks,Snacks,Chips,Green Basket,products/default.jpg
+Soda 947,2449,High quality Soda from Beverages,Beverages,Soda,Daily Needs Store,products/default.jpg
+Onion 735,1093,High quality Onion from Vegetables,Vegetables,Onion,Super Store,products/default.jpg
+Pen 303,4497,High quality Pen from Stationery,Stationery,Pen,Super Store,products/default.jpg
+Spinach 565,3677,High quality Spinach from Vegetables,Vegetables,Spinach,Daily Needs Store,products/default.jpg
+Banana 275,4592,High quality Banana from Fruits,Fruits,Banana,Mega Mart,products/default.jpg
+Curtain 559,1403,High quality Curtain from Home,Home,Curtain,Daily Needs Store,products/default.jpg
+Grapes 54,2471,High quality Grapes from Fruits,Fruits,Grapes,Green Basket,products/default.jpg
+Paneer 629,979,High quality Paneer from Dairy,Dairy,Paneer,Fresh Mart,products/default.jpg
+Yogurt 371,739,High quality Yogurt from Dairy,Dairy,Yogurt,Urban Grocery,products/default.jpg
+Yogurt 921,923,High quality Yogurt from Dairy,Dairy,Yogurt,Mega Mart,products/default.jpg
+Donut 639,4074,High quality Donut from Bakery,Bakery,Donut,Fresh Mart,products/default.jpg
+Headphones 199,4714,High quality Headphones from Electronics,Electronics,Headphones,Smart Shop,products/default.jpg
+Smart Watch 562,279,High quality Smart Watch from Electronics,Electronics,Smart Watch,Smart Shop,products/default.jpg
+Banana 544,2157,High quality Banana from Fruits,Fruits,Banana,Daily Needs Store,products/default.jpg
+Carrot 643,1745,High quality Carrot from Vegetables,Vegetables,Carrot,Mega Mart,products/default.jpg
+Grapes 158,4384,High quality Grapes from Fruits,Fruits,Grapes,Green Basket,products/default.jpg
+Toothpaste 621,1953,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Urban Grocery,products/default.jpg
+Mango 331,3244,High quality Mango from Fruits,Fruits,Mango,Urban Grocery,products/default.jpg
+Jeans 922,2770,High quality Jeans from Clothing,Clothing,Jeans,Green Basket,products/default.jpg
+Soda 628,402,High quality Soda from Beverages,Beverages,Soda,Mega Mart,products/default.jpg
+Chocolate 554,4621,High quality Chocolate from Snacks,Snacks,Chocolate,Quick Shop,products/default.jpg
+Bread 137,4973,High quality Bread from Bakery,Bakery,Bread,Urban Grocery,products/default.jpg
+Pencil 180,2272,High quality Pencil from Stationery,Stationery,Pencil,Mega Mart,products/default.jpg
+Coffee 692,4555,High quality Coffee from Beverages,Beverages,Coffee,Super Store,products/default.jpg
+Soap 114,2378,High quality Soap from Daily Needs,Daily Needs,Soap,Urban Grocery,products/default.jpg
+Laptop 42,3964,High quality Laptop from Electronics,Electronics,Laptop,Urban Grocery,products/default.jpg
+Pillow 87,2812,High quality Pillow from Home,Home,Pillow,Mega Mart,products/default.jpg
+Cookies 182,3015,High quality Cookies from Snacks,Snacks,Cookies,Smart Shop,products/default.jpg
+Table 692,3638,High quality Table from Home,Home,Table,Mega Mart,products/default.jpg
+Notebook 201,3765,High quality Notebook from Stationery,Stationery,Notebook,Super Store,products/default.jpg
+Eraser 371,4617,High quality Eraser from Stationery,Stationery,Eraser,Mega Mart,products/default.jpg
+Toothpaste 982,3478,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Fresh Mart,products/default.jpg
+Pen 528,3719,High quality Pen from Stationery,Stationery,Pen,Quick Shop,products/default.jpg
+Apple 40,1839,High quality Apple from Fruits,Fruits,Apple,Mega Mart,products/default.jpg
+Chips 921,408,High quality Chips from Snacks,Snacks,Chips,Daily Needs Store,products/default.jpg
+Juice 225,2170,High quality Juice from Beverages,Beverages,Juice,Green Basket,products/default.jpg
+Soap 402,3458,High quality Soap from Daily Needs,Daily Needs,Soap,Green Basket,products/default.jpg
+Apple 826,672,High quality Apple from Fruits,Fruits,Apple,Fresh Mart,products/default.jpg
+Apple 903,944,High quality Apple from Fruits,Fruits,Apple,Green Basket,products/default.jpg
+Muffin 706,1967,High quality Muffin from Bakery,Bakery,Muffin,Fresh Mart,products/default.jpg
+Pillow 190,782,High quality Pillow from Home,Home,Pillow,Urban Grocery,products/default.jpg
+Jacket 235,2725,High quality Jacket from Clothing,Clothing,Jacket,Quick Shop,products/default.jpg
+Bread 241,3497,High quality Bread from Bakery,Bakery,Bread,Green Basket,products/default.jpg
+T-Shirt 345,2918,High quality T-Shirt from Clothing,Clothing,T-Shirt,Super Store,products/default.jpg
+Milk 356,2812,High quality Milk from Dairy,Dairy,Milk,Mega Mart,products/default.jpg
+Mango 246,2212,High quality Mango from Fruits,Fruits,Mango,Smart Shop,products/default.jpg
+Curtain 123,112,High quality Curtain from Home,Home,Curtain,Quick Shop,products/default.jpg
+Pillow 70,3160,High quality Pillow from Home,Home,Pillow,Fresh Mart,products/default.jpg
+Jeans 997,1488,High quality Jeans from Clothing,Clothing,Jeans,Fresh Mart,products/default.jpg
+Orange 683,2947,High quality Orange from Fruits,Fruits,Orange,Mega Mart,products/default.jpg
+Milk 718,4230,High quality Milk from Dairy,Dairy,Milk,Urban Grocery,products/default.jpg
+Table 609,1827,High quality Table from Home,Home,Table,Daily Needs Store,products/default.jpg
+Pen 683,3325,High quality Pen from Stationery,Stationery,Pen,Green Basket,products/default.jpg
+Popcorn 195,1930,High quality Popcorn from Snacks,Snacks,Popcorn,Daily Needs Store,products/default.jpg
+Cake 397,250,High quality Cake from Bakery,Bakery,Cake,Fresh Mart,products/default.jpg
+Onion 251,1570,High quality Onion from Vegetables,Vegetables,Onion,Smart Shop,products/default.jpg
+Eraser 825,3642,High quality Eraser from Stationery,Stationery,Eraser,Mega Mart,products/default.jpg
+Paneer 806,3283,High quality Paneer from Dairy,Dairy,Paneer,Super Store,products/default.jpg
+Energy Drink 434,729,High quality Energy Drink from Beverages,Beverages,Energy Drink,Green Basket,products/default.jpg
+Cookies 633,4415,High quality Cookies from Snacks,Snacks,Cookies,Green Basket,products/default.jpg
+Notebook 319,585,High quality Notebook from Stationery,Stationery,Notebook,Urban Grocery,products/default.jpg
+Orange 694,4320,High quality Orange from Fruits,Fruits,Orange,Super Store,products/default.jpg
+Smart Watch 754,2437,High quality Smart Watch from Electronics,Electronics,Smart Watch,Daily Needs Store,products/default.jpg
+Onion 145,4812,High quality Onion from Vegetables,Vegetables,Onion,Quick Shop,products/default.jpg
+Milk 489,3978,High quality Milk from Dairy,Dairy,Milk,Fresh Mart,products/default.jpg
+Pillow 926,309,High quality Pillow from Home,Home,Pillow,Green Basket,products/default.jpg
+Shampoo 462,2405,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Mega Mart,products/default.jpg
+Shirt 996,1984,High quality Shirt from Clothing,Clothing,Shirt,Smart Shop,products/default.jpg
+Notebook 93,1024,High quality Notebook from Stationery,Stationery,Notebook,Super Store,products/default.jpg
+Muffin 324,2757,High quality Muffin from Bakery,Bakery,Muffin,Super Store,products/default.jpg
+Jacket 348,4878,High quality Jacket from Clothing,Clothing,Jacket,Daily Needs Store,products/default.jpg
+Jeans 989,3448,High quality Jeans from Clothing,Clothing,Jeans,Fresh Mart,products/default.jpg
+Charger 997,3542,High quality Charger from Electronics,Electronics,Charger,Smart Shop,products/default.jpg
+Coffee 907,422,High quality Coffee from Beverages,Beverages,Coffee,Green Basket,products/default.jpg
+Bread 311,3930,High quality Bread from Bakery,Bakery,Bread,Quick Shop,products/default.jpg
+Yogurt 216,2504,High quality Yogurt from Dairy,Dairy,Yogurt,Daily Needs Store,products/default.jpg
+Energy Drink 655,2135,High quality Energy Drink from Beverages,Beverages,Energy Drink,Smart Shop,products/default.jpg
+Charger 112,1784,High quality Charger from Electronics,Electronics,Charger,Urban Grocery,products/default.jpg
+Shirt 47,3227,High quality Shirt from Clothing,Clothing,Shirt,Fresh Mart,products/default.jpg
+Soap 507,56,High quality Soap from Daily Needs,Daily Needs,Soap,Fresh Mart,products/default.jpg
+Smart Watch 259,4170,High quality Smart Watch from Electronics,Electronics,Smart Watch,Daily Needs Store,products/default.jpg
+Butter 443,3252,High quality Butter from Dairy,Dairy,Butter,Urban Grocery,products/default.jpg
+Namkeen 18,2775,High quality Namkeen from Snacks,Snacks,Namkeen,Super Store,products/default.jpg
+Laptop 97,4212,High quality Laptop from Electronics,Electronics,Laptop,Mega Mart,products/default.jpg
+Mango 872,2416,High quality Mango from Fruits,Fruits,Mango,Quick Shop,products/default.jpg
+Yogurt 498,4037,High quality Yogurt from Dairy,Dairy,Yogurt,Super Store,products/default.jpg
+Pencil 643,1243,High quality Pencil from Stationery,Stationery,Pencil,Fresh Mart,products/default.jpg
+Tea 803,741,High quality Tea from Beverages,Beverages,Tea,Mega Mart,products/default.jpg
+Onion 853,132,High quality Onion from Vegetables,Vegetables,Onion,Green Basket,products/default.jpg
+Milk 396,2047,High quality Milk from Dairy,Dairy,Milk,Fresh Mart,products/default.jpg
+Orange 606,250,High quality Orange from Fruits,Fruits,Orange,Green Basket,products/default.jpg
+Bed Sheet 784,2423,High quality Bed Sheet from Home,Home,Bed Sheet,Green Basket,products/default.jpg
+Shirt 64,1376,High quality Shirt from Clothing,Clothing,Shirt,Smart Shop,products/default.jpg
+Mobile 575,4091,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Charger 322,2667,High quality Charger from Electronics,Electronics,Charger,Fresh Mart,products/default.jpg
+Marker 553,1846,High quality Marker from Stationery,Stationery,Marker,Daily Needs Store,products/default.jpg
+Butter 213,727,High quality Butter from Dairy,Dairy,Butter,Mega Mart,products/default.jpg
+Shampoo 522,1431,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Quick Shop,products/default.jpg
+Carrot 517,4013,High quality Carrot from Vegetables,Vegetables,Carrot,Smart Shop,products/default.jpg
+Cake 840,1155,High quality Cake from Bakery,Bakery,Cake,Daily Needs Store,products/default.jpg
+Bed Sheet 430,4203,High quality Bed Sheet from Home,Home,Bed Sheet,Quick Shop,products/default.jpg
+Muffin 735,3806,High quality Muffin from Bakery,Bakery,Muffin,Quick Shop,products/default.jpg
+Muffin 440,2021,High quality Muffin from Bakery,Bakery,Muffin,Super Store,products/default.jpg
+Bread 607,818,High quality Bread from Bakery,Bakery,Bread,Mega Mart,products/default.jpg
+Tomato 875,3252,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+Carrot 450,533,High quality Carrot from Vegetables,Vegetables,Carrot,Mega Mart,products/default.jpg
+Chocolate 842,350,High quality Chocolate from Snacks,Snacks,Chocolate,Daily Needs Store,products/default.jpg
+Potato 243,275,High quality Potato from Vegetables,Vegetables,Potato,Smart Shop,products/default.jpg
+Mobile 716,837,High quality Mobile from Electronics,Electronics,Mobile,Fresh Mart,products/default.jpg
+Jacket 370,3012,High quality Jacket from Clothing,Clothing,Jacket,Mega Mart,products/default.jpg
+Apple 589,3545,High quality Apple from Fruits,Fruits,Apple,Fresh Mart,products/default.jpg
+Marker 512,1360,High quality Marker from Stationery,Stationery,Marker,Green Basket,products/default.jpg
+Tea 502,1833,High quality Tea from Beverages,Beverages,Tea,Daily Needs Store,products/default.jpg
+Table 432,1645,High quality Table from Home,Home,Table,Super Store,products/default.jpg
+Eraser 806,3618,High quality Eraser from Stationery,Stationery,Eraser,Urban Grocery,products/default.jpg
+Bread 936,4044,High quality Bread from Bakery,Bakery,Bread,Quick Shop,products/default.jpg
+Muffin 771,1765,High quality Muffin from Bakery,Bakery,Muffin,Smart Shop,products/default.jpg
+Laptop 207,2104,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+Shampoo 545,3316,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Quick Shop,products/default.jpg
+Laptop 104,1365,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+T-Shirt 549,1061,High quality T-Shirt from Clothing,Clothing,T-Shirt,Smart Shop,products/default.jpg
+Potato 153,356,High quality Potato from Vegetables,Vegetables,Potato,Green Basket,products/default.jpg
+Table 876,2842,High quality Table from Home,Home,Table,Green Basket,products/default.jpg
+Bread 163,56,High quality Bread from Bakery,Bakery,Bread,Daily Needs Store,products/default.jpg
+Shampoo 775,3104,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Daily Needs Store,products/default.jpg
+Popcorn 605,4375,High quality Popcorn from Snacks,Snacks,Popcorn,Green Basket,products/default.jpg
+Orange 304,4763,High quality Orange from Fruits,Fruits,Orange,Quick Shop,products/default.jpg
+Potato 197,3928,High quality Potato from Vegetables,Vegetables,Potato,Quick Shop,products/default.jpg
+Yogurt 199,565,High quality Yogurt from Dairy,Dairy,Yogurt,Urban Grocery,products/default.jpg
+Milk 259,274,High quality Milk from Dairy,Dairy,Milk,Smart Shop,products/default.jpg
+Pen 115,3832,High quality Pen from Stationery,Stationery,Pen,Mega Mart,products/default.jpg
+Shorts 448,2757,High quality Shorts from Clothing,Clothing,Shorts,Fresh Mart,products/default.jpg
+Donut 440,268,High quality Donut from Bakery,Bakery,Donut,Green Basket,products/default.jpg
+T-Shirt 432,3158,High quality T-Shirt from Clothing,Clothing,T-Shirt,Green Basket,products/default.jpg
+Muffin 416,2902,High quality Muffin from Bakery,Bakery,Muffin,Super Store,products/default.jpg
+Laptop 498,893,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+Spinach 927,2183,High quality Spinach from Vegetables,Vegetables,Spinach,Quick Shop,products/default.jpg
+Spinach 596,2942,High quality Spinach from Vegetables,Vegetables,Spinach,Smart Shop,products/default.jpg
+Spinach 827,135,High quality Spinach from Vegetables,Vegetables,Spinach,Quick Shop,products/default.jpg
+Jacket 382,3922,High quality Jacket from Clothing,Clothing,Jacket,Green Basket,products/default.jpg
+Pencil 178,413,High quality Pencil from Stationery,Stationery,Pencil,Quick Shop,products/default.jpg
+Grapes 135,2927,High quality Grapes from Fruits,Fruits,Grapes,Super Store,products/default.jpg
+Spinach 997,3731,High quality Spinach from Vegetables,Vegetables,Spinach,Mega Mart,products/default.jpg
+Shampoo 551,1792,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Super Store,products/default.jpg
+T-Shirt 580,3166,High quality T-Shirt from Clothing,Clothing,T-Shirt,Super Store,products/default.jpg
+Yogurt 403,4172,High quality Yogurt from Dairy,Dairy,Yogurt,Daily Needs Store,products/default.jpg
+Marker 509,157,High quality Marker from Stationery,Stationery,Marker,Quick Shop,products/default.jpg
+Jacket 113,411,High quality Jacket from Clothing,Clothing,Jacket,Super Store,products/default.jpg
+Spinach 449,1746,High quality Spinach from Vegetables,Vegetables,Spinach,Quick Shop,products/default.jpg
+Shampoo 217,1510,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Mega Mart,products/default.jpg
+Bed Sheet 880,4864,High quality Bed Sheet from Home,Home,Bed Sheet,Fresh Mart,products/default.jpg
+Eraser 119,1138,High quality Eraser from Stationery,Stationery,Eraser,Quick Shop,products/default.jpg
+Energy Drink 15,1643,High quality Energy Drink from Beverages,Beverages,Energy Drink,Green Basket,products/default.jpg
+Table 590,2346,High quality Table from Home,Home,Table,Super Store,products/default.jpg
+Smart Watch 601,2500,High quality Smart Watch from Electronics,Electronics,Smart Watch,Green Basket,products/default.jpg
+Carrot 698,1619,High quality Carrot from Vegetables,Vegetables,Carrot,Urban Grocery,products/default.jpg
+Detergent 56,3149,High quality Detergent from Daily Needs,Daily Needs,Detergent,Urban Grocery,products/default.jpg
+Curtain 374,1916,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+Namkeen 699,3504,High quality Namkeen from Snacks,Snacks,Namkeen,Super Store,products/default.jpg
+Detergent 167,4090,High quality Detergent from Daily Needs,Daily Needs,Detergent,Mega Mart,products/default.jpg
+Banana 52,691,High quality Banana from Fruits,Fruits,Banana,Quick Shop,products/default.jpg
+Charger 145,2415,High quality Charger from Electronics,Electronics,Charger,Green Basket,products/default.jpg
+Marker 443,4963,High quality Marker from Stationery,Stationery,Marker,Green Basket,products/default.jpg
+Soda 765,1003,High quality Soda from Beverages,Beverages,Soda,Quick Shop,products/default.jpg
+Apple 110,4769,High quality Apple from Fruits,Fruits,Apple,Mega Mart,products/default.jpg
+Tea 775,2045,High quality Tea from Beverages,Beverages,Tea,Urban Grocery,products/default.jpg
+Smart Watch 576,3138,High quality Smart Watch from Electronics,Electronics,Smart Watch,Super Store,products/default.jpg
+Chocolate 309,3266,High quality Chocolate from Snacks,Snacks,Chocolate,Green Basket,products/default.jpg
+Coffee 246,3366,High quality Coffee from Beverages,Beverages,Coffee,Green Basket,products/default.jpg
+Biscuit 708,3212,High quality Biscuit from Bakery,Bakery,Biscuit,Quick Shop,products/default.jpg
+Spinach 518,4671,High quality Spinach from Vegetables,Vegetables,Spinach,Mega Mart,products/default.jpg
+Tomato 21,2776,High quality Tomato from Vegetables,Vegetables,Tomato,Super Store,products/default.jpg
+Shorts 598,2329,High quality Shorts from Clothing,Clothing,Shorts,Urban Grocery,products/default.jpg
+Toothpaste 603,4933,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Daily Needs Store,products/default.jpg
+Pillow 408,1080,High quality Pillow from Home,Home,Pillow,Daily Needs Store,products/default.jpg
+Shirt 581,2593,High quality Shirt from Clothing,Clothing,Shirt,Fresh Mart,products/default.jpg
+Orange 31,4983,High quality Orange from Fruits,Fruits,Orange,Daily Needs Store,products/default.jpg
+Curtain 49,1366,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+Popcorn 418,3811,High quality Popcorn from Snacks,Snacks,Popcorn,Quick Shop,products/default.jpg
+Jacket 941,1433,High quality Jacket from Clothing,Clothing,Jacket,Mega Mart,products/default.jpg
+Pillow 906,999,High quality Pillow from Home,Home,Pillow,Daily Needs Store,products/default.jpg
+Chocolate 27,2154,High quality Chocolate from Snacks,Snacks,Chocolate,Smart Shop,products/default.jpg
+Milk 970,2398,High quality Milk from Dairy,Dairy,Milk,Quick Shop,products/default.jpg
+Popcorn 476,1759,High quality Popcorn from Snacks,Snacks,Popcorn,Quick Shop,products/default.jpg
+Detergent 426,1721,High quality Detergent from Daily Needs,Daily Needs,Detergent,Quick Shop,products/default.jpg
+Smart Watch 203,667,High quality Smart Watch from Electronics,Electronics,Smart Watch,Fresh Mart,products/default.jpg
+Banana 937,3472,High quality Banana from Fruits,Fruits,Banana,Super Store,products/default.jpg
+Coffee 659,3075,High quality Coffee from Beverages,Beverages,Coffee,Quick Shop,products/default.jpg
+Tea 135,625,High quality Tea from Beverages,Beverages,Tea,Urban Grocery,products/default.jpg
+Muffin 751,2327,High quality Muffin from Bakery,Bakery,Muffin,Super Store,products/default.jpg
+Tea 776,4566,High quality Tea from Beverages,Beverages,Tea,Quick Shop,products/default.jpg
+Pencil 190,470,High quality Pencil from Stationery,Stationery,Pencil,Daily Needs Store,products/default.jpg
+Bread 288,4428,High quality Bread from Bakery,Bakery,Bread,Super Store,products/default.jpg
+Toilet Paper 535,4750,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Smart Shop,products/default.jpg
+Headphones 836,2107,High quality Headphones from Electronics,Electronics,Headphones,Urban Grocery,products/default.jpg
+Pen 952,3355,High quality Pen from Stationery,Stationery,Pen,Super Store,products/default.jpg
+Shirt 65,2221,High quality Shirt from Clothing,Clothing,Shirt,Daily Needs Store,products/default.jpg
+Cookies 389,948,High quality Cookies from Snacks,Snacks,Cookies,Mega Mart,products/default.jpg
+Jacket 143,2460,High quality Jacket from Clothing,Clothing,Jacket,Urban Grocery,products/default.jpg
+Grapes 196,4757,High quality Grapes from Fruits,Fruits,Grapes,Smart Shop,products/default.jpg
+Popcorn 42,944,High quality Popcorn from Snacks,Snacks,Popcorn,Green Basket,products/default.jpg
+Butter 318,4390,High quality Butter from Dairy,Dairy,Butter,Quick Shop,products/default.jpg
+Banana 648,546,High quality Banana from Fruits,Fruits,Banana,Daily Needs Store,products/default.jpg
+Chair 782,4618,High quality Chair from Home,Home,Chair,Quick Shop,products/default.jpg
+Carrot 213,923,High quality Carrot from Vegetables,Vegetables,Carrot,Fresh Mart,products/default.jpg
+Shampoo 383,4003,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Mega Mart,products/default.jpg
+Cookies 884,2846,High quality Cookies from Snacks,Snacks,Cookies,Fresh Mart,products/default.jpg
+Biscuit 807,1222,High quality Biscuit from Bakery,Bakery,Biscuit,Fresh Mart,products/default.jpg
+Yogurt 456,3659,High quality Yogurt from Dairy,Dairy,Yogurt,Mega Mart,products/default.jpg
+Onion 555,3127,High quality Onion from Vegetables,Vegetables,Onion,Super Store,products/default.jpg
+Chair 385,4310,High quality Chair from Home,Home,Chair,Smart Shop,products/default.jpg
+Eraser 620,4131,High quality Eraser from Stationery,Stationery,Eraser,Smart Shop,products/default.jpg
+Toilet Paper 182,4274,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Daily Needs Store,products/default.jpg
+Butter 802,2518,High quality Butter from Dairy,Dairy,Butter,Smart Shop,products/default.jpg
+Cheese 970,1942,High quality Cheese from Dairy,Dairy,Cheese,Fresh Mart,products/default.jpg
+Jeans 593,4885,High quality Jeans from Clothing,Clothing,Jeans,Green Basket,products/default.jpg
+Carrot 245,3871,High quality Carrot from Vegetables,Vegetables,Carrot,Smart Shop,products/default.jpg
+Tomato 232,998,High quality Tomato from Vegetables,Vegetables,Tomato,Quick Shop,products/default.jpg
+Namkeen 844,3662,High quality Namkeen from Snacks,Snacks,Namkeen,Mega Mart,products/default.jpg
+Bed Sheet 984,15,High quality Bed Sheet from Home,Home,Bed Sheet,Daily Needs Store,products/default.jpg
+Pencil 937,3478,High quality Pencil from Stationery,Stationery,Pencil,Fresh Mart,products/default.jpg
+Soap 546,1848,High quality Soap from Daily Needs,Daily Needs,Soap,Quick Shop,products/default.jpg
+Table 753,2259,High quality Table from Home,Home,Table,Super Store,products/default.jpg
+Toothpaste 580,1209,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Urban Grocery,products/default.jpg
+Mango 401,2271,High quality Mango from Fruits,Fruits,Mango,Smart Shop,products/default.jpg
+Laptop 554,1835,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+Mobile 5,2448,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Jacket 359,2382,High quality Jacket from Clothing,Clothing,Jacket,Super Store,products/default.jpg
+Soda 147,4388,High quality Soda from Beverages,Beverages,Soda,Smart Shop,products/default.jpg
+Shampoo 330,3827,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Super Store,products/default.jpg
+Notebook 736,1913,High quality Notebook from Stationery,Stationery,Notebook,Mega Mart,products/default.jpg
+Marker 929,4980,High quality Marker from Stationery,Stationery,Marker,Smart Shop,products/default.jpg
+Potato 671,2536,High quality Potato from Vegetables,Vegetables,Potato,Super Store,products/default.jpg
+Energy Drink 427,3866,High quality Energy Drink from Beverages,Beverages,Energy Drink,Fresh Mart,products/default.jpg
+Cake 693,1054,High quality Cake from Bakery,Bakery,Cake,Quick Shop,products/default.jpg
+Charger 660,3782,High quality Charger from Electronics,Electronics,Charger,Mega Mart,products/default.jpg
+Bread 940,3813,High quality Bread from Bakery,Bakery,Bread,Green Basket,products/default.jpg
+Table 413,2939,High quality Table from Home,Home,Table,Green Basket,products/default.jpg
+Mobile 391,1861,High quality Mobile from Electronics,Electronics,Mobile,Urban Grocery,products/default.jpg
+Soda 47,585,High quality Soda from Beverages,Beverages,Soda,Super Store,products/default.jpg
+Shirt 810,1553,High quality Shirt from Clothing,Clothing,Shirt,Super Store,products/default.jpg
+Shampoo 810,3447,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Mega Mart,products/default.jpg
+Curtain 400,1859,High quality Curtain from Home,Home,Curtain,Quick Shop,products/default.jpg
+Eraser 636,4454,High quality Eraser from Stationery,Stationery,Eraser,Daily Needs Store,products/default.jpg
+Juice 207,2821,High quality Juice from Beverages,Beverages,Juice,Mega Mart,products/default.jpg
+Banana 382,1888,High quality Banana from Fruits,Fruits,Banana,Urban Grocery,products/default.jpg
+Cookies 902,718,High quality Cookies from Snacks,Snacks,Cookies,Super Store,products/default.jpg
+Chocolate 7,642,High quality Chocolate from Snacks,Snacks,Chocolate,Mega Mart,products/default.jpg
+Milk 425,243,High quality Milk from Dairy,Dairy,Milk,Fresh Mart,products/default.jpg
+Chocolate 902,2666,High quality Chocolate from Snacks,Snacks,Chocolate,Fresh Mart,products/default.jpg
+Shorts 923,414,High quality Shorts from Clothing,Clothing,Shorts,Quick Shop,products/default.jpg
+Jeans 340,4006,High quality Jeans from Clothing,Clothing,Jeans,Green Basket,products/default.jpg
+Detergent 938,974,High quality Detergent from Daily Needs,Daily Needs,Detergent,Smart Shop,products/default.jpg
+Chocolate 507,991,High quality Chocolate from Snacks,Snacks,Chocolate,Super Store,products/default.jpg
+Energy Drink 100,3015,High quality Energy Drink from Beverages,Beverages,Energy Drink,Fresh Mart,products/default.jpg
+Detergent 289,3772,High quality Detergent from Daily Needs,Daily Needs,Detergent,Super Store,products/default.jpg
+Table 689,3264,High quality Table from Home,Home,Table,Fresh Mart,products/default.jpg
+Carrot 920,1710,High quality Carrot from Vegetables,Vegetables,Carrot,Green Basket,products/default.jpg
+Shirt 437,4452,High quality Shirt from Clothing,Clothing,Shirt,Urban Grocery,products/default.jpg
+Headphones 194,3914,High quality Headphones from Electronics,Electronics,Headphones,Urban Grocery,products/default.jpg
+Detergent 121,3161,High quality Detergent from Daily Needs,Daily Needs,Detergent,Green Basket,products/default.jpg
+Chair 675,4180,High quality Chair from Home,Home,Chair,Smart Shop,products/default.jpg
+Tomato 245,4216,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+Banana 952,3396,High quality Banana from Fruits,Fruits,Banana,Urban Grocery,products/default.jpg
+Yogurt 151,4261,High quality Yogurt from Dairy,Dairy,Yogurt,Smart Shop,products/default.jpg
+Juice 953,3864,High quality Juice from Beverages,Beverages,Juice,Quick Shop,products/default.jpg
+Paneer 945,2991,High quality Paneer from Dairy,Dairy,Paneer,Quick Shop,products/default.jpg
+Apple 722,3329,High quality Apple from Fruits,Fruits,Apple,Fresh Mart,products/default.jpg
+Charger 474,2728,High quality Charger from Electronics,Electronics,Charger,Fresh Mart,products/default.jpg
+Muffin 117,1121,High quality Muffin from Bakery,Bakery,Muffin,Urban Grocery,products/default.jpg
+Mango 71,4440,High quality Mango from Fruits,Fruits,Mango,Urban Grocery,products/default.jpg
+Bread 631,3398,High quality Bread from Bakery,Bakery,Bread,Daily Needs Store,products/default.jpg
+Juice 614,678,High quality Juice from Beverages,Beverages,Juice,Green Basket,products/default.jpg
+Curtain 573,4779,High quality Curtain from Home,Home,Curtain,Green Basket,products/default.jpg
+Shorts 567,4140,High quality Shorts from Clothing,Clothing,Shorts,Urban Grocery,products/default.jpg
+Grapes 945,2203,High quality Grapes from Fruits,Fruits,Grapes,Quick Shop,products/default.jpg
+Paneer 942,831,High quality Paneer from Dairy,Dairy,Paneer,Fresh Mart,products/default.jpg
+Mango 927,2215,High quality Mango from Fruits,Fruits,Mango,Green Basket,products/default.jpg
+Apple 284,4289,High quality Apple from Fruits,Fruits,Apple,Smart Shop,products/default.jpg
+Headphones 750,2557,High quality Headphones from Electronics,Electronics,Headphones,Green Basket,products/default.jpg
+Energy Drink 828,81,High quality Energy Drink from Beverages,Beverages,Energy Drink,Mega Mart,products/default.jpg
+Popcorn 101,4376,High quality Popcorn from Snacks,Snacks,Popcorn,Urban Grocery,products/default.jpg
+Chocolate 66,4999,High quality Chocolate from Snacks,Snacks,Chocolate,Green Basket,products/default.jpg
+Cake 501,4199,High quality Cake from Bakery,Bakery,Cake,Smart Shop,products/default.jpg
+Laptop 512,3609,High quality Laptop from Electronics,Electronics,Laptop,Super Store,products/default.jpg
+Orange 411,4105,High quality Orange from Fruits,Fruits,Orange,Smart Shop,products/default.jpg
+Bed Sheet 890,3593,High quality Bed Sheet from Home,Home,Bed Sheet,Green Basket,products/default.jpg
+Pencil 405,1902,High quality Pencil from Stationery,Stationery,Pencil,Daily Needs Store,products/default.jpg
+Coffee 922,2248,High quality Coffee from Beverages,Beverages,Coffee,Smart Shop,products/default.jpg
+Tomato 819,2564,High quality Tomato from Vegetables,Vegetables,Tomato,Super Store,products/default.jpg
+Smart Watch 90,1418,High quality Smart Watch from Electronics,Electronics,Smart Watch,Quick Shop,products/default.jpg
+Orange 119,4949,High quality Orange from Fruits,Fruits,Orange,Mega Mart,products/default.jpg
+Shirt 336,3230,High quality Shirt from Clothing,Clothing,Shirt,Urban Grocery,products/default.jpg
+Milk 50,1508,High quality Milk from Dairy,Dairy,Milk,Urban Grocery,products/default.jpg
+Biscuit 365,420,High quality Biscuit from Bakery,Bakery,Biscuit,Urban Grocery,products/default.jpg
+Smart Watch 301,1958,High quality Smart Watch from Electronics,Electronics,Smart Watch,Quick Shop,products/default.jpg
+Curtain 112,106,High quality Curtain from Home,Home,Curtain,Quick Shop,products/default.jpg
+Laptop 667,956,High quality Laptop from Electronics,Electronics,Laptop,Daily Needs Store,products/default.jpg
+Mango 463,63,High quality Mango from Fruits,Fruits,Mango,Super Store,products/default.jpg
+Table 467,4811,High quality Table from Home,Home,Table,Smart Shop,products/default.jpg
+Biscuit 477,1706,High quality Biscuit from Bakery,Bakery,Biscuit,Mega Mart,products/default.jpg
+Cake 327,2491,High quality Cake from Bakery,Bakery,Cake,Fresh Mart,products/default.jpg
+Grapes 681,575,High quality Grapes from Fruits,Fruits,Grapes,Daily Needs Store,products/default.jpg
+Pen 215,2370,High quality Pen from Stationery,Stationery,Pen,Mega Mart,products/default.jpg
+Notebook 726,251,High quality Notebook from Stationery,Stationery,Notebook,Quick Shop,products/default.jpg
+Yogurt 814,577,High quality Yogurt from Dairy,Dairy,Yogurt,Fresh Mart,products/default.jpg
+Cheese 831,4019,High quality Cheese from Dairy,Dairy,Cheese,Urban Grocery,products/default.jpg
+Charger 5,2906,High quality Charger from Electronics,Electronics,Charger,Mega Mart,products/default.jpg
+Yogurt 495,64,High quality Yogurt from Dairy,Dairy,Yogurt,Smart Shop,products/default.jpg
+Charger 644,393,High quality Charger from Electronics,Electronics,Charger,Super Store,products/default.jpg
+Marker 846,648,High quality Marker from Stationery,Stationery,Marker,Super Store,products/default.jpg
+Namkeen 33,4114,High quality Namkeen from Snacks,Snacks,Namkeen,Green Basket,products/default.jpg
+Mango 436,1075,High quality Mango from Fruits,Fruits,Mango,Green Basket,products/default.jpg
+Detergent 371,1524,High quality Detergent from Daily Needs,Daily Needs,Detergent,Quick Shop,products/default.jpg
+Table 431,197,High quality Table from Home,Home,Table,Fresh Mart,products/default.jpg
+Soda 822,4881,High quality Soda from Beverages,Beverages,Soda,Urban Grocery,products/default.jpg
+Tea 542,795,High quality Tea from Beverages,Beverages,Tea,Daily Needs Store,products/default.jpg
+Popcorn 36,2113,High quality Popcorn from Snacks,Snacks,Popcorn,Fresh Mart,products/default.jpg
+Bed Sheet 848,1516,High quality Bed Sheet from Home,Home,Bed Sheet,Smart Shop,products/default.jpg
+Mobile 420,90,High quality Mobile from Electronics,Electronics,Mobile,Urban Grocery,products/default.jpg
+T-Shirt 904,2468,High quality T-Shirt from Clothing,Clothing,T-Shirt,Green Basket,products/default.jpg
+Cheese 627,4617,High quality Cheese from Dairy,Dairy,Cheese,Daily Needs Store,products/default.jpg
+Donut 279,398,High quality Donut from Bakery,Bakery,Donut,Smart Shop,products/default.jpg
+Chocolate 243,2886,High quality Chocolate from Snacks,Snacks,Chocolate,Green Basket,products/default.jpg
+Pen 39,2937,High quality Pen from Stationery,Stationery,Pen,Fresh Mart,products/default.jpg
+Muffin 730,2648,High quality Muffin from Bakery,Bakery,Muffin,Fresh Mart,products/default.jpg
+Cheese 578,4246,High quality Cheese from Dairy,Dairy,Cheese,Daily Needs Store,products/default.jpg
+Shampoo 829,4162,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Daily Needs Store,products/default.jpg
+Yogurt 902,2889,High quality Yogurt from Dairy,Dairy,Yogurt,Mega Mart,products/default.jpg
+Curtain 632,3717,High quality Curtain from Home,Home,Curtain,Smart Shop,products/default.jpg
+Curtain 81,4108,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+Potato 385,2691,High quality Potato from Vegetables,Vegetables,Potato,Urban Grocery,products/default.jpg
+Orange 962,184,High quality Orange from Fruits,Fruits,Orange,Smart Shop,products/default.jpg
+Banana 169,1736,High quality Banana from Fruits,Fruits,Banana,Green Basket,products/default.jpg
+Toilet Paper 759,3765,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Green Basket,products/default.jpg
+Biscuit 842,3120,High quality Biscuit from Bakery,Bakery,Biscuit,Mega Mart,products/default.jpg
+Milk 997,930,High quality Milk from Dairy,Dairy,Milk,Green Basket,products/default.jpg
+T-Shirt 360,4723,High quality T-Shirt from Clothing,Clothing,T-Shirt,Green Basket,products/default.jpg
+Popcorn 293,4298,High quality Popcorn from Snacks,Snacks,Popcorn,Quick Shop,products/default.jpg
+Bed Sheet 98,2599,High quality Bed Sheet from Home,Home,Bed Sheet,Daily Needs Store,products/default.jpg
+Juice 733,4620,High quality Juice from Beverages,Beverages,Juice,Mega Mart,products/default.jpg
+Namkeen 992,430,High quality Namkeen from Snacks,Snacks,Namkeen,Green Basket,products/default.jpg
+Marker 703,3833,High quality Marker from Stationery,Stationery,Marker,Quick Shop,products/default.jpg
+Detergent 323,1442,High quality Detergent from Daily Needs,Daily Needs,Detergent,Green Basket,products/default.jpg
+Onion 780,2046,High quality Onion from Vegetables,Vegetables,Onion,Green Basket,products/default.jpg
+Toilet Paper 829,4419,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Urban Grocery,products/default.jpg
+Chips 693,619,High quality Chips from Snacks,Snacks,Chips,Quick Shop,products/default.jpg
+Biscuit 621,1204,High quality Biscuit from Bakery,Bakery,Biscuit,Super Store,products/default.jpg
+Mobile 201,382,High quality Mobile from Electronics,Electronics,Mobile,Mega Mart,products/default.jpg
+Mobile 170,441,High quality Mobile from Electronics,Electronics,Mobile,Green Basket,products/default.jpg
+Cookies 453,2677,High quality Cookies from Snacks,Snacks,Cookies,Urban Grocery,products/default.jpg
+Toothpaste 23,1349,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Smart Shop,products/default.jpg
+Pen 813,3195,High quality Pen from Stationery,Stationery,Pen,Mega Mart,products/default.jpg
+Mango 501,1316,High quality Mango from Fruits,Fruits,Mango,Quick Shop,products/default.jpg
+Chips 44,2744,High quality Chips from Snacks,Snacks,Chips,Super Store,products/default.jpg
+Coffee 500,3162,High quality Coffee from Beverages,Beverages,Coffee,Urban Grocery,products/default.jpg
+Curtain 745,1131,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+T-Shirt 532,4091,High quality T-Shirt from Clothing,Clothing,T-Shirt,Mega Mart,products/default.jpg
+Butter 625,1067,High quality Butter from Dairy,Dairy,Butter,Green Basket,products/default.jpg
+Table 257,4366,High quality Table from Home,Home,Table,Mega Mart,products/default.jpg
+Pencil 916,3652,High quality Pencil from Stationery,Stationery,Pencil,Super Store,products/default.jpg
+Charger 758,4389,High quality Charger from Electronics,Electronics,Charger,Quick Shop,products/default.jpg
+Onion 707,1798,High quality Onion from Vegetables,Vegetables,Onion,Smart Shop,products/default.jpg
+Shampoo 272,298,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Smart Shop,products/default.jpg
+Eraser 787,3190,High quality Eraser from Stationery,Stationery,Eraser,Urban Grocery,products/default.jpg
+Toothpaste 859,2409,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Daily Needs Store,products/default.jpg
+Headphones 525,2438,High quality Headphones from Electronics,Electronics,Headphones,Quick Shop,products/default.jpg
+Donut 853,590,High quality Donut from Bakery,Bakery,Donut,Fresh Mart,products/default.jpg
+Yogurt 179,4769,High quality Yogurt from Dairy,Dairy,Yogurt,Mega Mart,products/default.jpg
+Tomato 411,976,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+T-Shirt 161,4919,High quality T-Shirt from Clothing,Clothing,T-Shirt,Super Store,products/default.jpg
+Detergent 343,3879,High quality Detergent from Daily Needs,Daily Needs,Detergent,Daily Needs Store,products/default.jpg
+Shampoo 59,395,High quality Shampoo from Daily Needs,Daily Needs,Shampoo,Super Store,products/default.jpg
+Orange 639,470,High quality Orange from Fruits,Fruits,Orange,Smart Shop,products/default.jpg
+Onion 107,3742,High quality Onion from Vegetables,Vegetables,Onion,Mega Mart,products/default.jpg
+Mobile 239,4785,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Soda 440,4251,High quality Soda from Beverages,Beverages,Soda,Green Basket,products/default.jpg
+Namkeen 344,4184,High quality Namkeen from Snacks,Snacks,Namkeen,Mega Mart,products/default.jpg
+T-Shirt 607,2386,High quality T-Shirt from Clothing,Clothing,T-Shirt,Urban Grocery,products/default.jpg
+Milk 569,2667,High quality Milk from Dairy,Dairy,Milk,Green Basket,products/default.jpg
+Toothpaste 390,2546,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Mega Mart,products/default.jpg
+Tea 751,252,High quality Tea from Beverages,Beverages,Tea,Fresh Mart,products/default.jpg
+Pillow 47,2021,High quality Pillow from Home,Home,Pillow,Smart Shop,products/default.jpg
+Cookies 767,1971,High quality Cookies from Snacks,Snacks,Cookies,Urban Grocery,products/default.jpg
+Pen 755,4421,High quality Pen from Stationery,Stationery,Pen,Mega Mart,products/default.jpg
+Soap 31,3077,High quality Soap from Daily Needs,Daily Needs,Soap,Smart Shop,products/default.jpg
+Detergent 585,2998,High quality Detergent from Daily Needs,Daily Needs,Detergent,Green Basket,products/default.jpg
+Mango 17,2061,High quality Mango from Fruits,Fruits,Mango,Quick Shop,products/default.jpg
+Charger 512,4465,High quality Charger from Electronics,Electronics,Charger,Daily Needs Store,products/default.jpg
+Toothpaste 139,3617,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Mega Mart,products/default.jpg
+Popcorn 11,1901,High quality Popcorn from Snacks,Snacks,Popcorn,Daily Needs Store,products/default.jpg
+Tea 548,3394,High quality Tea from Beverages,Beverages,Tea,Urban Grocery,products/default.jpg
+Donut 529,3699,High quality Donut from Bakery,Bakery,Donut,Quick Shop,products/default.jpg
+Headphones 168,905,High quality Headphones from Electronics,Electronics,Headphones,Super Store,products/default.jpg
+Mango 231,3516,High quality Mango from Fruits,Fruits,Mango,Mega Mart,products/default.jpg
+Juice 124,1678,High quality Juice from Beverages,Beverages,Juice,Super Store,products/default.jpg
+Namkeen 422,2647,High quality Namkeen from Snacks,Snacks,Namkeen,Smart Shop,products/default.jpg
+Toothpaste 900,3283,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Fresh Mart,products/default.jpg
+Chair 963,4191,High quality Chair from Home,Home,Chair,Quick Shop,products/default.jpg
+Table 637,2452,High quality Table from Home,Home,Table,Quick Shop,products/default.jpg
+Mango 211,4333,High quality Mango from Fruits,Fruits,Mango,Mega Mart,products/default.jpg
+Chips 823,1988,High quality Chips from Snacks,Snacks,Chips,Mega Mart,products/default.jpg
+Headphones 696,3671,High quality Headphones from Electronics,Electronics,Headphones,Green Basket,products/default.jpg
+Pillow 181,3808,High quality Pillow from Home,Home,Pillow,Mega Mart,products/default.jpg
+Cake 444,1272,High quality Cake from Bakery,Bakery,Cake,Urban Grocery,products/default.jpg
+Tomato 802,985,High quality Tomato from Vegetables,Vegetables,Tomato,Daily Needs Store,products/default.jpg
+Donut 664,2760,High quality Donut from Bakery,Bakery,Donut,Super Store,products/default.jpg
+Charger 842,737,High quality Charger from Electronics,Electronics,Charger,Urban Grocery,products/default.jpg
+Spinach 973,2328,High quality Spinach from Vegetables,Vegetables,Spinach,Quick Shop,products/default.jpg
+Pillow 373,1332,High quality Pillow from Home,Home,Pillow,Super Store,products/default.jpg
+Muffin 598,2038,High quality Muffin from Bakery,Bakery,Muffin,Quick Shop,products/default.jpg
+Donut 837,4890,High quality Donut from Bakery,Bakery,Donut,Super Store,products/default.jpg
+Jeans 429,3232,High quality Jeans from Clothing,Clothing,Jeans,Urban Grocery,products/default.jpg
+Soda 879,1370,High quality Soda from Beverages,Beverages,Soda,Urban Grocery,products/default.jpg
+Mobile 605,4141,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Onion 11,3781,High quality Onion from Vegetables,Vegetables,Onion,Fresh Mart,products/default.jpg
+Soap 697,4365,High quality Soap from Daily Needs,Daily Needs,Soap,Green Basket,products/default.jpg
+Bread 224,2270,High quality Bread from Bakery,Bakery,Bread,Mega Mart,products/default.jpg
+Table 138,369,High quality Table from Home,Home,Table,Green Basket,products/default.jpg
+Toilet Paper 851,2249,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Mega Mart,products/default.jpg
+Soda 501,2030,High quality Soda from Beverages,Beverages,Soda,Fresh Mart,products/default.jpg
+Pillow 510,4137,High quality Pillow from Home,Home,Pillow,Mega Mart,products/default.jpg
+Popcorn 303,194,High quality Popcorn from Snacks,Snacks,Popcorn,Daily Needs Store,products/default.jpg
+Chair 725,2849,High quality Chair from Home,Home,Chair,Super Store,products/default.jpg
+Energy Drink 518,1654,High quality Energy Drink from Beverages,Beverages,Energy Drink,Urban Grocery,products/default.jpg
+Popcorn 48,3980,High quality Popcorn from Snacks,Snacks,Popcorn,Urban Grocery,products/default.jpg
+Laptop 75,4788,High quality Laptop from Electronics,Electronics,Laptop,Mega Mart,products/default.jpg
+Jeans 544,1939,High quality Jeans from Clothing,Clothing,Jeans,Smart Shop,products/default.jpg
+Onion 135,307,High quality Onion from Vegetables,Vegetables,Onion,Daily Needs Store,products/default.jpg
+Spinach 464,4541,High quality Spinach from Vegetables,Vegetables,Spinach,Green Basket,products/default.jpg
+Butter 759,4750,High quality Butter from Dairy,Dairy,Butter,Fresh Mart,products/default.jpg
+Banana 982,3993,High quality Banana from Fruits,Fruits,Banana,Mega Mart,products/default.jpg
+Apple 572,1812,High quality Apple from Fruits,Fruits,Apple,Smart Shop,products/default.jpg
+Muffin 932,4401,High quality Muffin from Bakery,Bakery,Muffin,Smart Shop,products/default.jpg
+Soda 908,363,High quality Soda from Beverages,Beverages,Soda,Green Basket,products/default.jpg
+Laptop 439,1598,High quality Laptop from Electronics,Electronics,Laptop,Green Basket,products/default.jpg
+Biscuit 49,203,High quality Biscuit from Bakery,Bakery,Biscuit,Urban Grocery,products/default.jpg
+Detergent 582,4768,High quality Detergent from Daily Needs,Daily Needs,Detergent,Daily Needs Store,products/default.jpg
+Muffin 213,1854,High quality Muffin from Bakery,Bakery,Muffin,Mega Mart,products/default.jpg
+Pen 747,4457,High quality Pen from Stationery,Stationery,Pen,Mega Mart,products/default.jpg
+Paneer 928,476,High quality Paneer from Dairy,Dairy,Paneer,Super Store,products/default.jpg
+Soap 927,167,High quality Soap from Daily Needs,Daily Needs,Soap,Urban Grocery,products/default.jpg
+Banana 331,1523,High quality Banana from Fruits,Fruits,Banana,Daily Needs Store,products/default.jpg
+Laptop 457,2409,High quality Laptop from Electronics,Electronics,Laptop,Quick Shop,products/default.jpg
+Detergent 909,416,High quality Detergent from Daily Needs,Daily Needs,Detergent,Urban Grocery,products/default.jpg
+Banana 238,1917,High quality Banana from Fruits,Fruits,Banana,Fresh Mart,products/default.jpg
+Carrot 748,1084,High quality Carrot from Vegetables,Vegetables,Carrot,Smart Shop,products/default.jpg
+Banana 472,5,High quality Banana from Fruits,Fruits,Banana,Fresh Mart,products/default.jpg
+Orange 675,4478,High quality Orange from Fruits,Fruits,Orange,Fresh Mart,products/default.jpg
+Notebook 396,2948,High quality Notebook from Stationery,Stationery,Notebook,Super Store,products/default.jpg
+Milk 606,101,High quality Milk from Dairy,Dairy,Milk,Daily Needs Store,products/default.jpg
+Namkeen 253,4471,High quality Namkeen from Snacks,Snacks,Namkeen,Quick Shop,products/default.jpg
+Headphones 700,4600,High quality Headphones from Electronics,Electronics,Headphones,Quick Shop,products/default.jpg
+Yogurt 746,1954,High quality Yogurt from Dairy,Dairy,Yogurt,Daily Needs Store,products/default.jpg
+Potato 179,2491,High quality Potato from Vegetables,Vegetables,Potato,Green Basket,products/default.jpg
+Carrot 654,1228,High quality Carrot from Vegetables,Vegetables,Carrot,Daily Needs Store,products/default.jpg
+Biscuit 338,1998,High quality Biscuit from Bakery,Bakery,Biscuit,Urban Grocery,products/default.jpg
+Headphones 888,3448,High quality Headphones from Electronics,Electronics,Headphones,Daily Needs Store,products/default.jpg
+Shorts 851,2113,High quality Shorts from Clothing,Clothing,Shorts,Urban Grocery,products/default.jpg
+Potato 994,4847,High quality Potato from Vegetables,Vegetables,Potato,Mega Mart,products/default.jpg
+Bread 648,421,High quality Bread from Bakery,Bakery,Bread,Mega Mart,products/default.jpg
+Tomato 304,78,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+Curtain 197,1100,High quality Curtain from Home,Home,Curtain,Urban Grocery,products/default.jpg
+Popcorn 458,2176,High quality Popcorn from Snacks,Snacks,Popcorn,Fresh Mart,products/default.jpg
+Soap 832,741,High quality Soap from Daily Needs,Daily Needs,Soap,Daily Needs Store,products/default.jpg
+Marker 690,3282,High quality Marker from Stationery,Stationery,Marker,Fresh Mart,products/default.jpg
+Orange 978,3982,High quality Orange from Fruits,Fruits,Orange,Daily Needs Store,products/default.jpg
+Milk 382,4256,High quality Milk from Dairy,Dairy,Milk,Urban Grocery,products/default.jpg
+Curtain 832,4759,High quality Curtain from Home,Home,Curtain,Mega Mart,products/default.jpg
+Toothpaste 650,1298,High quality Toothpaste from Daily Needs,Daily Needs,Toothpaste,Green Basket,products/default.jpg
+Butter 262,2746,High quality Butter from Dairy,Dairy,Butter,Super Store,products/default.jpg
+Chair 755,845,High quality Chair from Home,Home,Chair,Smart Shop,products/default.jpg
+Soda 135,2686,High quality Soda from Beverages,Beverages,Soda,Super Store,products/default.jpg
+Spinach 763,3443,High quality Spinach from Vegetables,Vegetables,Spinach,Urban Grocery,products/default.jpg
+Cookies 783,460,High quality Cookies from Snacks,Snacks,Cookies,Quick Shop,products/default.jpg
+Banana 613,2787,High quality Banana from Fruits,Fruits,Banana,Mega Mart,products/default.jpg
+Shorts 813,2484,High quality Shorts from Clothing,Clothing,Shorts,Quick Shop,products/default.jpg
+Tea 692,3573,High quality Tea from Beverages,Beverages,Tea,Quick Shop,products/default.jpg
+Table 113,3752,High quality Table from Home,Home,Table,Super Store,products/default.jpg
+Paneer 824,2510,High quality Paneer from Dairy,Dairy,Paneer,Mega Mart,products/default.jpg
+Apple 694,4878,High quality Apple from Fruits,Fruits,Apple,Smart Shop,products/default.jpg
+Toilet Paper 670,2794,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Quick Shop,products/default.jpg
+Carrot 599,1500,High quality Carrot from Vegetables,Vegetables,Carrot,Mega Mart,products/default.jpg
+Mango 723,2681,High quality Mango from Fruits,Fruits,Mango,Mega Mart,products/default.jpg
+Charger 987,1233,High quality Charger from Electronics,Electronics,Charger,Mega Mart,products/default.jpg
+Paneer 510,2707,High quality Paneer from Dairy,Dairy,Paneer,Quick Shop,products/default.jpg
+Tomato 397,1027,High quality Tomato from Vegetables,Vegetables,Tomato,Smart Shop,products/default.jpg
+Table 145,3798,High quality Table from Home,Home,Table,Fresh Mart,products/default.jpg
+Soda 59,4474,High quality Soda from Beverages,Beverages,Soda,Daily Needs Store,products/default.jpg
+Laptop 848,800,High quality Laptop from Electronics,Electronics,Laptop,Smart Shop,products/default.jpg
+Chocolate 749,3127,High quality Chocolate from Snacks,Snacks,Chocolate,Urban Grocery,products/default.jpg
+Chips 929,1745,High quality Chips from Snacks,Snacks,Chips,Urban Grocery,products/default.jpg
+Smart Watch 836,4413,High quality Smart Watch from Electronics,Electronics,Smart Watch,Quick Shop,products/default.jpg
+Shirt 188,1370,High quality Shirt from Clothing,Clothing,Shirt,Green Basket,products/default.jpg
+Cheese 181,4741,High quality Cheese from Dairy,Dairy,Cheese,Smart Shop,products/default.jpg
+Chips 185,2254,High quality Chips from Snacks,Snacks,Chips,Urban Grocery,products/default.jpg
+Jacket 936,2184,High quality Jacket from Clothing,Clothing,Jacket,Daily Needs Store,products/default.jpg
+Tomato 878,1102,High quality Tomato from Vegetables,Vegetables,Tomato,Fresh Mart,products/default.jpg
+Soda 244,694,High quality Soda from Beverages,Beverages,Soda,Smart Shop,products/default.jpg
+Cheese 979,493,High quality Cheese from Dairy,Dairy,Cheese,Quick Shop,products/default.jpg
+Shirt 152,3318,High quality Shirt from Clothing,Clothing,Shirt,Super Store,products/default.jpg
+Mango 618,3022,High quality Mango from Fruits,Fruits,Mango,Smart Shop,products/default.jpg
+Tomato 384,4960,High quality Tomato from Vegetables,Vegetables,Tomato,Mega Mart,products/default.jpg
+Soda 695,4714,High quality Soda from Beverages,Beverages,Soda,Mega Mart,products/default.jpg
+Apple 194,3725,High quality Apple from Fruits,Fruits,Apple,Quick Shop,products/default.jpg
+Bread 128,86,High quality Bread from Bakery,Bakery,Bread,Smart Shop,products/default.jpg
+Mobile 917,3106,High quality Mobile from Electronics,Electronics,Mobile,Super Store,products/default.jpg
+Bed Sheet 440,2997,High quality Bed Sheet from Home,Home,Bed Sheet,Super Store,products/default.jpg
+Cake 248,3123,High quality Cake from Bakery,Bakery,Cake,Quick Shop,products/default.jpg
+Namkeen 901,1528,High quality Namkeen from Snacks,Snacks,Namkeen,Fresh Mart,products/default.jpg
+Bread 325,4141,High quality Bread from Bakery,Bakery,Bread,Super Store,products/default.jpg
+Apple 124,1635,High quality Apple from Fruits,Fruits,Apple,Daily Needs Store,products/default.jpg
+Energy Drink 224,4894,High quality Energy Drink from Beverages,Beverages,Energy Drink,Quick Shop,products/default.jpg
+Smart Watch 900,1192,High quality Smart Watch from Electronics,Electronics,Smart Watch,Quick Shop,products/default.jpg
+Yogurt 248,1708,High quality Yogurt from Dairy,Dairy,Yogurt,Smart Shop,products/default.jpg
+Mobile 638,639,High quality Mobile from Electronics,Electronics,Mobile,Daily Needs Store,products/default.jpg
+Pencil 947,4115,High quality Pencil from Stationery,Stationery,Pencil,Quick Shop,products/default.jpg
+Tomato 323,1921,High quality Tomato from Vegetables,Vegetables,Tomato,Daily Needs Store,products/default.jpg
+Biscuit 970,3098,High quality Biscuit from Bakery,Bakery,Biscuit,Fresh Mart,products/default.jpg
+Cookies 342,1167,High quality Cookies from Snacks,Snacks,Cookies,Green Basket,products/default.jpg
+Toilet Paper 713,2588,High quality Toilet Paper from Daily Needs,Daily Needs,Toilet Paper,Fresh Mart,products/default.jpg
+Tea 920,1713,High quality Tea from Beverages,Beverages,Tea,Daily Needs Store,products/default.jpg
+Soda 363,2880,High quality Soda from Beverages,Beverages,Soda,Quick Shop,products/default.jpg
+Bread 326,4069,High quality Bread from Bakery,Bakery,Bread,Quick Shop,products/default.jpg
+Onion 585,4574,High quality Onion from Vegetables,Vegetables,Onion,Super Store,products/default.jpg
+Butter 584,1519,High quality Butter from Dairy,Dairy,Butter,Smart Shop,products/default.jpg
+Cookies 421,4461,High quality Cookies from Snacks,Snacks,Cookies,Super Store,products/default.jpg
+Energy Drink 270,1416,High quality Energy Drink from Beverages,Beverages,Energy Drink,Super Store,products/default.jpg
+Cheese 804,2817,High quality Cheese from Dairy,Dairy,Cheese,Daily Needs Store,products/default.jpg
+Energy Drink 732,879,High quality Energy Drink from Beverages,Beverages,Energy Drink,Super Store,products/default.jpg
+Laptop 652,3677,High quality Laptop from Electronics,Electronics,Laptop,Super Store,products/default.jpg
+Butter 201,1017,High quality Butter from Dairy,Dairy,Butter,Super Store,products/default.jpg
+Pillow 459,736,High quality Pillow from Home,Home,Pillow,Fresh Mart,products/default.jpg
+Mobile 885,1330,High quality Mobile from Electronics,Electronics,Mobile,Urban Grocery,products/default.jpg
+Notebook 428,3633,High quality Notebook from Stationery,Stationery,Notebook,Fresh Mart,products/default.jpg

@@ -104,6 +104,13 @@ const fetchShops = async () => {
               ? imagePath
               : `https://res.cloudinary.com/gallimall/${imagePath}`
             : fallbackImage;
+//           const fallbackImage =
+//   "/placeholder.jpg";
+
+// const imageUrl =
+//   imagePath?.startsWith("http")
+//     ? imagePath
+//     : fallbackImage;
 
           return (
             <motion.div

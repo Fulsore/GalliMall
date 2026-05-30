@@ -71,7 +71,7 @@ const Products = ({ categoryId = null, subcategoryId = null }) => {
   };
 
 const getSafeImage = (url) => {
-  if (!url) return '/placeholder.jpg';
+  if (!url) return "/placeholder.jpg";
   if (url.startsWith('http')) return url;
   if (url.startsWith('image/upload')) return `https://res.cloudinary.com/gallimall/${url}`;
   return `https://res.cloudinary.com/gallimall/image/upload/${url}`;

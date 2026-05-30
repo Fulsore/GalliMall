@@ -25,7 +25,7 @@ from .views import (
     successful_orders,
     logout_view,
     latest_prices,
-    CustomerProfileView, CustomerProfileUpdateView, ChatBotAPIView, FavouriteItemViewSet, FavouriteShopViewSet, PromotionViewSet,SmartSuggestionViewSet,PopularProductViewSet,vendor_orders,vendor_revenue_summary,ContactMessageViewSet
+    CustomerProfileView, CustomerProfileUpdateView, ChatBotAPIView, FavouriteItemViewSet, FavouriteShopViewSet, PromotionViewSet,SmartSuggestionViewSet,PopularProductViewSet,vendor_orders,vendor_revenue_summary,ContactMessageViewSet,SemanticSearchAPIView
 )
 
 router = DefaultRouter()
@@ -55,6 +55,7 @@ urlpatterns = [
     path('customer/profile/', CustomerProfileView.as_view(), name='customer-profile'),
     path('customer/profile/update/', CustomerProfileUpdateView.as_view(), name='customer-profile-update'),
     path('chatbot/', ChatBotAPIView.as_view(), name='chatbot'),
+    path("semantic-search/", SemanticSearchAPIView.as_view()),
 
     #shop Nearest
     path('shops/nearest/', ShopViewSet.as_view({'get': 'nearest_shop'}), name='nearest-shop'),
