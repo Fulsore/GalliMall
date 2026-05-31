@@ -33,6 +33,9 @@ export default function CategoryDetailPage() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const { addToFavourite, getFavourites, removeFromFavourite } = useFavourite();
+  const BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://gallimall-backend.onrender.com";
 
   useEffect(() => {
     const stored = localStorage.getItem('favorites');
@@ -48,8 +51,8 @@ export default function CategoryDetailPage() {
       try {
         setLoading(true);
         const [catRes, subRes] = await Promise.all([
-          axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/category/${categoryId}/`),
-          axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/category/${categoryId}/subcategories/`),
+          axios.get(`${BASE_URL}/category/${categoryId}/`),
+          axios.get(`${BASE_URL}/category/${categoryId}/subcategories/`),
         ]);
         setCategory(catRes.data);
         setSubcategories(subRes.data);

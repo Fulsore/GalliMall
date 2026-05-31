@@ -4,11 +4,11 @@ from datetime import timedelta
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(os.path.join(BASE_DIR, ".env"))
+load_dotenv()
 
 # ENVIRONMENT CONFIG
 ENV = os.getenv("ENV", "development")
-DEBUG = ENV == "development"
+DEBUG = os.getenv("DEBUG", "False") == "True"
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost,192.168.29.192,gallimall-backend.onrender.com").split(",")

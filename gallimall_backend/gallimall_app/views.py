@@ -35,6 +35,8 @@ from sentence_transformers import SentenceTransformer
 import json
 import numpy as np
 import faiss
+import razorpay
+from django.http import JsonResponse
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -941,3 +943,11 @@ class SemanticSearchAPIView(APIView):
         "distances": D[0].tolist()
     }
 })
+# def create_order(request):
+#         client = razorpay.Client(auth=("rzp_live_q1oDRYjp6Wjyj6", "eyDZTcUHEeXplmixorvqzj05"))
+#         order = client.order.create({
+#         "amount": 50000,  # ₹500 in paise
+#         "currency": "INR",
+#         "payment_capture": 1
+#     })
+#         return JsonResponse(order)

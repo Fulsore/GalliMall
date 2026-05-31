@@ -25,7 +25,7 @@ from .views import (
     successful_orders,
     logout_view,
     latest_prices,
-    CustomerProfileView, CustomerProfileUpdateView, ChatBotAPIView, FavouriteItemViewSet, FavouriteShopViewSet, PromotionViewSet,SmartSuggestionViewSet,PopularProductViewSet,vendor_orders,vendor_revenue_summary,ContactMessageViewSet,SemanticSearchAPIView
+    CustomerProfileView, CustomerProfileUpdateView, ChatBotAPIView, FavouriteItemViewSet, FavouriteShopViewSet, PromotionViewSet,SmartSuggestionViewSet,PopularProductViewSet,vendor_orders,vendor_revenue_summary,ContactMessageViewSet,SemanticSearchAPIView,
 )
 
 router = DefaultRouter()
@@ -42,7 +42,9 @@ router.register('popular', PopularProductViewSet)
 router.register(r'contact-messages', ContactMessageViewSet, basename='contact-message')
 
 
+
 urlpatterns = [
+    # path("create_order/", create_order),
     # JWT token endpoints
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),  
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
