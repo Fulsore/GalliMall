@@ -338,78 +338,66 @@ class CartViewSet(viewsets.ModelViewSet):
 class CartItemViewSet(viewsets.ModelViewSet):
     serializer_class = CartItemSerializer
     authentication_classes = [JWTAuthentication]
-    permission_classes = [GuestOrAuthenticatedPermission]
-    pagination_class = None
+    permission_classes = [IsAuthenticated]
+
+    def get_cart(self):
+        cart, _ = Cart.objects.get_or_create(user=self.request.user)
+        return cart
 
     def get_queryset(self):
-        user = self.request.user
-        cart_code = self.request.query_params.get('cart_code')
-
-        if user.is_authenticated:
-            return CartItem.objects.filter(cart__user=user)
-        elif cart_code:
-            return CartItem.objects.filter(cart__cart_code=cart_code, cart__user=None)
-        return CartItem.objects.none()
+        cart = self.get_cart()
+        return CartItem.objects.filter(cart=cart)
 
     def perform_create(self, serializer):
-        user = self.request.user if self.request.user.is_authenticated else None
-        cart_code = self.request.data.get("cart_code")
+        cart = self.get_cart()
+
         product_id = self.request.data.get("product")
         quantity = int(self.request.data.get("quantity", 1))
 
-        # Get or create the cart
-        if user:
-            cart, _ = Cart.objects.get_or_create(user=user)
-        else:
-            if not cart_code:
-                cart_code = str(uuid.uuid4())
-            cart, _ = Cart.objects.get_or_create(cart_code=cart_code, user=None)
+        item = CartItem.objects.filter(cart=cart, product_id=product_id).first()
 
-        # ✅ Check if CartItem already exists for this product
-        existing_item = CartItem.objects.filter(cart=cart, product_id=product_id).first()
-        if existing_item:
-            # ✅ Update quantity instead of creating new item
-            existing_item.quantity = quantity  # or += quantity if you want to add
-            existing_item.save()
+        if item:
+            item.quantity = quantity
+            item.save()
         else:
-            # ✅ Create new CartItem
             serializer.save(cart=cart)
-
-        self.cart_code = cart.cart_code
-
 
     def create(self, request, *args, **kwargs):
         response = super().create(request, *args, **kwargs)
-
-        if not request.user.is_authenticated and hasattr(self, 'cart_code'):
-            response.data['cart_code'] = self.cart_code
-
         return response
-
-
-
 class CreateOrderPayment(APIView):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
         user = request.user
-        cart = get_object_or_404(Cart, user=user)
-        cart_items = cart.cartitems.all()
+
+        # 🔥 FIX: ALWAYS take latest valid cart
+        cart = Cart.objects.filter(user=user).order_by("-id").first()
+
+        if not cart:
+            return Response({"error": "Cart not found"}, status=400)
+
+        cart_items = CartItem.objects.filter(cart=cart)
 
         if not cart_items.exists():
-            return Response({"error": "Cart is empty."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Cart is empty."}, status=400)
 
         try:
-            CONVENIENCE_FEE = Decimal('10.00')  # ✅ Flat convenience fee
+            CONVENIENCE_FEE = Decimal('10.00')
 
-            # Calculate total of products only
-            total_product_amount = sum(Decimal(item.product.price) * item.quantity for item in cart_items)
+            total_product_amount = sum(
+                Decimal(item.product.price) * item.quantity
+                for item in cart_items
+            )
 
-            total_amount = total_product_amount + CONVENIENCE_FEE  # ✅ Add fee here
+            total_amount = total_product_amount + CONVENIENCE_FEE
             amount_in_paise = int(total_amount * 100)
 
-            client = razorpay.Client(auth=(settings.RAZORPAY_KEY_ID, settings.RAZORPAY_KEY_SECRET))
+            client = razorpay.Client(
+                auth=(settings.RAZORPAY_KEY_ID, settings.RAZORPAY_KEY_SECRET)
+            )
+
             razorpay_order = client.order.create({
                 "amount": amount_in_paise,
                 "currency": "INR",
@@ -422,7 +410,7 @@ class CreateOrderPayment(APIView):
                 user=user,
                 shop=shop,
                 amount=total_amount,
-                convenience_fee=CONVENIENCE_FEE,  # ✅ Save to model
+                convenience_fee=CONVENIENCE_FEE,
                 razorpay_order_id=razorpay_order['id']
             )
 
@@ -434,15 +422,13 @@ class CreateOrderPayment(APIView):
                     price=item.product.price
                 )
 
-            cart.cartitems.all().delete()
-
-            logger.info(f"[ORDER CREATED] Razorpay ID: {razorpay_order['id']} | User: {user.email}")
+            cart_items.delete()
 
             return Response({
                 "order_id": razorpay_order['id'],
                 "razorpay_key": settings.RAZORPAY_KEY_ID,
                 "amount": float(total_amount),
-                "convenience_fee": float(CONVENIENCE_FEE),  # ✅ Expose it to frontend
+                "convenience_fee": float(CONVENIENCE_FEE),
                 "cart_items": [
                     {
                         "product": item.product.name,
@@ -450,16 +436,11 @@ class CreateOrderPayment(APIView):
                         "price": float(item.product.price)
                     }
                     for item in cart_items
-                ],
-                "total_quantity": sum(item.quantity for item in cart_items),
-                "cart_code": cart.cart_code
+                ]
             })
 
         except Exception as e:
-            logger.error(f"[ORDER ERROR] Razorpay order creation failed: {e}")
-            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
+            return Response({"error": str(e)}, status=500)
 class VerifyPaymentView(APIView):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]

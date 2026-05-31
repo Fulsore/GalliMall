@@ -36,11 +36,11 @@ const PaymentClient = () => {
 
     const options = {
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-      amount: order.amount * 100,
+      amount: order.amount,
       currency: 'INR',
       name: 'Galli Mall',
       description: `Payment for ${order.product}`,
-      order_id: order.order_id,
+      order_id: order.id,
       handler: function (response) {
         const paymentData = {
           razorpay_order_id: response.razorpay_order_id,
