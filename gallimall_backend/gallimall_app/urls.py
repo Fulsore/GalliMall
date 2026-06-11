@@ -25,7 +25,7 @@ from .views import (
     successful_orders,
     logout_view,
     latest_prices,
-    CustomerProfileView, CustomerProfileUpdateView, ChatBotAPIView, FavouriteItemViewSet, FavouriteShopViewSet, PromotionViewSet,SmartSuggestionViewSet,PopularProductViewSet,vendor_orders,vendor_revenue_summary,ContactMessageViewSet,SemanticSearchAPIView,
+    CustomerProfileView, CustomerProfileUpdateView, FavouriteItemViewSet, FavouriteShopViewSet, PromotionViewSet,SmartSuggestionViewSet,PopularProductViewSet,vendor_orders,vendor_revenue_summary,ContactMessageViewSet,SemanticSearchAPIView,
 )
 
 router = DefaultRouter()
