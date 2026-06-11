@@ -57,7 +57,7 @@ urlpatterns = [
     path('customer/profile/', CustomerProfileView.as_view(), name='customer-profile'),
     path('customer/profile/update/', CustomerProfileUpdateView.as_view(), name='customer-profile-update'),
     # path('chatbot/', ChatBotAPIView.as_view(), name='chatbot'),
-    path("semantic-search/", SemanticSearchAPIView.as_view()),
+    # path("semantic-search/", SemanticSearchAPIView.as_view()),
 
     #shop Nearest
     path('shops/nearest/', ShopViewSet.as_view({'get': 'nearest_shop'}), name='nearest-shop'),

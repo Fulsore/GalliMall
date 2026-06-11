@@ -886,45 +886,45 @@ class ContactMessageViewSet(viewsets.ModelViewSet):
             )
 
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-class SemanticSearchAPIView(APIView):
-    permission_classes = [AllowAny]
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+# class SemanticSearchAPIView(APIView):
+#     permission_classes = [AllowAny]
 
-    def get(self, request):
-        query = request.GET.get("q", "").strip()
+#     def get(self, request):
+#         query = request.GET.get("q", "").strip()
 
-        if not query:
-            return Response({"results": []})
+#         if not query:
+#             return Response({"results": []})
 
-        # Load index
-        index = faiss.read_index("rag/vectorstore_products/index.faiss")
+#         # Load index
+#         index = faiss.read_index("rag/vectorstore_products/index.faiss")
 
-        # Load metadata
-        with open("rag/vectorstore_products/meta.json", "r") as f:
-            meta = json.load(f)
+#         # Load metadata
+#         with open("rag/vectorstore_products/meta.json", "r") as f:
+#             meta = json.load(f)
 
-        # Encode query
-        query_vec = model.encode([query])
+#         # Encode query
+#         query_vec = model.encode([query])
 
-        # Search
-        D, I = index.search(np.array(query_vec), k=5)
+#         # Search
+#         D, I = index.search(np.array(query_vec), k=5)
 
-        results = []
-        seen = set()
-        for idx in I[0]:
-            if idx < len(meta) and idx not in seen:
-                results.append(meta[idx])
-                seen.add(idx)
+#         results = []
+#         seen = set()
+#         for idx in I[0]:
+#             if idx < len(meta) and idx not in seen:
+#                 results.append(meta[idx])
+#                 seen.add(idx)
 
-        return Response({
-    "query": query,
-    "results": results,
-    "debug": {
-        "total_indexed": len(meta),
-        "top_indexes": I[0].tolist(),
-        "distances": D[0].tolist()
-    }
-})
+#         return Response({
+#     "query": query,
+#     "results": results,
+#     "debug": {
+#         "total_indexed": len(meta),
+#         "top_indexes": I[0].tolist(),
+#         "distances": D[0].tolist()
+#     }
+# })
 # def create_order(request):
 #         client = razorpay.Client(auth=("rzp_live_q1oDRYjp6Wjyj6", "eyDZTcUHEeXplmixorvqzj05"))
 #         order = client.order.create({
