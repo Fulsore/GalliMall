@@ -784,37 +784,37 @@ def find_best_match(user_input, qna_dict):
 
     return "Sorry, I didn’t understand that. Please try again or contact support."
 """
-class ChatBotAPIView(APIView):
-    permission_classes = [IsAuthenticated]
+# class ChatBotAPIView(APIView):
+#     permission_classes = [IsAuthenticated]
 
-    def post(self, request):
-        from rag.pipeline.rag_chatbot import chatbot
-        user_text = request.data.get("user_text")
+#     def post(self, request):
+#         from rag.pipeline.rag_chatbot import chatbot
+#         user_text = request.data.get("user_text")
 
-        if not user_text:
-            return Response(
-                {"error": "user_text is required"},
-                status=400
-            )
+#         if not user_text:
+#             return Response(
+#                 {"error": "user_text is required"},
+#                 status=400
+#             )
 
-        try:
-            bot_reply = str(chatbot(user_text))
+#         try:
+#             bot_reply = str(chatbot(user_text))
 
-            chat = ChatBot.objects.create(
-                user=request.user,
-                user_text=user_text,
-                bot_reply=bot_reply
-            )
+#             chat = ChatBot.objects.create(
+#                 user=request.user,
+#                 user_text=user_text,
+#                 bot_reply=bot_reply
+#             )
 
-            serializer = ChatBotSerializer(chat)
+#             serializer = ChatBotSerializer(chat)
 
-            return Response(serializer.data)
+#             return Response(serializer.data)
 
-        except Exception as e:
-            return Response(
-                {"error": str(e)},
-                status=500
-            )
+#         except Exception as e:
+#             return Response(
+#                 {"error": str(e)},
+#                 status=500
+#             )
 
 class FavouriteItemViewSet(viewsets.ModelViewSet):
     serializer_class = FavouriteItemSerializer
