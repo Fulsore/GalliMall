@@ -785,35 +785,35 @@ def find_best_match(user_input, qna_dict):
     return "Sorry, I didn’t understand that. Please try again or contact support."
 """
 class ChatBotAPIView(APIView):
+    permission_classes = [IsAuthenticated]
 
     def post(self, request):
-
-        user = request.user
-
-        user_text = request.data.get('user_text', '')
+        user_text = request.data.get("user_text")
 
         if not user_text:
-
             return Response(
-                {
-                    'error': 'user_text is required.'
-                },
+                {"error": "user_text is required"},
                 status=400
             )
 
-        # AI RESPONSE
-        bot_reply = chatbot(user_text)
+        try:
+            bot_reply = str(chatbot(user_text))
 
-        # SAVE CHAT
-        chatbot_entry = ChatBot.objects.create(
-            user=user,
-            user_text=user_text,
-            bot_reply=bot_reply
-        )
+            chat = ChatBot.objects.create(
+                user=request.user,
+                user_text=user_text,
+                bot_reply=bot_reply
+            )
 
-        serializer = ChatBotSerializer(chatbot_entry)
+            serializer = ChatBotSerializer(chat)
 
-        return Response(serializer.data)
+            return Response(serializer.data)
+
+        except Exception as e:
+            return Response(
+                {"error": str(e)},
+                status=500
+            )
 
 class FavouriteItemViewSet(viewsets.ModelViewSet):
     serializer_class = FavouriteItemSerializer
