@@ -31,14 +31,14 @@ from django.db.models import Sum
 from rest_framework.decorators import api_view
 
 # from rag.pipeline.rag_chatbot import chatbot
-from sentence_transformers import SentenceTransformer
+# from sentence_transformers import SentenceTransformer
 import json
 import numpy as np
 import faiss
 import razorpay
 from django.http import JsonResponse
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+# model = SentenceTransformer("all-MiniLM-L6-v2")
 
 from .serializers import (
     UserRegistrationSerializer,
