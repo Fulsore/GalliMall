@@ -30,7 +30,7 @@ from .utils import generate_cart_code
 from django.db.models import Sum
 from rest_framework.decorators import api_view
 
-from rag.pipeline.rag_chatbot import chatbot
+# from rag.pipeline.rag_chatbot import chatbot
 from sentence_transformers import SentenceTransformer
 import json
 import numpy as np
@@ -788,6 +788,7 @@ class ChatBotAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
+        from rag.pipeline.rag_chatbot import chatbot
         user_text = request.data.get("user_text")
 
         if not user_text:
